@@ -1,0 +1,26 @@
+{
+	"name": "A.R.V.I.S docs",
+	"version": "0.0.1",
+	"description": "Documentation for A.R.V.I.S",
+	"main": "index.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jilarganti/demo"
+	},
+	"author": "Jil Arganti",
+	"license": "MIT",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vitepress dev",
+		"build": "vitepress build",
+		"preview": "vitepress preview",
+		"lunaria:build": "lunaria build",
+		"lunaria:open": "open-cli .vitepress/dist/_translations/index.html"
+	},
+	"devDependencies": {
+		"@lunariajs/core": "^0.0.31",
+		"vitepress": "^1.0.0-rc.45",
+		"vitepress-plugin-mermaid": "^2.0.16"
+	}
+}
