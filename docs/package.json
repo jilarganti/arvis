@@ -20,7 +20,9 @@
 	},
 	"devDependencies": {
 		"@lunariajs/core": "^0.0.31",
-		"vitepress": "^1.0.0-rc.45",
+		"@types/node": "^20.11.30",
+		"vitepress": "latest",
+		"markdown-it-mathjax3": "^4.3.2",
 		"vitepress-plugin-mermaid": "^2.0.16"
 	}
 }
