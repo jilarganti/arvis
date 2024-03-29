@@ -15,6 +15,9 @@
 		"dev": "vitepress dev",
 		"build": "vitepress build",
 		"preview": "vitepress preview",
+		"docs:translation:compare": "v-translation compare",
+		"translation:update": "v-translation update",
+		"docs:translation:status": "v-translation status",
 		"lunaria:build": "lunaria build",
 		"lunaria:open": "open-cli .vitepress/dist/_translations/index.html"
 	},
@@ -24,6 +27,7 @@
 		"vitepress": "latest",
 		"markdown-it-mathjax3": "^4.3.2",
 		"open-cli": "^8.0.0",
+		"vitepress-translation-helper": "^0.1.3",
 		"vitepress-plugin-mermaid": "^2.0.16"
 	}
 }

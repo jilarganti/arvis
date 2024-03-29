@@ -22,13 +22,23 @@ hero:
     alt: Arvis gif
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: More
-    details: More supported bundlers...
-    link: /guide/#supported-hooks
-    icon:
-      src: /more.svg
+  - title: 🗂️ Uses Past Data
+    details: Analyzes past discussions and documents for relevant advice.
+    linkText: "Learn more"
+    link: guide/uses-past-data.md
+  - title: 🥇 Achieves Goals
+    details: Focuses strategies on fulfilling your objectives.
+    linkText: "Learn more"
+    link: guide/achieves-goals.md
+  - title: 🤖 Strategic Representation
+    details: Acts on your behalf with insight towards your goals.
+    linkText: "Learn more"
+    link: guide/strategic-representation.md
+    # icon: 
+  - title: 🌡️ Drives Results
+    details: Ensures actions lead to measurable success.
+    linkText: "Learn more"
+    link: guide/drives-results.md
+    # icon: <span class="i-carbon-face-wink hover:i-carbon-face-satisfied"></span>
+      # src: /more.svg
 ---

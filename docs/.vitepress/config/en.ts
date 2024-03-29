@@ -7,7 +7,7 @@ const pkg = require('vitepress/package.json')
 export const en = defineConfig({
     lang: 'en-US',
 
-    description: "Equip your assistant to recall previous conversations, documents, chats, presentations, and all pertinent info for video meetings. It will then efficiently advise and stand in for you at meetings, ensuring seamless communication.",
+    description: "Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results.",
 
     themeConfig: {
 
@@ -25,7 +25,7 @@ export const en = defineConfig({
 
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2019-present Evan You'
+            copyright: 'Copyright © 2024-present Jil Arganti'
         }
     }
 })
