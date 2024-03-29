@@ -22,25 +22,12 @@ The types of data accessible for agent training can be restricted up to complete
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Just want to try it out? Skip to the [Quickstart](./getting-started).
+<!-- Just want to try it out? Skip to the [Quickstart](./getting-started). -->
 
 </div>
 
 ###### Групповые встречи это
 
-## Use Cases
-
-- **Documentation**
-
-  VitePress ships with a default theme designed for technical documentation. It powers this page you are reading right now, along with the documentation for [Vite](https://vitejs.dev/), [Rollup](https://rollupjs.org/), [Pinia](https://pinia.vuejs.org/), [VueUse](https://vueuse.org/), [Vitest](https://vitest.dev/), [D3](https://d3js.org/), [UnoCSS](https://unocss.dev/), [Iconify](https://iconify.design/) and [many more](https://www.vuetelescope.com/explore?framework.slug=vitepress).
-
-  The [official Vue.js documentation](https://vuejs.org/) is also based on VitePress, but uses a custom theme shared between multiple translations.
-
-- **Blogs, Portfolios, and Marketing Sites**
-
-  VitePress supports [fully customized themes](./custom-theme), with the developer experience of a standard Vite + Vue application. Being built on Vite also means you can directly leverage Vite plugins from its rich ecosystem. In addition, VitePress provides flexible APIs to [load data](./data-loading) (local or remote) and [dynamically generate routes](./routing#dynamic-routes). You can use it to build almost anything as long as the data can be determined at build time.
-
-  The official [Vue.js blog](https://blog.vuejs.org/) is a simple blog that generates its index page based on local content.
 
 ## Why Not Fine-Tuning?
 

@@ -5,8 +5,9 @@ title: 'AI Assistant for Video Meetings'
 
 hero:
   name: 'A.R.V.I.S.'
-  text: 'AI Assistant for<br>Video Meetings'
-  tagline: 'Equip your assistant to recall previous conversations, documents, chats, presentations, and all pertinent info for video meetings. It will then efficiently advise and stand in for you at meetings, ensuring seamless communication.'
+  # text: 'AI Assistant for<br>Video Meetings'
+  text: 'AI for Result-Driven Meetings'
+  tagline: "Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results."
   actions:
     - theme: brand
       text: What is A.R.V.I.S.?

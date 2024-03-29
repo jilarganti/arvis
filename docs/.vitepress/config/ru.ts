@@ -13,7 +13,7 @@ export const ru = defineConfig({
 
         sidebar: {
             '/ru/guide/': { base: '/ru/guide/', items: sidebarGuide() },
-            '/ru/reference/': { base: '/ru/reference/', items: sidebarReference() }
+            // '/ru/reference/': { base: '/ru/reference/', items: sidebarReference() }
         },
 
         editLink: {
@@ -55,15 +55,11 @@ export const ru = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
     return [
         {
-            text: 'Guia',
-            link: '/ru/guide/what-is-vitepress',
+            text: 'Гид',
+            link: '/ru/guide/',
             activeMatch: '/ru/guide/'
         },
-        {
-            text: 'Referência',
-            link: '/ru/reference/site-config',
-            activeMatch: '/ru/reference/'
-        },
+
         {
             text: pkg.version,
             items: [

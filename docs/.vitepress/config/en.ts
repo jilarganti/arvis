@@ -15,7 +15,7 @@ export const en = defineConfig({
 
         sidebar: {
             '/guide/': { base: '/guide/', items: sidebarGuide() },
-            '/reference/': { base: '/reference/', items: sidebarReference() }
+            // '/reference/': { base: '/reference/', items: sidebarReference() }
         },
 
         editLink: {
@@ -34,14 +34,10 @@ function nav(): DefaultTheme.NavItem[] {
     return [
         {
             text: 'Guide',
-            link: '/guide/what-is-arvis',
+            link: '/guide/',
             activeMatch: '/guide/'
         },
-        {
-            text: 'Reference',
-            link: '/reference/site-config',
-            activeMatch: '/reference/'
-        },
+
         {
             text: pkg.version,
             items: [
@@ -64,9 +60,9 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             text: 'Introduction',
             collapsed: false,
             items: [
-                { text: 'What is VitePress?', link: 'what-is-vitepress' },
-                { text: 'Getting Started', link: 'getting-started' },
-                { text: 'Routing', link: 'routing' },
+                // { text: 'What is VitePress?', link: 'what-is-vitepress' },
+                // { text: 'Getting Started', link: 'getting-started' },
+                // { text: 'Routing', link: 'routing' },
                 { text: 'Deploy', link: 'deploy' }
             ]
         },
