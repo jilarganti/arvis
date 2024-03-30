@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import algoliasearch from 'algoliasearch'
+
 // import { search as zhSearch } from './zh'
 import { search as ruSearch } from './ru'
 
@@ -56,9 +58,9 @@ export const shared = defineConfig({
         search: {
             provider: 'algolia',
             options: {
-                appId: 'JL6W3SFMCC',
-                apiKey: 'a17c2844e688c8c1fe3e345f585d0583',
-                indexName: 'Arvis',
+                appId: 'OAF8W52W8I',
+                apiKey: '9d785ee5b027174f12217ea63bc041a1',
+                indexName: 'arvis-doc',
                 // locales: { ...zhSearch, ...ruSearch }
                 locales: { ...ruSearch }
             }

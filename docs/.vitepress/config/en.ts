@@ -6,9 +6,8 @@ const pkg = require('vitepress/package.json')
 
 export const en = defineConfig({
     lang: 'en-US',
-
     description: "Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results.",
-
+    head: [['link', { rel: 'icon', href: '/play.png' }]],
     themeConfig: {
 
         nav: nav(),
