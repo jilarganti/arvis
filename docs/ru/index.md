@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: Что это?
-      link: ru/guide/what-is-arvis
+      link: ru/guide/introduction
     - theme: alt
       text: API Examples
       link: /api-examples

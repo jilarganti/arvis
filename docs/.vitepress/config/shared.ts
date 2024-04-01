@@ -5,7 +5,7 @@ import algoliasearch from 'algoliasearch'
 import { search as ruSearch } from './ru'
 
 export const shared = defineConfig({
-    title: "A.R.V.I.S",
+    title: "A.R.V.I.S.",
 
     lastUpdated: true,
     cleanUrls: true,
@@ -59,7 +59,7 @@ export const shared = defineConfig({
             provider: 'algolia',
             options: {
                 appId: 'OAF8W52W8I',
-                apiKey: '9d785ee5b027174f12217ea63bc041a1',
+                apiKey: '12c782af03f5595d06a56e517eb8c67b',
                 indexName: 'arvis-doc',
                 // locales: { ...zhSearch, ...ruSearch }
                 locales: { ...ruSearch }

@@ -1,8 +1,8 @@
 import { createRequire } from 'module'
 import { defineConfig, type DefaultTheme } from 'vitepress'
 
-const require = createRequire(import.meta.url)
-const pkg = require('vitepress/package.json')
+// const require = createRequire(import.meta.url)
+// const pkg = require('vitepress/package.json')
 
 export const en = defineConfig({
     lang: 'en-US',
@@ -31,25 +31,30 @@ export const en = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
     return [
+        { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide/' },
+        { text: 'Join', link: 'https://zoom.us/join', target: '_self', rel: 'noreferrer' },
         {
-            text: 'Guide',
-            link: '/guide/',
-            activeMatch: '/guide/'
-        },
-
-        {
-            text: pkg.version,
+            text: 'Host',
             items: [
                 {
-                    text: 'Changelog',
-                    link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md'
+                    text: 'Public Meeting',
+                    items: [
+                        { text: 'Create a meeting for later', link: '/guide/~meeting#create-a-meeting-for-later' },
+                        { text: 'Start an instant meeting', link: '/guide/~meeting#start-an-instant-meeting' },
+                        { text: 'Shedule in Calendar', link: '/guide/~meeting#shedule-in-calendar' },
+                    ]
                 },
                 {
-                    text: 'Contributing',
-                    link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md'
-                }
-            ]
-        }
+                    text: 'Private Meeting',
+                    items: [
+                        { text: 'Create a meeting for later', link: '/guide/~meeting#create-a-meeting-for-later-1' },
+                        { text: 'Start an instant meeting', link: '/guide/~meeting#start-an-instant-meeting-1' },
+                        { text: 'Shedule in Calendar', link: '/guide/~meeting#shedule-in-calendar-1' },
+                    ]
+                },
+            ],
+        },
+        { text: 'Sign In', link: 'https://zoom.us/signin#/login', target: '_self', rel: 'noreferrer' },
     ]
 }
 
@@ -57,12 +62,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     return [
         {
             text: 'Introduction',
-            collapsed: false,
+            collapsed: true,
             items: [
-                // { text: 'What is VitePress?', link: 'what-is-vitepress' },
-                // { text: 'Getting Started', link: 'getting-started' },
-                // { text: 'Routing', link: 'routing' },
-                { text: 'Deploy', link: 'deploy' }
+                { text: 'What is A.R.V.I.S.?', link: 'introduction' },
+                { text: 'Get Started', link: 'get-started' },
             ]
         },
         {
@@ -70,15 +73,12 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             items: [
                 { text: 'Markdown Extensions', link: 'markdown' },
-                { text: 'Asset Handling', link: 'asset-handling' },
-                { text: 'Frontmatter', link: 'frontmatter' },
-                { text: 'Using Vue in Markdown', link: 'using-vue' },
-                { text: 'Internationalization', link: 'i18n' }
+
             ]
         },
         {
             text: 'Customization',
-            collapsed: false,
+            collapsed: true,
             items: [
                 { text: 'Using a Custom Theme', link: 'custom-theme' },
                 {
@@ -92,7 +92,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         },
         {
             text: 'Experimental',
-            collapsed: false,
+            collapsed: true,
             items: [
                 { text: 'MPA Mode', link: 'mpa-mode' },
                 { text: 'Sitemap Generation', link: 'sitemap-generation' }
