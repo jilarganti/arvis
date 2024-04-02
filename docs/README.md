@@ -1,38 +1,27 @@
-# create-svelte
+# VitePress 📝💨
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+[![test](https://github.com/vuejs/vitepress/workflows/Test/badge.svg)](https://github.com/vuejs/vitepress/actions)
+[![npm](https://img.shields.io/npm/v/vitepress)](https://www.npmjs.com/package/vitepress)
+[![chat](https://img.shields.io/badge/chat-discord-blue?logo=discord)](https://chat.vuejs.org)
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+VitePress is a Vue-powered static site generator and a spiritual successor to [VuePress](https://vuepress.vuejs.org), built on top of [Vite](https://github.com/vitejs/vite).
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Documentation
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+To check out docs, visit [vitepress.dev](https://arvisme.vercel.app/).
 
-## Developing
+## Changelog
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Detailed changes for each release are documented in the [CHANGELOG](https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md).
 
-```bash
-npm run dev
+## Contribution
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Please make sure to read the [Contributing Guide](https://github.com/vuejs/vitepress/blob/main/.github/contributing.md) before making a pull request.
 
-## Building
+## License
 
-To create a production version of your app:
+[MIT](https://github.com/vuejs/vitepress/blob/main/LICENSE)
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Copyright (c) 2019-present, Yuxi (Evan) You

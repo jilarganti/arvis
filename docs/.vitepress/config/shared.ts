@@ -45,14 +45,14 @@ export const shared = defineConfig({
     ],
 
     themeConfig: {
-        // logo: { src: '/vitepress-logo-mini.svg', width: 24, height: 24 },
+        // logo: { src: '/play.png', width: 24, height: 24 },
         logo: {
             light: '/play.png',
             dark: '/play.png',
         },
 
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+            { icon: 'github', link: 'https://github.com/jilarganti/arvis' }
         ],
 
         search: {
