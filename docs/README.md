@@ -1,20 +1,20 @@
-# VitePress 📝💨
-
+# A.R.V.I.S – AI for Result-Driven Meetings
+<!-- 
 [![test](https://github.com/vuejs/vitepress/workflows/Test/badge.svg)](https://github.com/vuejs/vitepress/actions)
 [![npm](https://img.shields.io/npm/v/vitepress)](https://www.npmjs.com/package/vitepress)
-[![chat](https://img.shields.io/badge/chat-discord-blue?logo=discord)](https://chat.vuejs.org)
+[![chat](https://img.shields.io/badge/chat-discord-blue?logo=discord)](https://chat.vuejs.org) -->
 
 ---
 
-VitePress is a Vue-powered static site generator and a spiritual successor to [VuePress](https://vuepress.vuejs.org), built on top of [Vite](https://github.com/vitejs/vite).
+Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results.
 
 ## Documentation
 
-To check out docs, visit [vitepress.dev](https://arvisme.vercel.app/).
+To check out docs, visit [arvis-doc](https://arvis-doc.vercel.app/).
 
 ## Changelog
 
-Detailed changes for each release are documented in the [CHANGELOG](https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md).
+Detailed changes for each release are documented in the [CHANGELOG](../CHANGELOG.md).
 
 ## Contribution
 
@@ -22,6 +22,6 @@ Please make sure to read the [Contributing Guide](https://github.com/vuejs/vitep
 
 ## License
 
-[MIT](https://github.com/vuejs/vitepress/blob/main/LICENSE)
+[MIT](../LICENSE)
 
 Copyright (c) 2019-present, Yuxi (Evan) You
