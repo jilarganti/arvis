@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import algoliasearch from 'algoliasearch'
 
 // import { search as zhSearch } from './zh'
 import { search as ruSearch } from './ru'
