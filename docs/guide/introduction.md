@@ -16,38 +16,22 @@ Just want to try it out? Skip to the [Quickstart](./get-started).
 
 Similar to a video conference like Google Meet, Zoom, or MS Teams, but with the presence of an AI assistant named A.R.V.I.S. during group meetings. It retains the entire context of the group's communications throughout the entire duration of the group's interactions, including all conversations during meetings, chat interactions, presentations, and attached documents. 
 
-Every registered user and each group meeting possess their unique assistant:
-- **User Assistant**: Specifically trained on the context of a user's group meetings. It is exclusively accessible to that user.
-- **Group Assistant**: Trained on the context of the group's meeting participants. It is available to all members of the group.
+For the user, think of it as having an additional participant in your conference – an AI bot named A.R.V.I.S. Behind the scenes, this involves a group of [AI assistants](https://platform.openai.com/docs/assistants/overview?context=with-streaming) each having access to specific types of data:
 
-The types of data accessible for assistant training can be restricted up to complete inaccessibility of any information. Upon the deletion of a user or group, the corresponding assistant is eliminated and is irrecoverable. If a user re-registers, the assistant will start its training from the beginning.
+**Access for a Registered User's Assistant**:
+- Metadata of all meetings involving the user: titles, descriptions, participant lists, durations, etc.
+- Data from all meetings involving the user: recordings, chats, documents, and presentations.
 
-- **Leverages historical data**: The AI analyzes information from past sources. This allows it to understand the context, consider previous decisions and discussions, making its advice and recommendations more accurate and relevant.
-- **Focused on tangible results**: The ultimate goal of the assistant is not just to participate in the process but to ensure real, measurable outcomes. It aims to make every action and suggestion contribute to achieving specific goals, making your work more effective.
-- **Represents you with strategic insight**: The assistant can act on your behalf in meetings, possessing a strategic vision. This means it can participate in discussions, offer ideas, and solutions that align with your long-term goals and objectives.
+**Access for a Public Meeting's Assistant**:
+- Metadata of all meetings with a given ID: titles, descriptions, participant lists, durations, etc.
+- Data from all meetings with a given ID: recordings, chats, documents, and presentations.
 
-A.R.V.I.S. can assist you in various ways:
-- **Discovering Goals, Summaries, and Outcomes of Past Meetings**: A.R.V.I.S. enables you to comprehend the objectives, summaries, and results of previous gatherings.
-- **Setting Goals for Future Meetings**: It aids in establishing new objectives, crafting agendas, and predicting the accomplishment of these objectives.
-- **Monitoring the Discussion**: Guided by the agenda, established goals, and timing of the meeting, A.R.V.I.S. ensures that the conversation remains on track.
-- **Serving as a Consultant**: Throughout the meeting, A.R.V.I.S. acts as a consultant to you and other participants, providing insights and information.
+Assistants [enhance their capabilities](https://platform.openai.com/docs/assistants/tools/knowledge-retrieval) with the data available after each meeting. To maintain the context of the dialogue with the assistant over time, they have access to [persistent threads](https://platform.openai.com/docs/assistants/how-it-works). This means when you interact with A.R.V.I.S. in the chat of a new meeting, it's like continuing a previous conversation with them.
 
-Для пользователя это еще один участник в конференции – AI бот A.R.V.I.S. Под катом, это группа [AI ассистентов](https://platform.openai.com/docs/assistants/overview?context=with-streaming), у которых есть доступ к следующим типам данных:
-- **ассистент зарегистрированного пользователя** имеет доступ к:
-    - метаданным всех встреч с участием данного пользователя: название, описание, состав участников, длительность, ...
-    - данным всех встреч с участием данного пользователя: записи встреч, чаты, документы и демонстрации
+**Restrictions**:
+You can interact with your assistant or the meeting's assistant if you are:
+- The organizer of the meeting.
+- Have received a personal invitation to the meeting.
 
-- **ассистент открытой встречи** имеет доступ к:
-    - метаданным всех встреч с данным ID: название, описание, состав участников, длительность, ...
-    - данным всех встреч с данным ID: записи встреч, чаты, документы и демонстрации
-
-Ассистенты [прокачивают свои скилы](https://platform.openai.com/docs/assistants/tools/knowledge-retrieval) доступными данными после каждой встречи. Чтобы контекст диалога с ассистентом сохранялся во времени они получают доступ к access [persistent Threads.](https://platform.openai.com/docs/assistants/how-it-works) Таким образом, когда вы обращаетесь к A.R.V.I.S. в чате в новой встрече вы как бы продолжаете с ним прошлый диалог.
-
-### Ограничения
-
-- Вы можете обращаться к своему ассистенту либо к ассистенту встречи если вы:
-    - ее организатор
-    - получили персональное приглашение на эту встречу
-- Вы не можете общаться или каким-либо образом получить доступ к знаниям других ассистентов
-- У приватных встреч нет ассистентов. Никакие данные и метаданные таких встреч не сохраняются.
+You cannot communicate or access the knowledge of other assistants in any way. **Assistants are not available for private meetings; consequently, no data or metadata from such meetings is saved.**
 

@@ -16,12 +16,12 @@ To check out docs, visit [arvis-doc](https://arvis-doc.vercel.app/).
 
 Detailed changes for each release are documented in the [CHANGELOG](../CHANGELOG.md).
 
-## Contribution
+<!-- ## Contribution -->
 
-Please make sure to read the [Contributing Guide](https://github.com/vuejs/vitepress/blob/main/.github/contributing.md) before making a pull request.
+<!-- Please make sure to read the [Contributing Guide](https://github.com/vuejs/vitepress/blob/main/.github/contributing.md) before making a pull request. -->
 
 ## License
 
 [MIT](../LICENSE)
 
-Copyright (c) 2019-present, Yuxi (Evan) You
+Copyright © 2024-present, MindMeeting OÜ
