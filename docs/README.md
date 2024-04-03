@@ -14,7 +14,7 @@ To check out docs, visit [arvis-doc](https://arvis-doc.vercel.app/).
 
 ## Changelog
 
-Detailed changes for each release are documented in the [CHANGELOG](../CHANGELOG.md).
+Detailed changes for each release are documented in the [CHANGELOG](https://github.com/jilarganti/arvis/blob/main/CHANGELOG.md).
 
 <!-- ## Contribution -->
 
@@ -22,6 +22,6 @@ Detailed changes for each release are documented in the [CHANGELOG](../CHANGELOG
 
 ## License
 
-[MIT](../LICENSE)
+[MIT](https://github.com/jilarganti/arvis/blob/main/LICENSE)
 
 Copyright © 2024-present, MindMeeting OÜ
