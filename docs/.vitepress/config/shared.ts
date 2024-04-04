@@ -31,7 +31,7 @@ export const shared = defineConfig({
 
     /* prettier-ignore */
     head: [
-        // ['link', { rel: 'icon', type: 'image/svg+xml', href: '/vitepress-logo-mini.svg' }],
+        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/vitepress-logo-mini.svg' }],
         ['link', { rel: 'icon', type: 'image/png', href: '/play.png' }],
         ['meta', { name: 'theme-color', content: '#5f67ee' }],
         ['meta', { property: 'og:type', content: 'website' }],
