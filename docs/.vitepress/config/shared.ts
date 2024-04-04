@@ -50,6 +50,8 @@ export const shared = defineConfig({
             dark: '/play.png',
         },
 
+        // appearance: 'dark',
+
         socialLinks: [
             { icon: 'github', link: 'https://github.com/jilarganti/arvis' }
         ],
