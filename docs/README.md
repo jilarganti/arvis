@@ -24,4 +24,4 @@ Detailed changes for each release are documented in the [CHANGELOG](https://gith
 
 [MIT](https://github.com/jilarganti/arvis/blob/main/LICENSE)
 
-Copyright © 2024-present, MindMeeting OÜ
+Copyright © 2024-present, Jil Arganti

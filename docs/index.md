@@ -5,8 +5,8 @@ title: 'AI for Result-Driven Meetings'
 
 hero:
   name: 'A.R.V.I.S.'
-  text: 'AI for Result-Driven Meetings'
-  tagline: "Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results."
+  text: 'AI for Effective Meetings'
+  tagline: "Introducing J.A.R.V.I.S.'s apprentice, designed to bring the brilliance of its mentor into your meetings. This AI assistant uses past data to help you reach your goals, providing strategic advice and a focus on concrete outcomes."
   actions:
     - theme: brand
       text: What is A.R.V.I.S.?
