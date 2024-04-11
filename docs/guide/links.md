@@ -13,22 +13,20 @@
     - результаты обследования перед консультацией с врачом
     - документы, имеющие отношение к истории болезни
 
-## Formatting knowledge sources
-
- Чтобы не заставлять пользователя приводить данные к формату, который понимает спецассистент, необходимо научить ассистента понимать любой формат. Для этого используется [Enhancing LLM-based Agents with Concise Tool Instruction](https://github.com/microsoft/JARVIS/tree/main/easytool).
+ Чтобы не заставлять пользователя приводить данные к формату, который понимает ассистент, нам предварительно нужно научить ассистента понимать любой формат. Для этого используется [Enhancing LLM-based Agents with Concise Tool Instruction](https://github.com/microsoft/JARVIS/tree/main/easytool).
  ![](/front.png)
  > LLM-based agents usually employ tool documentation to grasp the selection and usage of tools from different sources, but these documentations could be inconsistent in formats, redundant with excessive length, and lacking demonstrations for instructions.
 
 > EasyTool is an easy but effective method to create clear, structured, and unified instructions from tool documentations for improving LLM-based agents in using tools.
 
-## Auto-detect meeting topic and description. Formulation of evaluation hypotheses.
+## Create Meeting Meta Tags and Evaluation Metrics
 
-По результатам анализа источников знаний[1] [2] [3] будут автоматически определены:
+По результатам анализа источников знаний[1] [2] [3] будут автоматически созданы:
 1. тема встречи
 1. подробное описание встречи
-1. одна или несколько гипотез для периодической оценки в ходе встречи, например:
+1. один или несколько показателей для периодической оценки в ходе встречи, например:
     - Общие метрики:
-        1. **честность**: собеседник не вводит вас в заблуждение предоставляемой информацией
+        1. **честность**: собеседник не вводит вас в заблуждение предоставляемой информацией. 
     - Частные метрики:
         1. для тестирования, экзамена и тп:
             - результативность по каждому тесту
@@ -41,8 +39,9 @@
                 - ОРВИ
                 - грипп
                 - ковид
+1. может быть сформулирована и добавлена повестка встречи
 
-Будут созданы промпы для оценки созданных гипотез уже в ходе самой встречи. Все автоматичестки созданные данные можно будет уточнить до начала встречи.
+Будут созданы промты к ассистенту для оценки показателей уже в ходе самой встречи. Все автоматичестки созданные данные можно будет уточнить до начала встречи.
 
 [1]: https://towardsdatascience.com/zero-shot-vs-similarity-based-text-classification-83115d9879f5
 [2]: https://huggingface.co/tasks/zero-shot-classification
@@ -63,8 +62,20 @@
 
 ## Upgrading the assistant with external functions
 
-Ассистент может помочь:
+Ассистент может помочь, например:
 - собрать дополнительную информацию о кандидате, если у него есть доступ к Linkedin
 - выписать необходимые лекарства, если доступны данные из аптечной сети
 
 Для этого, ассистент должен [получать данные через API функций](https://platform.openai.com/docs/assistants/tools/function-calling).
+
+## Updating metrics
+
+Ассистент самостоятельно обновляет показатели по событиям конференции либо по запросам пользователя. При этом, UI сервиса:
+- отображает изменения и динамику изменений показателя
+- обосновывает причины изменений подсказками на интерфейсе  
+
+## Meeting accompaniment
+
+С ассистентом можно общаться как с обычным участником встречи. 
+
+
