@@ -5,18 +5,18 @@ title: 'AI Assistant for Video Meetings'
 
 hero:
   name: 'A.R.V.I.S.'
-  text: 'Искусственный Интеллект –<br>Ваш Помощник для Видеовстреч'
-  tagline: 'Equip your assistant to recall previous conversations, documents, chats, presentations, and all pertinent info for video meetings. It will then efficiently advise and stand in for you at meetings, ensuring seamless communication.'
+  text: 'Прокачай свои видеовстречи'
+  tagline: 'Ваш персональный ИИ-помощник для ведения конструктивного диалога'
   actions:
-    - theme: brand
+    - theme: sponsor
       text: Что это?
       link: ru/guide/introduction
     - theme: alt
       text: API Examples
       link: /api-examples
   image:
-    light: /arvis.light.gif
-    dark: /arvis.dark.gif
+    light: /arvis.dark.webp
+    dark: /arvis.dark.webp
     alt: Arvis gif
 
 features:
