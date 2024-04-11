@@ -6,10 +6,11 @@ title: 'AI for Result-Driven Meetings'
 hero:
   name: 'A.R.V.I.S.'
   # text: 'AI for Effective Meetings'
-  text: 'Boost Your Video Conferences'
+  # text: 'Boost Your Video Conferences'
+  text: 'Nextgen meetings for Gen XYZ'
   # tagline: "Introducing J.A.R.V.I.S.'s apprentice, designed to bring the brilliance of its mentor into your meetings. This AI assistant uses past data to help you reach your goals, providing strategic advice and a focus on concrete outcomes."
   # tagline: "Specially trained AI assistant<br>for effective video meetings"
-  tagline: "Your AI Personal Assistant for Facilitating Productive Conversations"
+  tagline: "Your AI Assistant:<br>Enhancing Dialogue for Greater Productivity"
   actions:
     - theme: brand
       text: What is A.R.V.I.S.?
@@ -19,9 +20,9 @@ hero:
       link: guide/get-started
   image:
     # light: /arvis.light.gif
-    light: /arvis.dark.webp
-    dark: /arvis.dark.webp
-    alt: Arvis gif
+    light: /shutterstock_1727908594_edited.png
+    dark: /shutterstock_1727908594_edited.png
+    alt: video conference in shorts
 
 features:
   - title: 🗂️ Uses Past Data
