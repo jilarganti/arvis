@@ -5,8 +5,8 @@ title: 'AI Assistant for Video Meetings'
 
 hero:
   name: 'A.R.V.I.S.'
-  text: 'Продуктивные видеоконференции'
-  tagline: 'Ваш ИИ-помощник для ведения конструктивного диалога'
+  text: 'Прокачай свои видеовстречи'
+  tagline: 'Ваш персональный ИИ-помощник для ведения конструктивного диалога'
   actions:
     - theme: sponsor
       text: Что это?
@@ -15,8 +15,8 @@ hero:
       text: API Examples
       link: /api-examples
   image:
-    light: /arvis.light.gif
-    dark: /arvis.dark.gif
+    light: /arvis.dark.webp
+    dark: /arvis.dark.webp
     alt: Arvis gif
 
 features:

@@ -9,7 +9,7 @@ hero:
   text: 'Boost Your Video Conferences'
   # tagline: "Introducing J.A.R.V.I.S.'s apprentice, designed to bring the brilliance of its mentor into your meetings. This AI assistant uses past data to help you reach your goals, providing strategic advice and a focus on concrete outcomes."
   # tagline: "Specially trained AI assistant<br>for effective video meetings"
-  tagline: "Your AI Assistant for Facilitating Productive Conversations"
+  tagline: "Your AI Personal Assistant for Facilitating Productive Conversations"
   actions:
     - theme: brand
       text: What is A.R.V.I.S.?
@@ -19,8 +19,8 @@ hero:
       link: guide/get-started
   image:
     # light: /arvis.light.gif
-    light: /arvis.dark.gif
-    dark: /arvis.dark.gif
+    light: /arvis.dark.webp
+    dark: /arvis.dark.webp
     alt: Arvis gif
 
 features:
