@@ -16,8 +16,8 @@ hero:
       text: API Examples
       link: /api-examples
   image:
-    light: /HeroImageSmall.png
-    dark: /HeroImageSmall.png
+    light: /HeroImageLarge.avif
+    dark: /HeroImageLarge.avif
     alt: video conference in shorts
 
 features:

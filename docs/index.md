@@ -20,8 +20,8 @@ hero:
       link: guide/get-started
   image:
     # light: /arvis.light.gif
-    light: /HeroImageSmall.png
-    dark: /HeroImageSmall.png
+    light: /HeroImageLarge.avif
+    dark: /HeroImageLarge.avif
     alt: video conference in shorts
 
 features:

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Desktop"
+		}
+	],
+	"settings": {
+		"js/ts.implicitProjectConfig.checkJs": true,
+		"github.copilot.editor.enableCodeActions": true,
+		"commentTranslate.targetLanguage": "ru",
+		"commentTranslate.multiLineMerge": true
+	}
+}
