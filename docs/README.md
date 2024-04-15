@@ -1,4 +1,4 @@
-# A.R.V.I.S – AI for Result-Driven Meetings
+# A.R.V.I.S: Nextgen meetings for Gen XYZ
 <!-- 
 [![test](https://github.com/vuejs/vitepress/workflows/Test/badge.svg)](https://github.com/vuejs/vitepress/actions)
 [![npm](https://img.shields.io/npm/v/vitepress)](https://www.npmjs.com/package/vitepress)
@@ -6,7 +6,7 @@
 
 ---
 
-Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results.
+Specially trained AI assistant for effective video meetings.
 
 ## Documentation
 
