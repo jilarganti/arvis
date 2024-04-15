@@ -11,6 +11,8 @@
 		"js/ts.implicitProjectConfig.checkJs": true,
 		"github.copilot.editor.enableCodeActions": true,
 		"commentTranslate.targetLanguage": "ru",
-		"commentTranslate.multiLineMerge": true
+		"commentTranslate.multiLineMerge": true,
+		"editor.wordWrapColumn": 160,
+		"editor.wordWrap": "wordWrapColumn"
 	}
 }
