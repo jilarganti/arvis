@@ -1,7 +1,8 @@
 .DS_Store
-node_modules
-/build
-/package
+docs/node_modules
+docs/.vitepress/dist
+docs/.vitepress/cache
+
 .env
 .env.*
 !.env.example
