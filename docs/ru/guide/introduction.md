@@ -1,4 +1,8 @@
-# Введение <Badge type="danger" text="alpha" />
+# Введение <Badge type="danger" text="DRAFT" />
+
+::: warning
+Это временная версия текста. Предстоят доработки.
+:::
 
 ## Что такое A.R.V.I.S.? 
 

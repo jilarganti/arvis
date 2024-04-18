@@ -20,6 +20,6 @@ Detailed changes for each release are documented:
 
 ## License
 
-[MIT](https://github.com/jilarganti/arvis/blob/main/LICENSE)
+[MIT](https://github.com/jilarganti/arvis/blob/docs/modules/media/LICENSE)
 
 Copyright © 2024-present, Jil Arganti
