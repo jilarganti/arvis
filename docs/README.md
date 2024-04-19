@@ -2,7 +2,7 @@
 
 <!-- [![test](https://github.com/vuejs/vitepress/workflows/Test/badge.svg)](https://github.com/vuejs/vitepress/actions) -->
 <!-- [![npm](https://img.shields.io/npm/v/vitepress)](https://www.npmjs.com/package/vitepress) -->
-[![chat](https://img.shields.io/badge/chat-discord-blue?logo=discord)](https://discord.gg/Qr8ckua9)
+[![chat](https://img.shields.io/badge/chat-discord-blue?logo=discord)](https://discord.com/invite/SA4hDwsk)
 
 Specially trained AI assistant for effective video meetings.
 

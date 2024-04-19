@@ -5,4 +5,3 @@
 ::: warning
 [Will be translated later](/ru/guide/introduction)
 :::
-
