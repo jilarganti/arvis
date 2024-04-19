@@ -2,7 +2,7 @@
 
 [![chat](https://img.shields.io/badge/chat-discord-blue?logo=discord)](https://discord.com/invite/SA4hDwsk)
 
-Specially trained AI assistant for effective video meetings.
+Video meetings enhanced by a specially trained AI assistant.
 
 ## Documentation
 

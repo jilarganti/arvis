@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: 'AI for Result-Driven Meetings'
+title: 'AI for Effective Meetings'
 
 hero:
   name: 'A.R.V.I.S.'
@@ -9,7 +9,7 @@ hero:
   # text: 'Boost Your Video Conferences'
   text: 'Nextgen meetings for Gen XYZ'
   # tagline: "Introducing J.A.R.V.I.S.'s apprentice, designed to bring the brilliance of its mentor into your meetings. This AI assistant uses past data to help you reach your goals, providing strategic advice and a focus on concrete outcomes."
-  tagline: "Specially trained AI assistant for effective video meetings"
+  tagline: "Video meetings enhanced by a specially trained AI assistant"
   # tagline: "Your AI Assistant:<br>Enhancing Dialogue for Greater Productivity"
   # tagline: "Your AI assistant A.R.V.I.S.: enhancing communication efficiency by optimizing your team's time and resources."
   actions:

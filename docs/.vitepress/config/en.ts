@@ -86,7 +86,7 @@ function sidebarAbout(): DefaultTheme.SidebarItem[] {
         {
             text: 'About',
             items: [
-                { text: 'Code Of Conduct', link: './CODE_OF_CONDUCT' },
+                { text: 'Code Of Conduct', base: '/', link: 'CODE_OF_CONDUCT' },
 
             ]
         }

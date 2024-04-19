@@ -1,12 +1,12 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-title: 'AI Assistant for Video Meetings'
+title: 'ИИ-помощник для видеоконференций'
 
 hero:
   name: 'A.R.V.I.S.'
-  text: 'Прокачай свои видеовстречи'
-  tagline: 'Специально обученный бот для эффективных видеоконференций'
+  text: 'Продуктивные беседы'
+  tagline: 'Видеовстречи с участием прокачанного ИИ-ассистента'
   # tagline: 'Ваш AI-ассистент A.R.V.I.S.: повышение эффективности коммуникации, оптимизируя время и ресурсы вашей команды.'
   actions:
     - theme: brand
