@@ -10,7 +10,7 @@ To check out docs, visit [arvis-doc](https://arvis-doc.vercel.app/).
 
 ## Changelog
 
-Detailed changes for each release are documented in the [CHANGELOG](https://github.com/jilarganti/arvis/blob/main/CHANGELOG.md).
+Detailed changes for each release are documented in the [CHANGELOG](CHANGELOG).
 
 <!-- ## Contribution -->
 
@@ -18,6 +18,6 @@ Detailed changes for each release are documented in the [CHANGELOG](https://gith
 
 ## License
 
-[MIT](https://github.com/jilarganti/arvis/blob/main/LICENSE)
+[MIT](https://github.com/jilarganti/arvis/blob/main/docs/LICENSE)
 
 Copyright © 2024-present, Jil Arganti
