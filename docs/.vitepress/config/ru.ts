@@ -3,15 +3,15 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 
 export const ru = defineConfig({
     lang: 'ru-RU',
-    description: "Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results.",
+    description: "Специально обученный бот для эффективных видеоконференций",
     head: [['link', { rel: 'icon', href: '/play.png' }]],
     themeConfig: {
 
         nav: nav(),
 
         sidebar: {
-            '/ru/guide/': { base: '/ru/guide/', items: sidebarGuide() },
-            // '/ru/reference/': { base: '/ru/reference/', items: sidebarReference() }
+            '/ru/docs/': { base: '/ru/docs/', items: sidebarDocs() },
+            '/ru/about/': { base: '/ru/about/', items: sidebarAbout() }
         },
 
         // editLink: {
@@ -28,8 +28,8 @@ export const ru = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
     return [
-        { text: 'Guide', link: '/ru/guide/introduction', activeMatch: '/ru/guide/introduction' },
-        // { text: 'Reference', link: '/ru/guide/introduction', activeMatch: '/ru/guide/introduction' },
+        { text: 'Дока', link: '/ru/docs/introduction', activeMatch: '/ru/docs/' },
+        { text: 'О нас', link: '/ru/about/team', activeMatch: '/ru/about/' },
         { text: 'Join', link: 'https://zoom.us/join', target: '_self', rel: 'noreferrer' },
         {
             text: 'Host',
@@ -37,17 +37,17 @@ function nav(): DefaultTheme.NavItem[] {
                 {
                     text: 'Public Meeting',
                     items: [
-                        { text: 'Create a meeting for later', link: '/ru/guide/meeting#create-a-meeting-for-later' },
-                        { text: 'Start an instant meeting', link: '/ru/guide/meeting#start-an-instant-meeting' },
-                        { text: 'Shedule in Calendar', link: '/ru/guide/meeting#shedule-in-calendar' },
+                        { text: 'Create a meeting for later', link: '/ru/docs/meeting#create-a-meeting-for-later' },
+                        { text: 'Start an instant meeting', link: '/ru/docs/meeting#start-an-instant-meeting' },
+                        { text: 'Shedule in Calendar', link: '/ru/docs/meeting#shedule-in-calendar' },
                     ]
                 },
                 {
                     text: 'Private Meeting',
                     items: [
-                        { text: 'Create a meeting for later', link: '/ru/guide/meeting#create-a-meeting-for-later-1' },
-                        { text: 'Start an instant meeting', link: '/ru/guide/meeting#start-an-instant-meeting-1' },
-                        { text: 'Shedule in Calendar', link: '/ru/guide/meeting#shedule-in-calendar-1' },
+                        { text: 'Create a meeting for later', link: '/ru/docs/meeting#create-a-meeting-for-later-1' },
+                        { text: 'Start an instant meeting', link: '/ru/docs/meeting#start-an-instant-meeting-1' },
+                        { text: 'Shedule in Calendar', link: '/ru/docs/meeting#shedule-in-calendar-1' },
                     ]
                 },
             ],
@@ -56,7 +56,7 @@ function nav(): DefaultTheme.NavItem[] {
     ]
 }
 
-function sidebarGuide(): DefaultTheme.SidebarItem[] {
+function sidebarDocs(): DefaultTheme.SidebarItem[] {
     return [
         {
             text: 'Введение',
@@ -70,31 +70,31 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             text: 'Стек',
             collapsed: false,
             items: [
-                { text: 'Наш медиадвижок', link: 'markdown' },
-                { text: 'Наши ИИ ассистенты', link: 'markdown' },
-                { text: 'Интеграции', link: 'markdown' },
+                { text: 'Медиа SDK', link: 'markdown' },
+                { text: 'ИИ ассистенты', link: 'markdown' },
+                // { text: 'Интеграции', link: 'markdown' },
 
             ]
         },
 
-        { text: 'Config & API Reference', base: '/reference/', link: 'site-config' }
+        // { text: 'Config & API Reference', base: '/reference/', link: 'site-config' }
     ]
 }
 
-function sidebarReference(): DefaultTheme.SidebarItem[] {
+function sidebarAbout(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Справочник',
+            text: 'О нас',
             items: [
-                { text: 'API', link: 'api' },
-                {
-                    text: 'Default Theme',
-                    base: '/reference/default-theme-',
-                    items: [
-                        { text: 'Overview', link: 'config' },
+                { text: 'Code Of Conduct', base: '/', link: 'CODE_OF_CONDUCT' },
+                // {
+                //     text: 'Default Theme',
+                //     base: '/reference/default-theme-',
+                //     items: [
+                //         { text: 'Overview', link: 'config' },
 
-                    ]
-                }
+                //     ]
+                // }
             ]
         }
     ]
@@ -134,7 +134,7 @@ export const search: DefaultTheme.AlgoliaSearchOptions['locales'] = {
                     searchByText: ''
                 },
                 noResultsScreen: {
-                    noResultsText: 'Не найдено',
+                    noResultsText: 'Ненайдено',
                     suggestedQueryText: 'Попробуйте так',
                     reportMissingResultsText: 'Должны ли быть результаты по этому запросу?',
                     reportMissingResultsLinkText: 'Отправить отзыв'

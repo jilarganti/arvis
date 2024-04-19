@@ -1,4 +1,4 @@
-// https://vitepress.dev/guide/custom-theme
+// https://vitepress.dev/docs/custom-theme
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
@@ -9,7 +9,7 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      // https://vitepress.dev/docs/extending-default-theme#layout-slots
     })
   },
   enhanceApp({ app, router, siteData }) {

@@ -11,8 +11,8 @@ export const en = defineConfig({
         nav: nav(),
 
         sidebar: {
-            '/guide/': { base: '/guide/', items: sidebarGuide() },
-            // '/reference/': { base: '/reference/', items: sidebarReference() }
+            '/docs/': { base: '/docs/', items: sidebarDocs() },
+            '/about/': { base: '/about/', items: sidebarAbout() }
         },
 
         // editLink: {
@@ -29,7 +29,8 @@ export const en = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
     return [
-        { text: 'Guide', link: '/guide/introduction', activeMatch: '/guide/' },
+        { text: 'Docs', link: '/docs/introduction', activeMatch: '/docs/' },
+        { text: 'About', link: '/about/team', activeMatch: '/about/' },
         { text: 'Join', link: 'https://zoom.us/join', target: '_self', rel: 'noreferrer' },
         {
             text: 'Host',
@@ -37,17 +38,17 @@ function nav(): DefaultTheme.NavItem[] {
                 {
                     text: 'Public Meeting',
                     items: [
-                        { text: 'Create a meeting for later', link: '/ru/guide/meeting#create-a-meeting-for-later' },
-                        { text: 'Start an instant meeting', link: '/ru/guide/meeting#start-an-instant-meeting' },
-                        { text: 'Shedule in Calendar', link: '/ru/guide/meeting#shedule-in-calendar' },
+                        { text: 'Create a meeting for later', link: '/ru/docs/meeting#create-a-meeting-for-later' },
+                        { text: 'Start an instant meeting', link: '/ru/docs/meeting#start-an-instant-meeting' },
+                        { text: 'Shedule in Calendar', link: '/ru/docs/meeting#shedule-in-calendar' },
                     ]
                 },
                 {
                     text: 'Private Meeting',
                     items: [
-                        { text: 'Create a meeting for later', link: '/ru/guide/meeting#create-a-meeting-for-later-1' },
-                        { text: 'Start an instant meeting', link: '/ru/guide/meeting#start-an-instant-meeting-1' },
-                        { text: 'Shedule in Calendar', link: '/ru/guide/meeting#shedule-in-calendar-1' },
+                        { text: 'Create a meeting for later', link: '/ru/docs/meeting#create-a-meeting-for-later-1' },
+                        { text: 'Start an instant meeting', link: '/ru/docs/meeting#start-an-instant-meeting-1' },
+                        { text: 'Shedule in Calendar', link: '/ru/docs/meeting#shedule-in-calendar-1' },
                     ]
                 },
             ],
@@ -56,7 +57,7 @@ function nav(): DefaultTheme.NavItem[] {
     ]
 }
 
-function sidebarGuide(): DefaultTheme.SidebarItem[] {
+function sidebarDocs(): DefaultTheme.SidebarItem[] {
     return [
         {
             text: 'Introduction',
@@ -70,29 +71,23 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             text: 'Platform',
             collapsed: false,
             items: [
-                { text: 'API Reference', link: 'markdown' },
+                { text: 'Media SDK', link: 'markdown' },
+                { text: 'AI assistants', link: 'markdown' },
 
             ]
         },
 
-        { text: 'Config & API Reference', base: '/reference/', link: 'site-config' }
+        // { text: 'Config & API Reference', base: '/reference/', link: 'site-config' }
     ]
 }
 
-function sidebarReference(): DefaultTheme.SidebarItem[] {
+function sidebarAbout(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: 'Reference',
+            text: 'About',
             items: [
-                { text: 'API', link: 'api' },
-                {
-                    text: 'Default Theme',
-                    base: '/reference/default-theme-',
-                    items: [
-                        { text: 'Overview', link: 'config' },
+                { text: 'Code Of Conduct', link: './CODE_OF_CONDUCT' },
 
-                    ]
-                }
             ]
         }
     ]

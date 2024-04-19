@@ -1,7 +1,5 @@
 # A.R.V.I.S: Nextgen meetings for Gen XYZ
 
-<!-- [![test](https://github.com/vuejs/vitepress/workflows/Test/badge.svg)](https://github.com/vuejs/vitepress/actions) -->
-<!-- [![npm](https://img.shields.io/npm/v/vitepress)](https://www.npmjs.com/package/vitepress) -->
 [![chat](https://img.shields.io/badge/chat-discord-blue?logo=discord)](https://discord.com/invite/SA4hDwsk)
 
 Specially trained AI assistant for effective video meetings.
@@ -16,7 +14,7 @@ Detailed changes for each release are documented in the [CHANGELOG](https://gith
 
 <!-- ## Contribution -->
 
-<!-- Please make sure to read the [Contributing Guide](https://github.com/vuejs/vitepress/blob/main/.github/contributing.md) before making a pull request. -->
+<!-- Please make sure to read the [Contributing Docs](https://github.com/vuejs/vitepress/blob/main/.github/contributing.md) before making a pull request. -->
 
 ## License
 

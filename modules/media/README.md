@@ -16,7 +16,7 @@ Detailed changes for each release are documented:
 
 <!-- ## Contribution -->
 
-<!-- Please make sure to read the [Contributing Guide](https://github.com/vuejs/vitepress/blob/main/.github/contributing.md) before making a pull request. -->
+<!-- Please make sure to read the [Contributing Docs](https://github.com/vuejs/vitepress/blob/main/.github/contributing.md) before making a pull request. -->
 
 ## License
 
