@@ -10,7 +10,7 @@ To check out docs, visit [arvis-doc](https://arvis-doc.vercel.app/).
 
 ## Changelog
 
-Detailed changes for each release are documented in the [CHANGELOG](CHANGELOG).
+Detailed changes for each release are documented in the [CHANGELOG](https://github.com/jilarganti/arvis/blob/main/docs/CHANGELOG.md).
 
 <!-- ## Contribution -->
 
