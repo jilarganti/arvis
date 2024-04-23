@@ -65,7 +65,7 @@
 - собрать дополнительную информацию о кандидате из Linkedin
 - выписать необходимые лекарства прямо из аптечной сети
 
-Для этого, ассистент должен [получать данные через API функций](https://platform.openai.com/docs/assistants/tools/function-calling).
+Для этого, ассистент должен [получать данные через API функций](https://platform.openai.com/documetns/assistants/tools/function-calling).
 
 ## Updating metrics
 
