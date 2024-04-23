@@ -63,6 +63,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
             collapsed: false,
             items: [
                 { text: 'Что такое A.R.V.I.S.?', link: 'introduction' },
+                { text: 'Конфиденциальность данных', link: 'privacy' },
                 { text: 'Начало работы', link: 'get-started' },
             ]
         },

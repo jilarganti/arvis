@@ -64,6 +64,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
             collapsed: true,
             items: [
                 { text: 'What is A.R.V.I.S.?', link: 'introduction' },
+                { text: 'Privacy', link: 'privacy' },
                 { text: 'Get Started', link: 'get-started' },
             ]
         },
