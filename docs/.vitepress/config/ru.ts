@@ -60,7 +60,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
     return [
         {
             text: 'Введение',
-            collapsed: true,
+            collapsed: false,
             items: [
                 { text: 'Что такое A.R.V.I.S.?', link: 'introduction' },
                 { text: 'Начало работы', link: 'get-started' },
@@ -68,7 +68,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
         },
         {
             text: 'Стек',
-            collapsed: false,
+            collapsed: true,
             items: [
                 { text: 'Медиа SDK', link: 'markdown' },
                 { text: 'ИИ ассистенты', link: 'markdown' },

@@ -46,8 +46,8 @@ export const shared = defineConfig({
     themeConfig: {
         // logo: { src: '/play.png', width: 24, height: 24 },
         logo: {
-            light: '/play.png',
-            dark: '/play.png',
+            light: '/LogoDark.png',
+            dark: '/LogoLight.png',
         },
 
         socialLinks: [

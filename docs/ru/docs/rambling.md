@@ -42,3 +42,11 @@ Guard работает только на вас. Его нельзя схант�
 <!-- Это просто тест инвайта в Дискорд -->
 
 <iframe src="https://discord.com/widget?id=1230122547652333660&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+[Open Source Explained](https://www.youtube.com/watch?v=PVD1LNDxOnc)
+
+
+## Лицензирование
+
+- документация – <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+- код – MIT | Apache 2.0

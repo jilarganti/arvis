@@ -7,11 +7,13 @@ hero:
   name: 'A.R.V.I.S.'
   # text: 'AI for Effective Meetings'
   # text: 'Boost Your Video Conferences'
-  text: 'Nextgen meetings for Gen XYZ'
+  # text: 'Nextgen meetings for Gen XYZ'
+  text: 'AI-enhanced video meetings'
   # tagline: "Introducing J.A.R.V.I.S.'s apprentice, designed to bring the brilliance of its mentor into your meetings. This AI assistant uses past data to help you reach your goals, providing strategic advice and a focus on concrete outcomes."
-  tagline: "Video meetings enhanced by a specially trained AI assistant"
+  # tagline: "Video meetings enhanced by a specially trained AI assistant"
   # tagline: "Your AI Assistant:<br>Enhancing Dialogue for Greater Productivity"
   # tagline: "Your AI assistant A.R.V.I.S.: enhancing communication efficiency by optimizing your team's time and resources."
+  tagline: "Your AI assistant A.R.V.I.S.: enhancing communication efficiency through continuous AI learning during your meetings."
   actions:
     - theme: brand
       text: I Am A.R.V.I.S.
