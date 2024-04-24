@@ -13,7 +13,7 @@ hero:
   # tagline: "Video meetings enhanced by a specially trained AI assistant"
   # tagline: "Your AI Assistant:<br>Enhancing Dialogue for Greater Productivity"
   # tagline: "Your AI assistant A.R.V.I.S.: enhancing communication efficiency by optimizing your team's time and resources."
-  tagline: "Your AI assistant A.R.V.I.S.: enhancing communication efficiency through continuous AI learning during your meetings."
+  tagline: "AI assistant A.R.V.I.S.: enhancing communication efficiency through continuous AI learning during your meetings."
   actions:
     - theme: brand
       text: I Am A.R.V.I.S.
