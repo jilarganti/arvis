@@ -3,5 +3,5 @@
 ## What is A.R.V.I.S.?
 
 ::: warning
-[Will be translated later](/ru/docs/introduction)
+[Will be translated later](/ru/documents/introduction)
 :::

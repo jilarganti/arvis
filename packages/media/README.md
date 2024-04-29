@@ -4,7 +4,7 @@ Media SDK is a [JavaScript library](https://gitlab.com/mindlabs/api/sdk) that in
 
 ## Documentation
 
-To check out docs, visit [Mind API (draft) (1.0)](https://api.mind.com/).
+To check out documents, visit [Mind API (draft) (1.0)](https://api.mind.com/).
 
 ## Changelog
 
@@ -20,6 +20,6 @@ Detailed changes for each release are documented:
 
 ## License
 
-[MIT](https://github.com/jilarganti/arvis/blob/docs/modules/media/LICENSE)
+[MIT](https://github.com/jilarganti/arvis/blob/documents/modules/media/LICENSE)
 
 Copyright © 2024-present, Jil Arganti

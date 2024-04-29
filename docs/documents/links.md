@@ -3,5 +3,5 @@
 ## Add knowledge sources
 
 ::: warning
-[Will be translated later](/ru/docs/links)
+[Will be translated later](/ru/documents/links)
 :::
