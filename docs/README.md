@@ -1,4 +1,4 @@
-# A.R.V.I.S: AI-enhanced video meetings
+# A.R.V.I.S: AI-enhanced video meetings ⚡
 
 [![chat](https://img.shields.io/badge/chat-discord-blue?logo=discord)](https://discord.com/invite/SA4hDwsk)
 
@@ -25,7 +25,7 @@ This project requires Node.js to be `v14.0.0` or higher, because we use new Java
 
 - See VitePress docs on supported [Markdown Extensions](https://vitepress.dev/guide/markdown) and the ability to [use Vue syntax inside markdown](https://vitepress.dev/guide/using-vue).
 
-- See the [Writing Guide](/${repoFolderBasename}/documents/writing-guide.md) for our rules and recommendations on writing and maintaining documentation content.
+- See the [Writing Guide](https://github.com/vuejs/docs/blob/main/.github/contributing/writing-guide.md) for our rules and recommendations on writing and maintaining documentation content.
 
 ## Changelog
 
