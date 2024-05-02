@@ -5,3 +5,4 @@ docs/.vitepress/cache
 
 .env
 .env.*
+node_modules
