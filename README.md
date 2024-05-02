@@ -24,7 +24,7 @@ Detailed changes for each release are documented in the [CHANGELOG](CHANGELOG.md
 
 ## License
 
-[MIT](https://github.com/jilarganti/arvis/blob/main/documents/LICENSE)
+[MIT](LICENSE)
 
 <!-- <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> -->
 
@@ -34,6 +34,6 @@ Detailed changes for each release are documented in the [CHANGELOG](CHANGELOG.md
 
 <p align="center">
   <a target="_blank" href="https://github.com/sponsors/yyx990803">
-    <img alt="sponsors" src="https://sponsors.vuejs.org/vite.svg">
+    <!-- <img alt="sponsors" src="https://sponsors.vuejs.org/vite.svg"> -->
   </a>
 </p>

@@ -10,8 +10,8 @@
 - Initialized documentation project on https://vitepress.dev/
 - Added to the root of the project: 
     - [README](README.md)
-    - LICENSE
-    - CODE_OF_CONDUCT
+    - [LICENSE](LICENSE)
+    - [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md)
 - Wrote text for the Introduction section
 - Added link to Github repository
 - Added links to the application
