@@ -1,0 +1,30 @@
+{
+	"name": "arvis-monorepo",
+	"description": "Arvis project monorepo: AI-enhanced video meetings",
+	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jilarganti/arvis"
+	},
+	"engines": {
+		"node": "^18.0.0 || >=20.0.0"
+	},
+	"type": "module",
+	"scripts": {
+		"docs": "pnpm --filter=arvis-docs run docs",
+		"docs-build": "pnpm --filter=arvis-docs run docs-build",
+		"docs-preview": "pnpm --filter=arvis-docs run docs-preview",
+		"docs-serve": "pnpm --filter=arvis-docs run docs-serve"
+	},
+	"devDependencies": {},
+	"dependencies": {},
+	"keywords": [
+		"arvis",
+		"video",
+		"meetings",
+		"ai"
+	],
+	"author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
+	"license": "MIT",
+	"private": false
+}

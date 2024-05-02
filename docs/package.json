@@ -1,20 +1,21 @@
 {
-	"name": "A.R.V.I.S-docs",
+	"name": "arvis-docs",
 	"version": "0.1.1",
 	"description": "Documentation for A.R.V.I.S",
 	"main": "index.md",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jilarganti/demo"
+		"url": "https://github.com/jilarganti/arvis"
 	},
 	"author": "Jil Arganti",
-	"license": "MIT",
+	"license": "CC BY-NC-SA 4.0",
 	"private": false,
 	"type": "module",
 	"scripts": {
-		"dev": "vitepress dev",
-		"build": "vitepress build",
-		"preview": "vitepress preview",
+		"docs": "vitepress dev",
+		"docs-build": "vitepress build",
+		"docs-preview": "vitepress preview",
+		"docs-serve": "vitepress serve",
 		"docs:translation:compare": "v-translation compare",
 		"translation:update": "v-translation update",
 		"docs:translation:status": "v-translation status",
