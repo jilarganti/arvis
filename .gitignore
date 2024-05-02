@@ -1,6 +1,8 @@
 .DS_Store
 .vscode
+.idea
+.temp
+
 node_modules
 dist
 cache
-.temp

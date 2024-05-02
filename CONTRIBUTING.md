@@ -1,4 +1,4 @@
-# Vite Contributing Guide
+# Arvis Contributing Guide
 
 Hi! We're really excited that you're interested in contributing to Vite! Before submitting your contribution, please read through the following guide. We also suggest you read the [Project Philosophy](https://vitejs.dev/guide/philosophy) in our documentation.
 
