@@ -6,6 +6,18 @@
 		"type": "git",
 		"url": "https://github.com/jilarganti/arvis"
 	},
+	"engines": {
+		"node": "^18.0.0 || >=20.0.0"
+	},
+	"type": "module",
+	"scripts": {
+		"docs": "pnpm --filter=arvis-docs run docs",
+		"docs-build": "pnpm --filter=arvis-docs run docs-build",
+		"docs-preview": "pnpm --filter=arvis-docs run docs-preview",
+		"docs-serve": "pnpm --filter=arvis-docs run docs-serve"
+	},
+	"devDependencies": {},
+	"dependencies": {},
 	"keywords": [
 		"arvis",
 		"video",
@@ -14,15 +26,5 @@
 	],
 	"author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
 	"license": "MIT",
-	"private": false,
-	"type": "module",
-	"packageManager": "pnpm@9.0.6",
-	"scripts": {
-		"docs": "pnpm --filter=arvis-docs run docs",
-		"docs-build": "pnpm --filter=arvis-docs run docs-build --output-dir=../.vitepress/dist",
-		"docs-preview": "pnpm --filter=arvis-docs run docs-preview",
-		"docs-serve": "pnpm --filter=arvis-docs run docs-serve"
-	},
-	"devDependencies": {},
-	"dependencies": {}
+	"private": false
 }
