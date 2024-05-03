@@ -18,7 +18,7 @@ AI assistant A.R.V.I.S.: enhancing communication efficiency through continuous A
   </a>
   <a href="https://discord.com/invite/SA4hDwsk)"><img src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord" alt="discord chat"></a> -->
 </p>
-<br/>
+<!-- <br/> -->
 
 ## Documentation
 
