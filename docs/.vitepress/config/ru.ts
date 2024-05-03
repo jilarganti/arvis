@@ -65,6 +65,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
                 { text: 'Что такое A.R.V.I.S.?', link: 'introduction' },
                 { text: 'Конфиденциальность данных', link: 'privacy' },
                 { text: 'Начало работы', link: 'get-started' },
+                { text: 'Философия', link: 'philosophy' },
             ]
         },
         {
