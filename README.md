@@ -1,8 +1,13 @@
-<p style="font-size: 36px; font-weight: bold; text-align: center; background: -webkit-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+# A.R.V.I.S: AI-enhanced video meetings ⚡
+
+AI assistant A.R.V.I.S.: enhancing communication efficiency through continuous AI learning during your meetings.
+
+<!-- <p style="font-size: 36px; font-weight: bold; text-align: center; background: -webkit-linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
   <a href="https://arvis-doc.vercel.app/" target="_blank" rel="noopener noreferrer" style="background: inherit; -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none;">A.R.V.I.S.</a>
-</p>
+</p> -->
 
 <!-- <p style="text-align: center; margin-top: 40px; margin-bottom: 40px;"> -->
+<br>
 <p align="center">
   <!-- <a href="https://npmjs.com/package/vite"><img src="https://img.shields.io/npm/v/vite.svg" alt="npm package"></a> -->
   <!-- <a href="https://nodejs.org/en/about/previous-releases"><img src="https://img.shields.io/node/v/vite.svg" alt="node compatibility"></a> -->
@@ -13,10 +18,7 @@
   </a>
   <a href="https://discord.com/invite/SA4hDwsk)"><img src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord" alt="discord chat"></a> -->
 </p>
-
-# A.R.V.I.S: AI-enhanced video meetings ⚡
-
-AI assistant A.R.V.I.S.: enhancing communication efficiency through continuous AI learning during your meetings.
+<br/>
 
 ## Documentation
 
