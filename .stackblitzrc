@@ -1,4 +1,4 @@
 {
     "installDependencies": true,
-    "startCommand": "npm run docs"
+    "startCommand": "pnpm run docs"
 }
