@@ -1,38 +1,62 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+name: "\U0001F41E Bug report"
+description: Create a report to help us improve
+labels: ['pending triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is. If you intend to submit a PR for this issue, tell us in the description. Thanks!
+      placeholder: I am doing ... What I expect is ... What actually happening is ...
+    validations:
+      required: true
+  - type: input
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Please provide a link via [vite.new](https://vite.new/) or a link to a repo that can reproduce the problem you ran into. A [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) is required ([Why?](https://antfu.me/posts/why-reproductions-are-required)). If a report is vague (e.g. just a generic error message) and has no reproduction, it will receive a "needs reproduction" label. If no reproduction is provided after 3 days, it will be auto-closed.
+      placeholder: Reproduction URL
+    validations:
+      placeholder: Reproduction URL
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Info
+      description: Output of `npx envinfo --system --npmPackages vitepress --binaries --browsers`
+      render: Text
+      placeholder: System, Binaries, Browsers
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the bug report here.
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check if you're on the [latest Arvis version](https://github.com/jilarganti/arvis/releases).
+          required: true
+        - label: Follow our [Code of Conduct](https://github.com/jilarganti/arvis/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: Read the [docs](https://arvis-doc.vercel.app/).
+          required: true
+        - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
+          required: true
