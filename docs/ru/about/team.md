@@ -1,11 +1,10 @@
-# Начало работы <Badge type="danger" text="DRAFT" /> [![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/docs/ru/about/team.md?initialPath=%2Fru%2Fabout%2Fteam)
+# Начало работы <Badge type="danger" text="DRAFT" /> 
 
 
-<!-- <p> -->
-  <a href="https://pr.new/jilarganti/arvis/edit/main/docs/ru/about/team.md?initialPath=%2Fru%2Fabout%2Fteam" target="_blank">
-    <img src="https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg" alt="Open in Codeflow" style="float: right;">
-  </a>
-<!-- </p> -->
+<a href="https://pr.new/jilarganti/arvis/edit/main/docs/ru/about/team.md?initialPath=%2Fru%2Fabout%2Fteam" target="_blank">
+<img src="https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg" alt="Open in Codeflow" style="float: right;">
+</a>
+
 
 ::: warning
 <right>
@@ -17,6 +16,7 @@
 Этот текст еще не написан.
 :::
 
+[![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/docs/ru/about/team.md?initialPath=%2Fru%2Fabout%2Fteam)
 
 
 

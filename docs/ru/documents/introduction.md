@@ -41,3 +41,6 @@
 
 ![test](/IntroQuality.webp)
 
+---
+[![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/docs/ru/documents/introduction.md?initialPath=%2Fru%2Fdocuments%2Fintroduction)
+
