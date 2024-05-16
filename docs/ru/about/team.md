@@ -1,3 +1,10 @@
+---
+title: Introduction
+localPath: '/ru/documents/introduction.md'
+encodedPath: '%2Fru%2Fdocuments%2Fintroduction'
+---
+
+
 # Начало работы <Badge type="danger" text="DRAFT" /> 
 
 
@@ -18,5 +25,10 @@
 
 [![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/docs/ru/about/team.md?initialPath=%2Fru%2Fabout%2Fteam)
 
+[![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/docs{{ $frontmatter.localPath }}?initialPath={{ $frontmatter.encodedPath }})
 
+
+::: tip 📝 Suggest changes to this page 
+[![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/docs{{ localPath }}?initialPath={{ encodedPath }})
+:::
 

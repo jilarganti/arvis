@@ -31,5 +31,7 @@
 		"vitepress-plugin-mermaid": "^2.0.16",
 		"vitepress-translation-helper": "^0.1.3"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"release-please": "^16.10.2"
+	}
 }
