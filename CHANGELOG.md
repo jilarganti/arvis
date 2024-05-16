@@ -4,6 +4,18 @@
     - [CONTRIBUTING](CONTRIBUTING.md)
     - [SECURITY](SECURITY.md)
 
+## 1.0.0 (2024-05-16)
+
+
+### Features
+
+* Update team page with draft version and edit link ([2828b41](https://github.com/jilarganti/arvis/commit/2828b41f46381626a64d2559af79a78a068db11c))
+
+
+### Bug Fixes
+
+* Update .DocSearch styles in style.css ([d123909](https://github.com/jilarganti/arvis/commit/d123909584718aca2733c097dcceaed9c97c922e))
+
 ## 0.1.1 (2024-04-19)
 
 - Added About Us section
