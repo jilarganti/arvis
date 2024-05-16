@@ -1,7 +1,7 @@
 {
 	"name": "arvis-monorepo",
 	"description": "Arvis project monorepo: AI-enhanced video meetings",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/jilarganti/arvis"
@@ -17,9 +17,7 @@
 		"docs:serve": "pnpm --filter=arvis-docs run docs-serve",
 		"release": "release-it"
 	},
-	"dependencies": {
-		
-	},
+	"dependencies": {},
 	"packageManager": "pnpm@9.0.6",
 	"keywords": [
 		"arvis",
