@@ -14,10 +14,12 @@
 		"docs": "pnpm --filter=arvis-docs run docs",
 		"docs:build": "pnpm --filter=arvis-docs run docs-build",
 		"docs:preview": "pnpm --filter=arvis-docs run docs-preview",
-		"docs:serve": "pnpm --filter=arvis-docs run docs-serve"
+		"docs:serve": "pnpm --filter=arvis-docs run docs-serve",
+		"release": "release-it"
 	},
-	"devDependencies": {},
-	"dependencies": {},
+	"dependencies": {
+		
+	},
 	"keywords": [
 		"arvis",
 		"video",
