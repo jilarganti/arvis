@@ -45,6 +45,10 @@ Guard работает только на вас. Его нельзя схант�
 
 [Open Source Explained](https://www.youtube.com/watch?v=PVD1LNDxOnc)
 
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+
+[![codecov](https://img.shields.io/codecov/c/github/googleapis/release-please/main.svg?style=flat)](https://codecov.io/gh/googleapis/release-please)
+
 
 ## Лицензирование
 
