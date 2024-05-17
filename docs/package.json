@@ -1,6 +1,6 @@
 {
 	"name": "arvis-docs",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "Documentation for A.R.V.I.S",
 	"main": "index.md",
 	"repository": {
