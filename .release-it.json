@@ -12,6 +12,9 @@
     "requireCleanWorkingDir": false
   },
   "hooks": {
+    "before:init": [
+      "git pull"
+    ],
     "after:bump": "npx auto-changelog -p --tag-prefix v"
   },
   "github": {

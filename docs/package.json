@@ -1,6 +1,6 @@
 {
 	"name": "arvis-docs",
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"description": "Documentation for A.R.V.I.S",
 	"main": "index.md",
 	"repository": {
@@ -13,9 +13,9 @@
 	"type": "module",
 	"scripts": {
 		"docs": "vitepress dev",
-		"docs-build": "vitepress build",
-		"docs-preview": "vitepress preview",
-		"docs-serve": "vitepress serve",
+		"docs:build": "vitepress build",
+		"docs:preview": "vitepress preview",
+		"docs:serve": "vitepress serve",
 		"docs:translation:compare": "v-translation compare",
 		"translation:update": "v-translation update",
 		"docs:translation:status": "v-translation status",
