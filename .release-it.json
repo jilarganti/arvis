@@ -12,7 +12,7 @@
     "requireCleanWorkingDir": false
   },
   "hooks": {
-    "after:bump": "npx auto-changelog -p --template keepachangelog --commit-limit false --unreleased --tag-prefix v"
+    "after:bump": "npx auto-changelog -p --tag-prefix v"
   },
   "github": {
     "release": true
