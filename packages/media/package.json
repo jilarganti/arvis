@@ -4,7 +4,7 @@
 	"author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
 	"description": "Arvis media engine",
 	"private": false,
-	"version": "5.1.2",
+	"version": "0.1.17",
 	"homepage": "https://github.com/jilarganti/arvis",
 	"bugs": "https://github.com/jilarganti/arvis/issues",
 	"repository": {
@@ -16,7 +16,7 @@
 		"release": "release-it"
 	},
 	"dependencies": {
-		"packages/shared": "5.1.2"
+		"packages/shared": "5.1.4"
 	},
 	"release-it": {
 		"git": false,

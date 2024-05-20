@@ -4,7 +4,7 @@
 	"author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
 	"description": "Arvis project monorepo: AI-enhanced video meetings",
 	"private": false,
-	"version": "0.1.9",
+	"version": "0.1.17",
 	"homepage": "https://github.com/jilarganti/arvis",
 	"bugs": "https://github.com/jilarganti/arvis/issues",
 	"repository": "github:jilarganti/arvis",
@@ -19,10 +19,8 @@
 		"videomeeting"
 	],
 	"workspaces": [
-		"docs",
-		"packages/ai",
-		"packages/midia",
-		"packages/shared"
+		"packages/*",
+		"docs"
 	],
 	"scripts": {
 		"docs": "pnpm --filter=arvis-docs run docs",
@@ -33,13 +31,7 @@
 	},
 	"dependencies": {
 		"@release-it/bumper": "^6.0.1",
-		"@vscode/vsce": "^2.26.1",
-		"docs": "0.1.9",
-		"packages": {
-			"ai": "0.1.9",
-			"midia": "0.1.9",
-			"shared": "0.1.9"
-		}
+		"docs": "0.1.17"
 	},
 	"release-it": {
 		"git": {
@@ -67,17 +59,14 @@
 				"out": {
 					"file": "package.json",
 					"path": [
-						"dependencies.docs",
-						"dependencies.packages.ai",
-						"dependencies.packages.midia",
-						"dependencies.packages.shared"
+						"dependencies.docs"
 					]
 				}
 			},
 			"release-it-pnpm": {
 				"disableRelease": true,
 				"inFile": "CHANGELOG.md",
-				"publishCommand": "vsce publish --no-dependencies"
+				"publishCommand": "pnpm -r publish --access public --no-git-checks"
 			}
 		}
 	}
