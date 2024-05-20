@@ -1,13 +1,14 @@
 {
 	"name": "arvis-monorepo",
 	"description": "Arvis project monorepo: AI-enhanced video meetings",
-	"version": "0.1.9",
+	"version": "0.1.11",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/jilarganti/arvis"
 	},
 	"engines": {
-		"node": "^18.0.0 || >=20.0.0"
+		"node": "^18.0.0 || >=20.0.0",
+		"vscode": "^1.60.0"
 	},
 	"type": "module",
 	"scripts": {
