@@ -1,0 +1,34 @@
+{
+	"name": "arvis-media",
+	"license": "MIT",
+	"author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
+	"description": "Arvis media engine",
+	"private": false,
+	"version": "5.1.2",
+	"homepage": "https://github.com/jilarganti/arvis",
+	"bugs": "https://github.com/jilarganti/arvis/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jilarganti/arvis.git",
+		"directory": "packages/media"
+	},
+	"scripts": {
+		"release": "release-it"
+	},
+	"dependencies": {
+		"packages/shared": "5.1.2"
+	},
+	"release-it": {
+		"git": false,
+		"plugins": {
+			"@release-it/bumper": {
+				"out": {
+					"file": "package.json",
+					"path": [
+						"dependencies.packages/shared"
+					]
+				}
+			}
+		}
+	}
+}

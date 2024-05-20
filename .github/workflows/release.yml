@@ -36,7 +36,7 @@ jobs:
       - name: Release
         run: release-it --verbose
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.RELEASE_IT_GITHUB}}
           # Add following line if you are publishing to npm
           NODE_AUTH_TOKEN: ${{secrets.RELEASE_IT_NPM}}
           NPM_CONFIG_PROVENANCE: true

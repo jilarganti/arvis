@@ -4,7 +4,7 @@
 	"author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
 	"description": "Arvis project monorepo: AI-enhanced video meetings",
 	"private": false,
-	"version": "0.1.15",
+	"version": "0.1.9",
 	"homepage": "https://github.com/jilarganti/arvis",
 	"bugs": "https://github.com/jilarganti/arvis/issues",
 	"repository": "github:jilarganti/arvis",
@@ -34,8 +34,12 @@
 	"dependencies": {
 		"@release-it/bumper": "^6.0.1",
 		"@vscode/vsce": "^2.26.1",
-		"@7-docs/cli": "0.1.14",
-		"docs": "0.1.15"
+		"docs": "0.1.9",
+		"packages": {
+			"ai": "0.1.9",
+			"midia": "0.1.9",
+			"shared": "0.1.9"
+		}
 	},
 	"release-it": {
 		"git": {
@@ -47,7 +51,7 @@
 			"before:init": [
 				"git pull"
 			],
-			"after:bump": "npx auto-changelog -p --hide-credit --starting-version 0.1.4 --hide-empty-releases --release-summary"
+			"after:bump": "npx auto-changelog -p --hide-credit --starting-version 0.1.4"
 		},
 		"github": {
 			"release": true,
@@ -63,7 +67,10 @@
 				"out": {
 					"file": "package.json",
 					"path": [
-						"dependencies.docs"
+						"dependencies.docs",
+						"dependencies.packages.ai",
+						"dependencies.packages.midia",
+						"dependencies.packages.shared"
 					]
 				}
 			},
