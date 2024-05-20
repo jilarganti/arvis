@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "declaration": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "nodenext",
+      "moduleResolution": "nodenext",
+      "outDir": "dist",
+      "rootDir": "src",
+      "skipLibCheck": true,
+      "strict": true,
+      "target": "ES2022"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist/**/*"],
+    "references": [
+        {
+          "path": "./docs"
+        },
+        {
+            "path": "./packages/ai"
+        },
+        {
+            "path": "./packages/media"
+        },
+        {
+          "path": "./packages/shared"
+        },
+    ]
+  }

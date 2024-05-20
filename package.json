@@ -1,16 +1,29 @@
 {
 	"name": "arvis-monorepo",
+	"license": "MIT",
+	"author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
 	"description": "Arvis project monorepo: AI-enhanced video meetings",
-	"version": "0.1.11",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/jilarganti/arvis"
-	},
+	"private": false,
+	"version": "0.1.15",
+	"homepage": "https://github.com/jilarganti/arvis",
+	"bugs": "https://github.com/jilarganti/arvis/issues",
+	"repository": "github:jilarganti/arvis",
+	"type": "module",
+	"packageManager": "pnpm@9.1.1",
 	"engines": {
 		"node": "^18.0.0 || >=20.0.0",
 		"vscode": "^1.60.0"
 	},
-	"type": "module",
+	"keywords": [
+		"ai",
+		"videomeeting"
+	],
+	"workspaces": [
+		"docs",
+		"packages/ai",
+		"packages/midia",
+		"packages/shared"
+	],
 	"scripts": {
 		"docs": "pnpm --filter=arvis-docs run docs",
 		"docs:build": "pnpm --filter=arvis-docs run docs:build",
@@ -18,15 +31,47 @@
 		"docs:serve": "pnpm --filter=arvis-docs run docs:serve",
 		"release": "release-it"
 	},
-	"dependencies": {},
-	"packageManager": "pnpm@9.1.1",
-	"keywords": [
-		"arvis",
-		"video",
-		"meetings",
-		"ai"
-	],
-	"author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
-	"license": "MIT",
-	"private": false
+	"dependencies": {
+		"@release-it/bumper": "^6.0.1",
+		"@vscode/vsce": "^2.26.1",
+		"@7-docs/cli": "0.1.14",
+		"docs": "0.1.15"
+	},
+	"release-it": {
+		"git": {
+			"commitMessage": "chore: release v${version}",
+			"requireBranch": "main",
+			"requireCleanWorkingDir": false
+		},
+		"hooks": {
+			"before:init": [
+				"git pull"
+			],
+			"after:bump": "npx auto-changelog -p --hide-credit --starting-version 0.1.4 --hide-empty-releases --release-summary"
+		},
+		"github": {
+			"release": true,
+			"comments": {
+				"submit": true
+			}
+		},
+		"npm": {
+			"publish": false
+		},
+		"plugins": {
+			"@release-it/bumper": {
+				"out": {
+					"file": "package.json",
+					"path": [
+						"dependencies.docs"
+					]
+				}
+			},
+			"release-it-pnpm": {
+				"disableRelease": true,
+				"inFile": "CHANGELOG.md",
+				"publishCommand": "vsce publish --no-dependencies"
+			}
+		}
+	}
 }

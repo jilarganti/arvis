@@ -1,6 +1,6 @@
 {
 	"name": "arvis-docs",
-	"version": "0.1.11",
+	"version": "0.1.15",
 	"description": "Documentation for A.R.V.I.S",
 	"main": "index.md",
 	"repository": {
@@ -31,7 +31,5 @@
 		"vitepress-plugin-mermaid": "^2.0.16",
 		"vitepress-translation-helper": "^0.1.3"
 	},
-	"dependencies": {
-		"@vscode/vsce": "^2.26.1"
-	}
+	"dependencies": {}
 }
