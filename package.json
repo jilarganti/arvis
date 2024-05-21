@@ -23,7 +23,18 @@
 		"docs:build": "pnpm --filter=arvis-docs run docs:build",
 		"docs:preview": "pnpm --filter=arvis-docs run docs:preview",
 		"docs:serve": "pnpm --filter=arvis-docs run docs:serve",
-		"release": "release-it"
+		"release": "tsx scripts/release.ts"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.12",
+		"@types/fs-extra": "^11.0.4",
+		"@types/semver": "^7.5.8",
+		"@vitejs/release-scripts": "^1.3.1",
+		"conventional-changelog-cli": "^5.0.0",
+		"execa": "^9.1.0",
+		"fs-extra": "^11.2.0",
+		"tsx": "^4.10.5",
+		"semver": "^7.6.2"
 	},
 	"dependencies": {
 		"@release-it/bumper": "^6.0.1"
@@ -65,8 +76,5 @@
 				"publishCommand": "pnpm -r publish --access public --no-git-checks"
 			}
 		}
-	},
-	"devDependencies": {
-		"conventional-changelog-angular": "^8.0.0"
 	}
 }
