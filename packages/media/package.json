@@ -12,21 +12,6 @@
 		"url": "https://github.com/jilarganti/arvis.git",
 		"directory": "packages/media"
 	},
-	"scripts": {
-		"release": "release-it"
-	},
-	"dependencies": {},
-	"release-it": {
-		"git": false,
-		"plugins": {
-			"@release-it/bumper": {
-				"out": {
-					"file": "package.json",
-					"path": [
-						"dependencies.packages/shared"
-					]
-				}
-			}
-		}
-	}
+	"scripts": {},
+	"dependencies": {}
 }

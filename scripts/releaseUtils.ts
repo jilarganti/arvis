@@ -18,7 +18,7 @@ export async function getLatestTag(pkgName: string): Promise<string> {
   const tags = (await run('git', ['tag'], { stdio: 'pipe' })).stdout
     .split(/\n/)
     .filter(Boolean)
-  const prefix = pkgName === 'vite' ? 'v' : `${pkgName}@`
+  const prefix = pkgName === 'arvis' ? 'v' : `${pkgName}@`
   return tags
     .filter((tag) => tag.startsWith(prefix))
     .sort((a, b) =>
@@ -54,18 +54,22 @@ export async function logRecentCommits(pkgName: string): Promise<void> {
   console.log()
 }
 
+/**
+ * The updateTemplateVersions function is used to automatically update the arvis version in templates when the version in the main project is updated,
+ * unless that version is a beta, alpha, or release candidate.
+ */
 export async function updateTemplateVersions(): Promise<void> {
-  const viteVersion = fs.readJSONSync('packages/arvis/package.json').version
-  if (/beta|alpha|rc/.test(viteVersion)) return
+  const arvisVersion = fs.readJSONSync('packages/arvis/package.json').version
+  if (/beta|alpha|rc/.test(arvisVersion)) return
 
-  const dir = 'packages/create-vite'
+  const dir = 'packages/create-arvis'
   const templates = readdirSync(dir).filter((dir) =>
     dir.startsWith('template-')
   )
   for (const template of templates) {
     const pkgPath = path.join(dir, template, `package.json`)
     const pkg = fs.readJSONSync(pkgPath)
-    pkg.devDependencies.vite = `^` + viteVersion
+    pkg.devDependencies.arvis = `^` + arvisVersion
     writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n')
   }
 }

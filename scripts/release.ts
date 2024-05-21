@@ -4,12 +4,12 @@ import { logRecentCommits, run, updateTemplateVersions } from './releaseUtils'
 
 release({
   repo: 'arvis',
-  packages: ['arvis', 'create-vite', 'plugin-legacy'],
+  packages: ['arvis', 'create-arvis', 'ai', 'media'],
   toTag: (pkg, version) =>
     pkg === 'arvis' ? `v${version}` : `${pkg}@${version}`,
   logChangelog: (pkg) => logRecentCommits(pkg),
   generateChangelog: async (pkgName) => {
-    if (pkgName === 'create-vite') await updateTemplateVersions()
+    if (pkgName === 'create-arvis') await updateTemplateVersions()
 
     console.log(colors.cyan('\nGenerating changelog...'))
     const changelogArgs = [

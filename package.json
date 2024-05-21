@@ -18,6 +18,7 @@
 		"ai",
 		"videomeeting"
 	],
+	"///": "================================================================================",
 	"scripts": {
 		"docs": "pnpm --filter=arvis-docs run docs",
 		"docs:build": "pnpm --filter=arvis-docs run docs:build",
@@ -25,6 +26,7 @@
 		"docs:serve": "pnpm --filter=arvis-docs run docs:serve",
 		"release": "tsx scripts/release.ts"
 	},
+	"//": "================================================================================",
 	"devDependencies": {
 		"@types/node": "^20.12.12",
 		"@types/fs-extra": "^11.0.4",
@@ -36,45 +38,5 @@
 		"tsx": "^4.10.5",
 		"semver": "^7.6.2"
 	},
-	"dependencies": {
-		"@release-it/bumper": "^6.0.1"
-	},
-	"//": "This is a comment in JSON",
-	"release-it": {
-		"git": {
-			"commitMessage": "chore: release v${version}",
-			"requireBranch": "main",
-			"requireCleanWorkingDir": false
-		},
-		"hooks": {
-			"before:init": [
-				"git pull"
-			],
-			"after:bump": "npx auto-changelog -p --hide-credit --starting-version 0.1.4"
-		},
-		"github": {
-			"release": true,
-			"comments": {
-				"submit": true
-			}
-		},
-		"npm": {
-			"publish": false
-		},
-		"plugins": {
-			"@release-it/bumper": {
-				"out": {
-					"file": "package.json",
-					"path": [
-						"dependencies.docs"
-					]
-				}
-			},
-			"release-it-pnpm": {
-				"disableRelease": true,
-				"inFile": "CHANGELOG.md",
-				"publishCommand": "pnpm -r publish --access public --no-git-checks"
-			}
-		}
-	}
+	"dependencies": {}
 }
