@@ -18,10 +18,6 @@
 		"ai",
 		"videomeeting"
 	],
-	"workspaces": [
-		"packages/*",
-		"docs"
-	],
 	"scripts": {
 		"docs": "pnpm --filter=arvis-docs run docs",
 		"docs:build": "pnpm --filter=arvis-docs run docs:build",
@@ -30,9 +26,9 @@
 		"release": "release-it"
 	},
 	"dependencies": {
-		"@release-it/bumper": "^6.0.1",
-		"docs": "0.1.17"
+		"@release-it/bumper": "^6.0.1"
 	},
+	"//": "This is a comment in JSON",
 	"release-it": {
 		"git": {
 			"commitMessage": "chore: release v${version}",
@@ -69,5 +65,8 @@
 				"publishCommand": "pnpm -r publish --access public --no-git-checks"
 			}
 		}
+	},
+	"devDependencies": {
+		"conventional-changelog-angular": "^8.0.0"
 	}
 }

@@ -1,20 +1,16 @@
-# Changelog
-
-## 0.1.17
-
-*No significant changes*
-
-##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/jilarganti/arvis/compare/0.1.8...main)
-
-##
+### Changelog
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [0.1.17](https://github.com/jilarganti/arvis/compare/0.1.17...0.1.17)
+
 #### [0.1.17](https://github.com/jilarganti/arvis/compare/0.1.8...0.1.17)
 
+> 20 May 2024
+
 - chore: Update package versions and dependencies [`30d2195`](https://github.com/jilarganti/arvis/commit/30d2195c5f10755017d5ff55d98c3f382c191636)
+- chore: release v0.1.17 [`0165b07`](https://github.com/jilarganti/arvis/commit/0165b070db39de92e9c8c2b4358a74fae8a41e6c)
 - chore: Update package versions and dependencies [`7861735`](https://github.com/jilarganti/arvis/commit/78617356e39b7b1397ab33907dc87863761dfcd4)
-- chore: Update release workflow to use pnpm and release-it [`b1f1e7e`](https://github.com/jilarganti/arvis/commit/b1f1e7e11d06938c4a3c566da9cd2866a483c199)
 
 #### [0.1.8](https://github.com/jilarganti/arvis/compare/0.1.7...0.1.8)
 
