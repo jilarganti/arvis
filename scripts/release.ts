@@ -28,7 +28,7 @@ release({
             '.',
         ]
         if (pkgName !== 'arvis') changelogArgs.push('--lerna-package', pkgName)
+        console.log(colors.cyan('\nGenerating changelog...'))
         await run('npx', changelogArgs, { cwd: `${path}${pkgName}` })
-        console.log(colors.cyan('\nGenerating changelog...' + '\n' + changelogArgs + `${path}${pkgName}`))
     },
 })
