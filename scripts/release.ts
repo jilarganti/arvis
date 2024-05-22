@@ -7,7 +7,7 @@ let path = 'packages/'
 release({
     repo: 'arvis',
     packages: ['arvis', 'create-arvis', 'docs', 'ai', 'media'],
-    // getPkgDir: (pkg) => (pkg === 'docs' ? 'docs' : `packages/${pkg}`),
+    getPkgDir: (pkg) => (pkg === 'docs' ? 'docs' : `packages/${pkg}`),
     toTag: (pkg, version) => (pkg === 'arvis' ? `v${version}` : `${pkg}@${version}`),
     logChangelog: (pkg) => logRecentCommits(pkg),
     generateChangelog: async (pkgName) => {
@@ -20,13 +20,13 @@ release({
 
         const changelogArgs = [
             'conventional-changelog',
-            '-p',
-            'angular',
-            '-i',
-            'CHANGELOG.md',
-            '-s',
-            '--commit-path',
-            '.',
+            // '-p',
+            // 'angular',
+            // '-i',
+            // 'CHANGELOG.md',
+            // '-s',
+            // '--commit-path',
+            // '.',
         ]
         if (pkgName !== 'arvis') changelogArgs.push('--lerna-package', pkgName)
         console.log(colors.cyan('\nGenerating changelog...'))

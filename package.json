@@ -18,6 +18,7 @@
 		"videomeeting"
 	],
 	"///": "================================================================================",
+	"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --commit-path .",
 	"scripts": {
 		"docs": "pnpm --filter=arvis-docs run docs",
 		"docs:build": "pnpm --filter=arvis-docs run docs:build",

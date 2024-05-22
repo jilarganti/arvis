@@ -1,24 +1,24 @@
 {
-  "name": "arvis",
-  "license": "MIT",
-  "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
-  "description": "Arvis: AI-enhanced video meetings",
-  "private": false,
-  "version": "1.0.3",
-  "homepage": "https://github.com/jilarganti/arvis",
-  "bugs": "https://github.com/jilarganti/arvis/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jilarganti/arvis.git",
-    "directory": "packages/arvis"
-  },
-  "type": "module",
-  "scripts": {
-    "format": "prettier --write --cache --parser typescript \"src/**/*.ts\"",
-    "prepublishOnly": "npm run build"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "rollup-plugin-license": "^3.4.0"
-  }
+	"name": "arvis",
+	"license": "MIT",
+	"author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
+	"description": "Arvis: AI-enhanced video meetings",
+	"private": false,
+	"version": "0.0.1",
+	"homepage": "https://github.com/jilarganti/arvis",
+	"bugs": "https://github.com/jilarganti/arvis/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jilarganti/arvis.git",
+		"directory": "packages/arvis"
+	},
+	"type": "module",
+	"scripts": {
+		"format": "prettier --write --cache --parser typescript \"src/**/*.ts\"",
+		"prepublishOnly": "npm run build"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"rollup-plugin-license": "^3.4.0"
+	}
 }
