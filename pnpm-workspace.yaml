@@ -1,7 +1,8 @@
 packages:
-  # all packages in subdirs of docs/
-  - 'docs'
-  # all packages in direct subdirs of packages/
-  - 'packages/*'
-  # exclude packages that are inside test directories
-  - 'packages/**/__tests__/**'
+    # include packages that are inside this directories
+    - 'docs'
+    - 'packages/*'
+
+    # exclude packages that are inside this directories
+    - '!packages/create-arvis'
+    - '!packages/**/__tests__/**'

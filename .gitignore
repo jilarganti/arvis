@@ -6,3 +6,9 @@
 node_modules
 dist
 cache
+
+.turbo
+
+build/**
+dist/**
+.next/**
