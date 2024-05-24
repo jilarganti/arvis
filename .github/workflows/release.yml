@@ -1,43 +1,27 @@
 name: Release
 
-permissions:
-  contents: write
-  id-token: write
-
 on:
-  workflow_dispatch:
+    push:
+        branches:
+            - main
 
 jobs:
-  release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+    release:
+        runs-on: ubuntu-latest
 
-      - name: Git config
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
 
-      - name: Set node
-        uses: actions/setup-node@v2
-        with:
-          node-version: lts/*
-          registry-url: "https://registry.npmjs.org"
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "14"
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          run_install: |
-            - args: [--frozen-lockfile]
-            - args: [--global, release-it, release-it-pnpm]
+            - name: Install dependencies
+              run: pnpm install
 
-      - name: Release
-        run: release-it --verbose
-        env:
-          GITHUB_TOKEN: ${{secrets.RELEASE_IT_GITHUB}}
-          # Add following line if you are publishing to npm
-          NODE_AUTH_TOKEN: ${{secrets.RELEASE_IT_NPM}}
-          NPM_CONFIG_PROVENANCE: true
-          # Add more env variables if needed
+            - name: Run release
+              run: pnpm run release
+              env:
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
