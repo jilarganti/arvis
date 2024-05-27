@@ -1,17 +1,15 @@
-
 import { defineConfig, type DefaultTheme } from 'vitepress'
 
 export const ru = defineConfig({
     lang: 'ru-RU',
-    description: "Видеовстречи с поддержкой ИИ-помощника",
+    description: 'Видеовстречи с поддержкой ИИ-помощника',
     head: [['link', { rel: 'icon', href: '/play.png' }]],
     themeConfig: {
-
         nav: nav(),
 
         sidebar: {
             '/ru/documents/': { base: '/ru/documents/', items: sidebarDocs() },
-            '/ru/about/': { base: '/ru/about/', items: sidebarAbout() }
+            '/ru/about/': { base: '/ru/about/', items: sidebarAbout() },
         },
 
         // editLink: {
@@ -21,9 +19,9 @@ export const ru = defineConfig({
 
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2024-present, Jil Arganti'
-        }
-    }
+            copyright: 'Copyright © 2024-present, Jil Arganti',
+        },
+    },
 })
 
 function nav(): DefaultTheme.NavItem[] {
@@ -37,18 +35,24 @@ function nav(): DefaultTheme.NavItem[] {
                 {
                     text: 'Public Meeting',
                     items: [
-                        { text: 'Create a meeting for later', link: '/ru/documents/meeting#create-a-meeting-for-later' },
+                        {
+                            text: 'Create a meeting for later',
+                            link: '/ru/documents/meeting#create-a-meeting-for-later',
+                        },
                         { text: 'Start an instant meeting', link: '/ru/documents/meeting#start-an-instant-meeting' },
                         { text: 'Shedule in Calendar', link: '/ru/documents/meeting#shedule-in-calendar' },
-                    ]
+                    ],
                 },
                 {
                     text: 'Private Meeting',
                     items: [
-                        { text: 'Create a meeting for later', link: '/ru/documents/meeting#create-a-meeting-for-later-1' },
+                        {
+                            text: 'Create a meeting for later',
+                            link: '/ru/documents/meeting#create-a-meeting-for-later-1',
+                        },
                         { text: 'Start an instant meeting', link: '/ru/documents/meeting#start-an-instant-meeting-1' },
                         { text: 'Shedule in Calendar', link: '/ru/documents/meeting#shedule-in-calendar-1' },
-                    ]
+                    ],
                 },
             ],
         },
@@ -65,7 +69,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
                 { text: 'Что такое A.R.V.I.S.?', link: 'introduction' },
                 { text: 'Конфиденциальность данных', link: 'privacy' },
                 { text: 'Начало работы', link: 'get-started' },
-            ]
+            ],
         },
         {
             text: 'Стек',
@@ -74,8 +78,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
                 { text: 'Медиа SDK', link: 'markdown' },
                 { text: 'ИИ ассистенты', link: 'markdown' },
                 // { text: 'Интеграции', link: 'markdown' },
-
-            ]
+            ],
         },
 
         // { text: 'Config & API Reference', base: '/reference/', link: 'site-config' }
@@ -96,8 +99,8 @@ function sidebarAbout(): DefaultTheme.SidebarItem[] {
 
                 //     ]
                 // }
-            ]
-        }
+            ],
+        },
     ]
 }
 
@@ -107,14 +110,14 @@ export const search: DefaultTheme.AlgoliaSearchOptions['locales'] = {
         translations: {
             button: {
                 buttonText: 'Поиск',
-                buttonAriaLabel: 'Поиск'
+                buttonAriaLabel: 'Поиск',
             },
             modal: {
                 searchBox: {
                     resetButtonTitle: 'Очистить поиск',
                     resetButtonAriaLabel: 'Очистить поиск',
                     cancelButtonText: 'Закрыть',
-                    cancelButtonAriaLabel: 'Закрыть'
+                    cancelButtonAriaLabel: 'Закрыть',
                 },
                 startScreen: {
                     recentSearchesTitle: 'История поиска',
@@ -126,21 +129,21 @@ export const search: DefaultTheme.AlgoliaSearchOptions['locales'] = {
                 },
                 errorScreen: {
                     titleText: 'Невозможно получить результаты',
-                    helpText: 'Проверьте подключение к сети'
+                    helpText: 'Проверьте подключение к сети',
                 },
                 footer: {
                     selectText: 'Выбрать',
                     navigateText: 'Следующий',
                     closeText: 'Закрыть',
-                    searchByText: ''
+                    searchByText: '',
                 },
                 noResultsScreen: {
                     noResultsText: 'Ненайдено',
                     suggestedQueryText: 'Попробуйте так',
                     reportMissingResultsText: 'Должны ли быть результаты по этому запросу?',
-                    reportMissingResultsLinkText: 'Отправить отзыв'
-                }
-            }
-        }
-    }
+                    reportMissingResultsLinkText: 'Отправить отзыв',
+                },
+            },
+        },
+    },
 }

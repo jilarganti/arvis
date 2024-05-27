@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 import { search as ruSearch } from './ru'
 
 export const shared = defineConfig({
-    title: "A.R.V.I.S.",
+    title: 'A.R.V.I.S.',
 
     lastUpdated: true,
     cleanUrls: true,
@@ -17,16 +17,16 @@ export const shared = defineConfig({
             {
                 postprocess(code) {
                     return code.replace(/\[\!\!code/g, '[!code')
-                }
-            }
-        ]
+                },
+            },
+        ],
     },
 
     sitemap: {
         hostname: 'https://vitepress.dev',
         transformItems(items) {
             return items.filter((item) => !item.url.includes('migration'))
-        }
+        },
     },
 
     /* prettier-ignore */
@@ -52,7 +52,7 @@ export const shared = defineConfig({
 
         socialLinks: [
             { icon: 'github', link: 'https://github.com/jilarganti/arvis' },
-            { icon: 'discord', link: 'https://discord.com/invite/SA4hDwsk' }
+            { icon: 'discord', link: 'https://discord.com/invite/SA4hDwsk' },
         ],
 
         search: {
@@ -62,10 +62,10 @@ export const shared = defineConfig({
                 apiKey: '12c782af03f5595d06a56e517eb8c67b',
                 indexName: 'arvis-doc',
                 // locales: { ...zhSearch, ...ruSearch }
-                locales: { ...ruSearch }
-            }
+                locales: { ...ruSearch },
+            },
         },
 
         // carbonAds: { code: 'CEBDT27Y', placement: 'vuejsorg' }
-    }
+    },
 })

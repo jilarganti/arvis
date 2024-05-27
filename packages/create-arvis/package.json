@@ -1,44 +1,44 @@
 {
-  "name": "create-arvis",
-  "version": "0.0.1",
-  "type": "module",
-  "license": "MIT",
-  "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
-  "bin": {
-    "create-arvis": "index.js",
-    "cva": "index.js"
-  },
-  "files": [
-    "index.js",
-    "template-*",
-    "dist"
-  ],
-  "scripts": {
-    "dev": "unbuild --stub",
-    "build": "unbuild",
-    "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run build"
-  },
-  "engines": {
-    "node": "^18.0.0 || >=20.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arvis/jilarganti.git",
-    "directory": "packages/create-arvis"
-  },
-  "bugs": {
-    "url": "https://github.com/arvis/jilarganti/issues"
-  },
-  "homepage": "https://github.com/arvis/jilarganti/tree/main/packages/create-arvis#readme",
-  "funding": "https://github.com/arvis/jilarganti?sponsor=1",
-  "devDependencies": {
-    "@types/minimist": "^1.2.5",
-    "@types/prompts": "^2.4.9",
-    "cross-spawn": "^7.0.3",
-    "kolorist": "^1.8.0",
-    "minimist": "^1.2.8",
-    "prompts": "^2.4.2",
-    "unbuild": "^2.0.0"
-  }
+    "name": "create-arvis",
+    "version": "0.0.1",
+    "type": "module",
+    "license": "MIT",
+    "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
+    "bin": {
+        "create-arvis": "index.js",
+        "cva": "index.js"
+    },
+    "files": [
+        "index.js",
+        "template-*",
+        "dist"
+    ],
+    "scripts": {
+        "dev": "unbuild --stub",
+        "build": "unbuild",
+        "typecheck": "tsc --noEmit",
+        "prepublishOnly": "npm run build"
+    },
+    "engines": {
+        "node": "^18.0.0 || >=20.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/arvis/jilarganti.git",
+        "directory": "packages/create-arvis"
+    },
+    "bugs": {
+        "url": "https://github.com/arvis/jilarganti/issues"
+    },
+    "homepage": "https://github.com/arvis/jilarganti/tree/main/packages/create-arvis#readme",
+    "funding": "https://github.com/arvis/jilarganti?sponsor=1",
+    "devDependencies": {
+        "@types/minimist": "^1.2.5",
+        "@types/prompts": "^2.4.9",
+        "cross-spawn": "^7.0.3",
+        "kolorist": "^1.8.0",
+        "minimist": "^1.2.8",
+        "prompts": "^2.4.2",
+        "unbuild": "^2.0.0"
+    }
 }

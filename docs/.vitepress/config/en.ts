@@ -1,18 +1,17 @@
-
 import { defineConfig, type DefaultTheme } from 'vitepress'
 
 export const en = defineConfig({
     lang: 'en-US',
     // description: "Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results.",
-    description: "Introducing J.A.R.V.I.S.'s apprentice, designed to bring the brilliance of its mentor into your meetings. This AI assistant uses past data to help you reach your goals, providing strategic advice and a focus on concrete outcomes.",
+    description:
+        "Introducing J.A.R.V.I.S.'s apprentice, designed to bring the brilliance of its mentor into your meetings. This AI assistant uses past data to help you reach your goals, providing strategic advice and a focus on concrete outcomes.",
     head: [['link', { rel: 'icon', href: '/play.png' }]],
     themeConfig: {
-
         nav: nav(),
 
         sidebar: {
             '/documents/': { base: '/documents/', items: sidebarDocs() },
-            '/about/': { base: '/about/', items: sidebarAbout() }
+            '/about/': { base: '/about/', items: sidebarAbout() },
         },
 
         // editLink: {
@@ -22,9 +21,9 @@ export const en = defineConfig({
 
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2024-present, Jil Arganti'
-        }
-    }
+            copyright: 'Copyright © 2024-present, Jil Arganti',
+        },
+    },
 })
 
 function nav(): DefaultTheme.NavItem[] {
@@ -38,18 +37,24 @@ function nav(): DefaultTheme.NavItem[] {
                 {
                     text: 'Public Meeting',
                     items: [
-                        { text: 'Create a meeting for later', link: '/ru/documents/meeting#create-a-meeting-for-later' },
+                        {
+                            text: 'Create a meeting for later',
+                            link: '/ru/documents/meeting#create-a-meeting-for-later',
+                        },
                         { text: 'Start an instant meeting', link: '/ru/documents/meeting#start-an-instant-meeting' },
                         { text: 'Shedule in Calendar', link: '/ru/documents/meeting#shedule-in-calendar' },
-                    ]
+                    ],
                 },
                 {
                     text: 'Private Meeting',
                     items: [
-                        { text: 'Create a meeting for later', link: '/ru/documents/meeting#create-a-meeting-for-later-1' },
+                        {
+                            text: 'Create a meeting for later',
+                            link: '/ru/documents/meeting#create-a-meeting-for-later-1',
+                        },
                         { text: 'Start an instant meeting', link: '/ru/documents/meeting#start-an-instant-meeting-1' },
                         { text: 'Shedule in Calendar', link: '/ru/documents/meeting#shedule-in-calendar-1' },
-                    ]
+                    ],
                 },
             ],
         },
@@ -66,7 +71,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
                 { text: 'What is A.R.V.I.S.?', link: 'introduction' },
                 { text: 'Privacy', link: 'privacy' },
                 { text: 'Get Started', link: 'get-started' },
-            ]
+            ],
         },
         {
             text: 'Platform',
@@ -74,8 +79,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
             items: [
                 { text: 'Media SDK', link: 'markdown' },
                 { text: 'AI assistants', link: 'markdown' },
-
-            ]
+            ],
         },
 
         // { text: 'Config & API Reference', base: '/reference/', link: 'site-config' }
@@ -86,10 +90,7 @@ function sidebarAbout(): DefaultTheme.SidebarItem[] {
     return [
         {
             text: 'About',
-            items: [
-                { text: 'Code Of Conduct', base: '/', link: 'CODE_OF_CONDUCT' },
-
-            ]
-        }
+            items: [{ text: 'Code Of Conduct', base: '/', link: 'CODE_OF_CONDUCT' }],
+        },
     ]
 }

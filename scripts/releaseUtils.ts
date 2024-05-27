@@ -9,21 +9,17 @@ import fs from 'fs-extra'
 export function run<EO extends ExecaOptions>(
     bin: string,
     args: string[],
-    opts?: EO
+    opts?: EO,
 ): ResultPromise<EO & (keyof EO extends 'stdio' ? {} : { stdio: 'inherit' })> {
     return execa(bin, args, { stdio: 'inherit', ...opts }) as any
 }
 
 export async function getLatestTag(pkgName: string): Promise<string> {
-    const tags = (await run('git', ['tag'], { stdio: 'pipe' })).stdout
-        .split(/\n/)
-        .filter(Boolean)
+    const tags = (await run('git', ['tag'], { stdio: 'pipe' })).stdout.split(/\n/).filter(Boolean)
     const prefix = pkgName === 'arvis' ? 'v' : `${pkgName}@`
     return tags
         .filter((tag) => tag.startsWith(prefix))
-        .sort((a, b) =>
-            semver.rcompare(a.slice(prefix.length), b.slice(prefix.length))
-        )[0]
+        .sort((a, b) => semver.rcompare(a.slice(prefix.length), b.slice(prefix.length)))[0]
 }
 
 export async function logRecentCommits(pkgName: string): Promise<void> {
@@ -34,25 +30,14 @@ export async function logRecentCommits(pkgName: string): Promise<void> {
     }).then((res) => res.stdout.trim())
     console.log(
         colors.bold(
-            `\n${colors.blue(`i`)} Commits of ${colors.green(
-                pkgName
-            )} since ${colors.green(tag)} ${colors.gray(
-                `(${sha.slice(0, 5)})`
-            )}`
-        )
+            `\n${colors.blue(`i`)} Commits of ${colors.green(pkgName)} since ${colors.green(tag)} ${colors.gray(
+                `(${sha.slice(0, 5)})`,
+            )}`,
+        ),
     )
-    await run(
-        'git',
-        [
-            '--no-pager',
-            'log',
-            `${sha}..HEAD`,
-            '--oneline',
-            '--',
-            `packages/${pkgName}`,
-        ],
-        { stdio: 'inherit' }
-    )
+    await run('git', ['--no-pager', 'log', `${sha}..HEAD`, '--oneline', '--', `packages/${pkgName}`], {
+        stdio: 'inherit',
+    })
     console.log()
 }
 
@@ -65,9 +50,7 @@ export async function updateTemplateVersions(): Promise<void> {
     if (/beta|alpha|rc/.test(arvisVersion)) return
 
     const dir = 'packages/create-arvis'
-    const templates = readdirSync(dir).filter((dir) =>
-        dir.startsWith('template-')
-    )
+    const templates = readdirSync(dir).filter((dir) => dir.startsWith('template-'))
     for (const template of templates) {
         const pkgPath = path.join(dir, template, `package.json`)
         const pkg = fs.readJSONSync(pkgPath)
