@@ -2,6 +2,7 @@
 .vscode
 .idea
 .temp
+.env
 
 node_modules
 dist
