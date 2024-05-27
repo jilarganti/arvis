@@ -41,6 +41,6 @@ jobs:
 
             - name: Release
               #   run: npx semantic-release
-              run: pnpm run mono
+              run: pnpx run mono
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
