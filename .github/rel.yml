@@ -1,0 +1,36 @@
+name: Rel
+
+on:
+    push:
+        branches:
+            - main
+
+permissions:
+    contents: write # to be able to publish a GitHub release
+    issues: write # to be able to comment on released issues
+    pull-requests: write # to be able to comment on released pull requests
+    id-token: write # to enable use of OIDC for npm provenance
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "20"
+
+            - name: Install pnpm
+              run: npm install -g pnpm@9.1.1
+
+            - name: Install dependencies
+              run: pnpm install
+
+            - name: Run release
+              run: pnpm run mono
+              env:
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}

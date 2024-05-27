@@ -1,4 +1,5 @@
 module.exports = {
+    extends: 'semantic-release-monorepo',
     branches: ['main'],
     repositoryUrl: 'https://github.com/jilarganti/arvis',
     plugins: [
