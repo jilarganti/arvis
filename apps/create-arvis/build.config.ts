@@ -24,7 +24,7 @@ export default defineBuildConfig({
             options.plugins = [
                 options.plugins,
                 // TODO: unbuild uses rollup v3 and arvis uses rollup v4
-                licensePlugin(path.resolve(__dirname, './LICENSE'), 'create-arvis license', 'create-arvis'),
+                licensePlugin(path.resolve(__dirname, './LICENSE'), 'create-app license', 'create-app'),
             ]
         },
     },

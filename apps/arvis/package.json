@@ -1,5 +1,5 @@
 {
-    "name": "arvis-app",
+    "name": "app",
     "license": "MIT",
     "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
     "description": "Arvis: AI-enhanced video meetings",
@@ -17,8 +17,8 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "arvis-ai": "workspace:*",
-        "arvis-media": "workspace:*",
+        "ai": "workspace:*",
+        "link": "workspace:*",
         "shared": "workspace:*"
     },
     "devDependencies": {

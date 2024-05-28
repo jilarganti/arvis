@@ -49,7 +49,7 @@ export async function updateTemplateVersions(): Promise<void> {
     const arvisVersion = fs.readJSONSync('packages/arvis/package.json').version
     if (/beta|alpha|rc/.test(arvisVersion)) return
 
-    const dir = 'packages/create-arvis'
+    const dir = 'packages/create-app'
     const templates = readdirSync(dir).filter((dir) => dir.startsWith('template-'))
     for (const template of templates) {
         const pkgPath = path.join(dir, template, `package.json`)

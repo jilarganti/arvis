@@ -1,9 +1,8 @@
 packages:
     # include packages that are inside this directories
-    - 'docs'
     - 'apps/*'
     - 'packages/*'
 
     # exclude packages that are inside this directories
-    - '!apps/create-arvis'
+    - '!apps/create-app'
     - '!packages/**/__tests__/**'

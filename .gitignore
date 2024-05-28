@@ -13,3 +13,5 @@ cache
 build/**
 dist/**
 .next/**
+
+.nx/cache
