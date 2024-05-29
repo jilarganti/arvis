@@ -1,3 +1,14 @@
+## 1.1.5 (2024-05-29)
+
+
+### 🩹 Fixes
+
+- **site:** h3 ([aa68f1d](https://github.com/jilarganti/arvis/commit/aa68f1d))
+
+### ❤️  Thank You
+
+- AlexeyKorolev @aleksey-korolyov
+
 ## 1.1.4 (2024-05-29)
 
 
