@@ -1,7 +1,7 @@
 ---
 title: Introduction
-localPath: '/ru/documents/introduction.md'
-encodedPath: '%2Fru%2Fdocuments%2Fintroduction'
+localPath: '/ru/guide/introduction.md'
+encodedPath: '%2Fru%2Fguide%2Fintroduction'
 ---
 
 

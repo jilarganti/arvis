@@ -8,12 +8,12 @@ export const ru = defineConfig({
         nav: nav(),
 
         sidebar: {
-            '/ru/documents/': { base: '/ru/documents/', items: sidebarDocs() },
+            '/ru/guide/': { base: '/ru/guide/', items: sidebarDocs() },
             '/ru/about/': { base: '/ru/about/', items: sidebarAbout() },
         },
 
         // editLink: {
-        //     pattern: 'https://github.com/vuejs/vitepress/edit/main/documents/:path',
+        //     pattern: 'https://github.com/vuejs/vitepress/edit/main/guide/:path',
         //     text: 'Edit this page on GitHub'
         // },
 
@@ -26,7 +26,7 @@ export const ru = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
     return [
-        { text: 'Дока', link: '/ru/documents/introduction', activeMatch: '/ru/documents/' },
+        { text: 'Дока', link: '/ru/guide/introduction', activeMatch: '/ru/guide/' },
         { text: 'О нас', link: '/ru/about/team', activeMatch: '/ru/about/' },
         { text: 'Join', link: 'https://zoom.us/join', target: '_self', rel: 'noreferrer' },
         {
@@ -37,10 +37,10 @@ function nav(): DefaultTheme.NavItem[] {
                     items: [
                         {
                             text: 'Create a meeting for later',
-                            link: '/ru/documents/meeting#create-a-meeting-for-later',
+                            link: '/ru/guide/meeting#create-a-meeting-for-later',
                         },
-                        { text: 'Start an instant meeting', link: '/ru/documents/meeting#start-an-instant-meeting' },
-                        { text: 'Shedule in Calendar', link: '/ru/documents/meeting#shedule-in-calendar' },
+                        { text: 'Start an instant meeting', link: '/ru/guide/meeting#start-an-instant-meeting' },
+                        { text: 'Shedule in Calendar', link: '/ru/guide/meeting#shedule-in-calendar' },
                     ],
                 },
                 {
@@ -48,10 +48,10 @@ function nav(): DefaultTheme.NavItem[] {
                     items: [
                         {
                             text: 'Create a meeting for later',
-                            link: '/ru/documents/meeting#create-a-meeting-for-later-1',
+                            link: '/ru/guide/meeting#create-a-meeting-for-later-1',
                         },
-                        { text: 'Start an instant meeting', link: '/ru/documents/meeting#start-an-instant-meeting-1' },
-                        { text: 'Shedule in Calendar', link: '/ru/documents/meeting#shedule-in-calendar-1' },
+                        { text: 'Start an instant meeting', link: '/ru/guide/meeting#start-an-instant-meeting-1' },
+                        { text: 'Shedule in Calendar', link: '/ru/guide/meeting#shedule-in-calendar-1' },
                     ],
                 },
             ],
