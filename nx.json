@@ -6,11 +6,10 @@
         "projects": [ "*", "!create-app", "!link" ],
         "version": {
             "generatorOptions": {
-                "installIgnoreScripts": true,
                 "installArgs": "--no-optional"
-            },
-            "skipLockFileUpdate": true
-        } },
+            }
+        }
+    },
 
     "tasksRunnerOptions": {
         "another": {
