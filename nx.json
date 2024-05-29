@@ -2,7 +2,15 @@
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
     "defaultBase": "main",
     "nxCloudAccessToken": "MDk0OGE2MzgtYjA3MC00NDFhLWIyNjItYjE4ZmU1MWIwYmJmfHJlYWQtd3JpdGU=",
-    "release": { "projects": [ "*", "!create-app", "!link" ] },
+    "release": {
+        "projects": [ "*", "!create-app", "!link" ],
+        "version": {
+            "generatorOptions": {
+                "installIgnoreScripts": true,
+                "installArgs": "--no-optional"
+            },
+            "skipLockFileUpdate": true
+        } },
 
     "tasksRunnerOptions": {
         "another": {
