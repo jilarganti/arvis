@@ -1,3 +1,14 @@
+## 1.1.6 (2024-05-29)
+
+
+### 🩹 Fixes
+
+- **shared:** del license ([2501e8e](https://github.com/jilarganti/arvis/commit/2501e8e))
+
+### ❤️  Thank You
+
+- AlexeyKorolev @aleksey-korolyov
+
 ## 1.1.5 (2024-05-29)
 
 
