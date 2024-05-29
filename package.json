@@ -22,7 +22,7 @@
   "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --commit-path .",
   "scripts": {
     "dev": "pnpm run --parallel -r dev",
-    "build": "pnpm nx affected:build",
+    "build": "nx build app",
     "lint": "turbo lint",
     "lint:prettier": "turbo run lint:prettier",
     "docs:dev": "pnpm --filter=arvis-docs run dev",
