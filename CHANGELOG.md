@@ -1,3 +1,14 @@
+## 1.1.4 (2024-05-29)
+
+
+### 🩹 Fixes
+
+- **share:** Update package.json license to Apache-2.0 ([4dcb03f](https://github.com/jilarganti/arvis/commit/4dcb03f))
+
+### ❤️  Thank You
+
+- AlexeyKorolev @aleksey-korolyov
+
 ## 1.1.3 (2024-05-29)
 
 This was a version bump only, there were no code changes.

@@ -1,14 +1,13 @@
 {
-  "name": "shared",
-  "version": "1.1.2",
-  "description": "",
-  "main": "index.js",
-
-  "scripts": {
-    "build ": "echo \"Error: no build specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [ ],
-  "author": "",
-  "license": "Apache-2.0"
+    "name": "shared",
+    "version": "1.1.4",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build ": "echo \"Error: no build specified\" && exit 1",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "Apache-2.0"
 }
