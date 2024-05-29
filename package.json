@@ -9,10 +9,11 @@
   "bugs": "https://github.com/jilarganti/arvis/issues",
   "repository": "github:jilarganti/arvis",
   "type": "module",
-  "engines": {
-    "node": "^18.0.0 || >=20.0.0",
-    "vscode": "^1.60.0"
-  },
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "!apps/create-app/*"
+  ],
   "keywords": [
     "ai",
     "videomeeting"
@@ -21,7 +22,7 @@
   "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --commit-path .",
   "scripts": {
     "dev": "pnpm run --parallel -r dev",
-    "build": "pnpm run --parallel -r build",
+    "build": "pnpm nx affected:build",
     "lint": "turbo lint",
     "lint:prettier": "turbo run lint:prettier",
     "docs:dev": "pnpm --filter=arvis-docs run dev",
@@ -39,6 +40,7 @@
   "//": "================================================================================",
   "devDependencies": {
     "@changesets/cli": "^2.27.3",
+    "@nx/js": "^19.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^12.0.0",
     "@semantic-release/github": "^10.0.5",

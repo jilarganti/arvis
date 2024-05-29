@@ -13,6 +13,7 @@
     },
     "type": "module",
     "scripts": {
+        "build": "echo \"No build step\"",
         "format": "prettier --write --cache --parser typescript \"src/**/*.ts\"",
         "prepublishOnly": "npm run build"
     },
