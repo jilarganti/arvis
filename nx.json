@@ -5,6 +5,43 @@
     "release": {
         "projects": [ "*", "!create-app", "!link" ],
         "version": {
+            "conventionalCommits": true,
+
+            "update": "in-bump",
+            "bump": "release",
+            "tag": "release",
+            "defaultBase": "main",
+            "baseBranch": "main",
+            "mainBranch": "main",
+            "prerelease": "alpha",
+            "prereleaseBranch": "main",
+            "defaultVersion": "0.0.0",
+            "updateStrategy": "increase",
+            "tracks": [
+                {
+                    "track": "latest",
+                    "default": true
+                },
+                {
+                    "track": "next"
+                }
+            ],
+            "changelog": "github",
+            "ci": "github",
+            "ciOptions": {
+                "github": {
+                    "publish": true
+                }
+            },
+            "npm": {
+                "publish": false
+            },
+            "build": true,
+            "buildOptions": {
+                "createPackageJson": true
+            },
+            "publish": true,
+
             "generatorOptions": {
                 "installArgs": "--no-optional"
             }
