@@ -22,6 +22,9 @@
         "lunaria:build": "lunaria build",
         "lunaria:open": "open-cli .vitepress/dist/_translations/index.html"
     },
+    "dependencies": {
+        "shared": "*"
+    },
     "devDependencies": {
         "@lunariajs/core": "^0.0.31",
         "@types/node": "^20.12.12",

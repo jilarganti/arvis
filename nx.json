@@ -3,7 +3,7 @@
     "defaultBase": "main",
     "nxCloudAccessToken": "MDk0OGE2MzgtYjA3MC00NDFhLWIyNjItYjE4ZmU1MWIwYmJmfHJlYWQtd3JpdGU=",
     "release": {
-        "projects": [ "*", "!create-app", "!link" ],
+        "projects": [ "site", "shared" ],
         "version": {
             "conventionalCommits": true,
             "generatorOptions": {
