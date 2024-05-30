@@ -13,7 +13,7 @@
         }
     },
     "release": {
-        "projects": [ "arvis-app", "site", "ai", "link" ],
+        "projects": [ "arvis-app", "site" ],
         "version": {
             "conventionalCommits": true,
             "generatorOptions": {
