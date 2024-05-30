@@ -18,7 +18,7 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "site": "1.1.6"
+        "site": "workspace:1.1.6"
     },
     "devDependencies": {
         "rollup-plugin-license": "^3.4.0"
