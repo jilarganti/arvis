@@ -3,7 +3,7 @@
     "license": "MIT",
     "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
     "description": "Arvis: AI-enhanced video meetings",
-    "version": "0.0.0",
+    "version": "1.1.7",
     "homepage": "https://github.com/jilarganti/arvis",
     "bugs": "https://github.com/jilarganti/arvis/issues",
     "repository": {
@@ -18,7 +18,7 @@
         "prepublishOnly": "npm run build"
     },
     "dependencies": {
-        "site": "workspace:1.1.6",
+        "site": "1.1.7",
         "utils": "workspace:0.1.0"
     },
     "devDependencies": {

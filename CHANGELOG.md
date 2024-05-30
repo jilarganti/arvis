@@ -1,3 +1,14 @@
+## 1.1.7 (2024-05-30)
+
+
+### 🩹 Fixes
+
+- Update dependencies and remove unused files ([cc85657](https://github.com/jilarganti/arvis/commit/cc85657))
+
+### ❤️  Thank You
+
+- AlexeyKorolev @aleksey-korolyov
+
 ## 1.1.6 (2024-05-29)
 
 
