@@ -1,3 +1,15 @@
+## 0.0.2 (2024-05-30)
+
+
+### 🩹 Fixes
+
+- Add newline at end of test.md file ([c079efc](https://github.com/jilarganti/arvis/commit/c079efc))
+- Add information about A.R.V.I.S. in get-started.md ([758f281](https://github.com/jilarganti/arvis/commit/758f281))
+
+### ❤️  Thank You
+
+- AlexeyKorolev @aleksey-korolyov
+
 ## 0.0.1 (2024-05-30)
 
 
