@@ -4,23 +4,16 @@
     "nxCloudAccessToken": "MDk0OGE2MzgtYjA3MC00NDFhLWIyNjItYjE4ZmU1MWIwYmJmfHJlYWQtd3JpdGU=",
     "targetDefaults": {
         "build": {
-            "dependsOn": [
-                "^build"
-            ],
+            "dependsOn": [ "^build" ],
             "cache": true
         },
         "dev": {
-            "dependsOn": [
-                "^build"
-            ],
+            "dependsOn": [ "^build" ],
             "cache": true
         }
     },
     "release": {
-        "projects": [
-            "arvis-app",
-            "site"
-        ],
+        "projects": [ "arvis-app", "site", "ai", "link" ],
         "version": {
             "conventionalCommits": true,
             "generatorOptions": {

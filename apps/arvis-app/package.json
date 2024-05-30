@@ -1,9 +1,9 @@
 {
     "name": "arvis-app",
+    "version": "0.0.0",
     "license": "MIT",
     "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
     "description": "Arvis: AI-enhanced video meetings",
-    "version": "1.1.8",
     "homepage": "https://github.com/jilarganti/arvis",
     "bugs": "https://github.com/jilarganti/arvis/issues",
     "repository": {
@@ -13,13 +13,13 @@
     },
     "type": "module",
     "scripts": {
+        "dev": "echo \"No build step\"",
         "build": "echo \"No build step\"",
-        "format": "prettier --write --cache --parser typescript \"src/**/*.ts\"",
-        "prepublishOnly": "npm run build"
+        "format": "prettier --write --cache --parser typescript \"src/**/*.ts\""
     },
     "dependencies": {
-        "site": "1.1.8",
-        "utils": "workspace:0.1.0"
+        "site": "workspace:*",
+        "utils": "workspace:*"
     },
     "devDependencies": {
         "rollup-plugin-license": "^3.4.0"

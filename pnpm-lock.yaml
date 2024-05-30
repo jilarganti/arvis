@@ -21,10 +21,10 @@ importers:
   apps/arvis-app:
     dependencies:
       site:
-        specifier: workspace:1.1.6
+        specifier: workspace:*
         version: link:../site
       utils:
-        specifier: workspace:0.1.0
+        specifier: workspace:*
         version: link:../../packages/utils
     devDependencies:
       rollup-plugin-license:
@@ -34,7 +34,7 @@ importers:
   apps/site:
     dependencies:
       utils:
-        specifier: workspace:0.1.0
+        specifier: workspace:*
         version: link:../../packages/utils
     devDependencies:
       '@lunariajs/core':
@@ -1477,6 +1477,10 @@ packages:
 
   cli-spinners@2.6.1:
     resolution: {integrity: sha512-x/5fWmGMnbKQAaNwN+UZlV79qBLM9JFnJuJ03gIi5whrob0xV0ofNVHy9DhwGdsMJQc2OKv0oGmLzvaqvAVv+g==}
+    engines: {node: '>=6'}
+
+  cli-spinners@2.9.2:
+    resolution: {integrity: sha512-ywqV+5MmyL4E7ybXgKys4DugZbX0FC6LnwrhjuykIjnK9k8OQacQ7axGKnjDXWNhns0xot3bZI5h55H8yo9cJg==}
     engines: {node: '>=6'}
 
   cliui@8.0.1:
@@ -4542,6 +4546,8 @@ snapshots:
 
   cli-spinners@2.6.1: {}
 
+  cli-spinners@2.9.2: {}
+
   cliui@8.0.1:
     dependencies:
       string-width: 4.2.3
@@ -5580,7 +5586,7 @@ snapshots:
       bl: 4.1.0
       chalk: 4.1.2
       cli-cursor: 3.1.0
-      cli-spinners: 2.6.1
+      cli-spinners: 2.9.2
       is-interactive: 1.0.0
       log-symbols: 4.1.0
       strip-ansi: 6.0.1

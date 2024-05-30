@@ -1,6 +1,6 @@
 {
     "name": "site",
-    "version": "1.1.8",
+    "version": "0.0.0",
     "description": "Documentation for A.R.V.I.S",
     "main": "index.md",
     "repository": {
@@ -9,21 +9,19 @@
     },
     "author": "Jil Arganti",
     "license": "CC BY-NC-SA 4.0",
-    "private": false,
     "type": "module",
     "scripts": {
         "dev": "vitepress dev",
         "build": "vitepress build",
-        "docs:preview": "vitepress preview",
-        "docs:serve": "vitepress serve",
-        "docs:translation:compare": "v-translation compare",
+        "serve": "vitepress serve",
+        "translation:compare": "v-translation compare",
         "translation:update": "v-translation update",
-        "docs:translation:status": "v-translation status",
+        "translation:status": "v-translation status",
         "lunaria:build": "lunaria build",
         "lunaria:open": "open-cli .vitepress/dist/_translations/index.html"
     },
     "dependencies": {
-        "utils": "workspace:0.1.0"
+        "utils": "workspace:*"
     },
     "devDependencies": {
         "@lunariajs/core": "^0.0.31",
