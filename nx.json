@@ -14,30 +14,6 @@
                 "^build"
             ],
             "cache": true
-        },
-        "test": {
-            "dependsOn": [
-                "^test"
-            ],
-            "inputs": [
-                "{projectRoot}/**/*.{md}"
-            ],
-            "cache": true
-        },
-        "format": {
-            "dependsOn": [
-                "^format"
-            ]
-        },
-        "typecheck": {
-            "dependsOn": [
-                "^typecheck"
-            ]
-        },
-        "check": {
-            "dependsOn": [
-                "^check"
-            ]
         }
     },
     "release": {
@@ -50,13 +26,9 @@
             "generatorOptions": {
                 "installArgs": "--no-optional"
 
-            },
-            "npm": {
-                "publish": false
             }
         },
         "changelog": {
-
             "workspaceChangelog": {
                 "createRelease": "github"
             },
