@@ -1,0 +1,18 @@
+{
+  "name": "link",
+  "license": "MIT",
+  "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
+  "description": "Arvis media engine",
+  "private": true,
+  "version": "0.0.0",
+  "homepage": "https://github.com/jilarganti/arvis",
+  "bugs": "https://github.com/jilarganti/arvis/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jilarganti/arvis.git",
+    "directory": "packages/media"
+  },
+  "type": "module",
+  "scripts": {},
+  "dependencies": {}
+}

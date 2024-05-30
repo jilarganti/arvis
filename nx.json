@@ -2,44 +2,65 @@
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
     "defaultBase": "main",
     "nxCloudAccessToken": "MDk0OGE2MzgtYjA3MC00NDFhLWIyNjItYjE4ZmU1MWIwYmJmfHJlYWQtd3JpdGU=",
+    "targetDefaults": {
+        "build": {
+            "dependsOn": [
+                "^build"
+            ],
+            "cache": true
+        },
+        "dev": {
+            "dependsOn": [
+                "^build"
+            ],
+            "cache": true
+        },
+        "test": {
+            "dependsOn": [
+                "^test"
+            ],
+            "inputs": [
+                "{projectRoot}/**/*.{md}"
+            ],
+            "cache": true
+        },
+        "format": {
+            "dependsOn": [
+                "^format"
+            ]
+        },
+        "typecheck": {
+            "dependsOn": [
+                "^typecheck"
+            ]
+        },
+        "check": {
+            "dependsOn": [
+                "^check"
+            ]
+        }
+    },
     "release": {
-        "projects": [ "arvis-app", "site" ],
+        "projects": [
+            "arvis-app",
+            "site"
+        ],
         "version": {
             "conventionalCommits": true,
             "generatorOptions": {
                 "installArgs": "--no-optional"
+
             },
             "npm": {
                 "publish": false
             }
         },
         "changelog": {
+
             "workspaceChangelog": {
                 "createRelease": "github"
-            }
-        }
-    },
-
-    "tasksRunnerOptions": {
-        "default": {
-            "runner": "nx/tasks-runners/default",
-            "options": {
-                "cacheableOperations": [ "build", "test" ]
-            }
-        }
-    },
-
-    "targetDefaults": {
-        "build": {
-            "dependsOn": [ "^build" ],
-            "cache": true
-        },
-        "dev": {
-            "dependsOn": [ "^build" ]
-        },
-        "test": {
-            "dependsOn": [ "^test" ],
-            "inputs": [ "{projectRoot}/**/*.{md}" ]
+            },
+            "projectChangelogs": true
         }
     }
 }
