@@ -1,6 +1,6 @@
 {
     "name": "arvis-app",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "license": "MIT",
     "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
     "description": "Arvis: AI-enhanced video meetings",
@@ -18,7 +18,7 @@
         "format": "prettier --write --cache --parser typescript \"src/**/*.ts\""
     },
     "dependencies": {
-        "site": "0.0.2",
+        "site": "0.0.3",
         "utils": "workspace:*"
     },
     "devDependencies": {

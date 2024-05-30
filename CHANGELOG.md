@@ -1,3 +1,14 @@
+## 0.0.3 (2024-05-30)
+
+
+### 🩹 Fixes
+
+- Remove "ai" project from release configuration ([ebb4449](https://github.com/jilarganti/arvis/commit/ebb4449))
+
+### ❤️  Thank You
+
+- AlexeyKorolev @aleksey-korolyov
+
 ## 0.0.2 (2024-05-30)
 
 
