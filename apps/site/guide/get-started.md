@@ -6,4 +6,3 @@
 :::
 =======
 :::
->>>>>>> parent of 5f53420 (feat(site): Add new line at end of get-started.md file)
