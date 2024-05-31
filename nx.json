@@ -1,31 +1,55 @@
 {
+    //* https://nx.dev/reference/nx-json#nx-cloud
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
-    "defaultBase": "main",
     "nxCloudAccessToken": "MDk0OGE2MzgtYjA3MC00NDFhLWIyNjItYjE4ZmU1MWIwYmJmfHJlYWQtd3JpdGU=",
+    "generators": {
+        "@nx/js:library": {
+            "buildable": true
+        }
+    },
     "targetDefaults": {
         "build": {
-            "dependsOn": [ "^build" ],
+            "dependsOn": [
+                "^build"
+            ],
             "cache": true
         },
         "dev": {
-            "dependsOn": [ "^build" ],
+            "dependsOn": [
+                "^build"
+            ],
             "cache": true
         }
     },
     "release": {
-        "projects": [ "arvis-app", "site" ],
+        //* https://nx.dev/recipes/nx-release/get-started-with-nx-release
+        "projects": [
+            "*",
+            "!create-app"
+        ],
+        "projectsRelationship": "independent",
+        //* https://nx.dev/recipes/nx-release/automatically-version-with-conventional-commits
         "version": {
-            "conventionalCommits": true,
-            "generatorOptions": {
-                "installArgs": "--no-optional"
-
-            }
+            "conventionalCommits": true
         },
+        //* https://nx.dev/recipes/nx-release/automate-github-releases
         "changelog": {
             "workspaceChangelog": {
                 "createRelease": "github"
             },
             "projectChangelogs": true
+        },
+        //* https://nx.dev/recipes/nx-release/customize-conventional-commit-types
+        "conventionalCommits": {
+            "types": {
+                "docs": {
+                    "semverBump": "patch",
+                    "changelog": {
+                        "hidden": false,
+                        "title": "Documentation Changes"
+                    }
+                }
+            }
         }
     }
 }

@@ -2,6 +2,8 @@
 
 ::: warning
 [Will be translated later](/ru/guide/get-started)
+<<<<<<< HEAD
 :::
-
-Test
+=======
+:::
+>>>>>>> parent of 5f53420 (feat(site): Add new line at end of get-started.md file)
