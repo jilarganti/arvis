@@ -1,3 +1,14 @@
+## 0.0.9 (2024-05-31)
+
+
+### 🩹 Fixes
+
+- Uncomment generator configuration in nx.json ([505d659](https://github.com/jilarganti/arvis/commit/505d659))
+
+### ❤️  Thank You
+
+- AlexeyKorolev @aleksey-korolyov
+
 ## 0.0.8 (2024-05-31)
 
 
