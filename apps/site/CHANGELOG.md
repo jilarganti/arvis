@@ -1,3 +1,15 @@
+## 0.1.0 (2024-05-31)
+
+
+### 🚀 Features
+
+- **site:** Add new line at end of get-started.md file
+
+
+### ❤️  Thank You
+
+- AlexeyKorolev
+
 ## 0.0.3 (2024-05-30)
 
 

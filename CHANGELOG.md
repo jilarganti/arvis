@@ -1,3 +1,14 @@
+## 0.1.0 (2024-05-31)
+
+
+### 🚀 Features
+
+- **site:** Add new line at end of get-started.md file ([5f53420](https://github.com/jilarganti/arvis/commit/5f53420))
+
+### ❤️  Thank You
+
+- AlexeyKorolev @aleksey-korolyov
+
 ## 0.0.3 (2024-05-30)
 
 
