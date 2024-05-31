@@ -1,17 +1,9 @@
 .DS_Store
 .vscode
-.idea
 .temp
 .env
+.nx/cache
 
 node_modules
 dist
 cache
-
-.turbo
-
-build/**
-dist/**
-.next/**
-
-.nx/cache

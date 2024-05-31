@@ -21,6 +21,14 @@
             "cache": true
         }
     },
+    /**
+        For example, if the git history looks like this:
+
+        - fix(arvis-app): fix something
+        - feat(arvis-app): add a new feature
+        - docs(site): update docs
+        - chore(release): 1.0.0
+    */
     "release": {
         //* https://nx.dev/recipes/nx-release/get-started-with-nx-release
         "projects": [
@@ -30,7 +38,7 @@
         // "projectsRelationship": "independent",
         //* https://nx.dev/recipes/nx-release/automatically-version-with-conventional-commits
         "version": {
-            "conventionalCommits": true
+            // "conventionalCommits": true
         },
         //* https://nx.dev/recipes/nx-release/automate-github-releases
         "changelog": {
@@ -41,13 +49,20 @@
         },
         //* https://nx.dev/recipes/nx-release/customize-conventional-commit-types
         "conventionalCommits": {
+            // ! By default, fix, feat, and perf commits will be included in the changelog.
             "types": {
+                "feat": {
+                    "semverBump": "minor",
+                    "changelog": true,
+                    "emoji": "✨"
+                },
+                "chore": {
+                    "semverBump": "patch",
+                    "changelog": false
+                },
                 "docs": {
                     "semverBump": "patch",
-                    "changelog": {
-                        "hidden": false,
-                        "title": "Documentation Changes"
-                    }
+                    "changelog": true
                 }
             }
         }
