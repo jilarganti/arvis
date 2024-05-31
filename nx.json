@@ -2,11 +2,11 @@
     //* https://nx.dev/reference/nx-json#nx-cloud
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
     "nxCloudAccessToken": "MDk0OGE2MzgtYjA3MC00NDFhLWIyNjItYjE4ZmU1MWIwYmJmfHJlYWQtd3JpdGU=",
-    "generators": {
-        "@nx/js:library": {
-            "buildable": true
-        }
-    },
+    // "generators": {
+    //     "@nx/js:library": {
+    //         "buildable": true
+    //     }
+    // },
     "targetDefaults": {
         "build": {
             "dependsOn": [
@@ -24,10 +24,10 @@
     "release": {
         //* https://nx.dev/recipes/nx-release/get-started-with-nx-release
         "projects": [
-            "*",
-            "!create-app"
+            "site",
+            "arvis-app"
         ],
-        "projectsRelationship": "independent",
+        // "projectsRelationship": "independent",
         //* https://nx.dev/recipes/nx-release/automatically-version-with-conventional-commits
         "version": {
             "conventionalCommits": true
