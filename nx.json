@@ -2,11 +2,11 @@
     //* https://nx.dev/reference/nx-json#nx-cloud
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
     "nxCloudAccessToken": "MDk0OGE2MzgtYjA3MC00NDFhLWIyNjItYjE4ZmU1MWIwYmJmfHJlYWQtd3JpdGU=",
-    // "generators": {
-    //     "@nx/js:library": {
-    //         "buildable": true
-    //     }
-    // },
+    "generators": {
+        "@nx/js:library": {
+            "buildable": true
+        }
+    },
     "targetDefaults": {
         "build": {
             "dependsOn": [
