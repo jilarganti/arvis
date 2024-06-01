@@ -24,8 +24,8 @@
     /**
         For example, if the git history looks like this:
 
-        - fix(arvis-app): fix something
-        - feat(arvis-app): add a new feature
+        - fix(a.r.v.i.s.): fix something
+        - feat(a.r.v.i.s.): add a new feature
         - docs(site): update docs
         - chore(release): 1.0.0
     */
@@ -33,12 +33,12 @@
         //* https://nx.dev/recipes/nx-release/get-started-with-nx-release
         "projects": [
             "site",
-            "arvis-app"
+            "a.r.v.i.s."
         ],
         // "projectsRelationship": "independent",
         //* https://nx.dev/recipes/nx-release/automatically-version-with-conventional-commits
         "version": {
-            // "conventionalCommits": true
+            "conventionalCommits": true
         },
         //* https://nx.dev/recipes/nx-release/automate-github-releases
         "changelog": {
@@ -49,17 +49,15 @@
         },
         //* https://nx.dev/recipes/nx-release/customize-conventional-commit-types
         "conventionalCommits": {
-            // ! By default, fix, feat, and perf commits will be included in the changelog.
+            //? By default, fix, feat, and perf commits will be included in the changelog.
             "types": {
                 "feat": {
-                    "semverBump": "minor",
-                    "changelog": true,
                     "emoji": "✨"
                 },
-                "chore": {
-                    "semverBump": "patch",
-                    "changelog": false
-                },
+                // "chore": {
+                //     "semverBump": "none",
+                //     "changelog": false
+                // },
                 "docs": {
                     "semverBump": "patch",
                     "changelog": true

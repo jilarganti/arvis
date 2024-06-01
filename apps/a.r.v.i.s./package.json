@@ -1,0 +1,27 @@
+{
+    "name": "a.r.v.i.s.",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
+    "description": "Arvis: AI-enhanced video meetings",
+    "homepage": "https://github.com/jilarganti/arvis",
+    "bugs": "https://github.com/jilarganti/arvis/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jilarganti/arvis.git",
+        "directory": "packages/arvis"
+    },
+    "type": "module",
+    "scripts": {
+        "dev": "echo \"No build step\"",
+        "build": "echo \"No build step\"",
+        "format": "prettier --write --cache --parser typescript \"src/**/*.ts\""
+    },
+    "dependencies": {
+        "site": "0.1.0",
+        "utils": "workspace:*"
+    },
+    "devDependencies": {
+        "rollup-plugin-license": "^3.4.0"
+    }
+}
