@@ -1,12 +1,8 @@
 {
     //* https://nx.dev/reference/nx-json#nx-cloud
+    //* https://github.com/nrwl/nx/blob/master/packages/nx/src/config/nx-json.ts#L146
+    //* https://github.com/nrwl/nx/blob/master/nx.json
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
-    "nxCloudAccessToken": "MDk0OGE2MzgtYjA3MC00NDFhLWIyNjItYjE4ZmU1MWIwYmJmfHJlYWQtd3JpdGU=",
-    "generators": {
-        "@nx/js:library": {
-            "buildable": true
-        }
-    },
     "targetDefaults": {
         "build": {
             "dependsOn": [
@@ -27,14 +23,15 @@
         - fix(a.r.v.i.s.): fix something
         - feat(a.r.v.i.s.): add a new feature
         - docs(site): update docs
-        - chore(release): 1.0.0
+        - perf!: drop support for Node 6 => 1.0.0
     */
     "release": {
         //* https://nx.dev/recipes/nx-release/get-started-with-nx-release
         "projects": [
-            "site",
-            "a.r.v.i.s."
+            "a.r.v.i.s.",
+            "site"
         ],
+        // "releaseTagPattern": "{version}",
         // "projectsRelationship": "independent",
         //* https://nx.dev/recipes/nx-release/automatically-version-with-conventional-commits
         "version": {
@@ -49,11 +46,7 @@
         },
         //* https://nx.dev/recipes/nx-release/customize-conventional-commit-types
         "conventionalCommits": {
-            //? By default, fix, feat, and perf commits will be included in the changelog.
             "types": {
-                "feat": {
-                    "emoji": "✨"
-                },
                 "perf": true,
                 "docs": true
             }
