@@ -31,8 +31,6 @@
             "a.r.v.i.s.",
             "site"
         ],
-        // "releaseTagPattern": "{version}",
-        // "projectsRelationship": "independent",
         //* https://nx.dev/recipes/nx-release/automatically-version-with-conventional-commits
         "version": {
             "conventionalCommits": true
