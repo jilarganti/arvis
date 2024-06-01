@@ -54,14 +54,8 @@
                 "feat": {
                     "emoji": "✨"
                 },
-                // "chore": {
-                //     "semverBump": "none",
-                //     "changelog": false
-                // },
-                "docs": {
-                    "semverBump": "patch",
-                    "changelog": true
-                }
+                "perf": true,
+                "docs": true
             }
         }
     }
