@@ -38,7 +38,8 @@
         //* https://nx.dev/recipes/nx-release/automate-github-releases
         "changelog": {
             "workspaceChangelog": {
-                "createRelease": "github"
+                "createRelease": "github",
+                "file": false
             },
             "projectChangelogs": true
         },
