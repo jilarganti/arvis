@@ -40,6 +40,6 @@
 ![test](/IntroQuality.webp)
 
 ::: tip 📝 Suggest changes to this page 
-[![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/docs/ru/guide/introduction.md?initialPath=%2Fru%2Fguide%2Fintroduction)
+[![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/apps/site/ru/guide/introduction.md?initialPath=%2Fru%2Fguide%2Fintroduction)
 :::
 
