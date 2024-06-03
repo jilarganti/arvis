@@ -6,7 +6,7 @@ MIND VIDEO CONFERENCING SERVICE
 
 ---
 ::: tip 📝 Suggest changes to this page 
-[![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/apps/site/guide/vca_architecture.md?initialPath=%2Fru%2Fguide%2Fvca_architecture)
+[![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/apps/site/guide/vca_architecture.md?initialPath=%2Fguide%2Fvca_architecture)
 :::
 ---
 
