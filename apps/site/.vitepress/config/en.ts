@@ -77,7 +77,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
             text: 'Platform',
             collapsed: false,
             items: [
-                { text: 'Media SDK', link: 'markdown' },
+                { text: 'Backend Architecture Specification', link: 'vca_architecture' },
                 { text: 'AI assistants', link: 'markdown' },
             ],
         },
