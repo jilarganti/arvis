@@ -5152,7 +5152,7 @@ products/solutions/systems.\]
 
 ## 7.4 INFRASTRUCTURE View (DRAFT)
 
-![Infrastructure view diagram](./media/infrastructure_view_diagram.png)
+![Infrastructure view diagram](/infrastructure_view_diagram.png)
 
 ## 7.5 Addressing Key Quality Attributes (IN PROGRESS)
 
