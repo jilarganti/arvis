@@ -17,20 +17,18 @@
     "ai",
     "videomeeting"
   ],
-  "///": "================================================================================",
-  "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s --commit-path .",
+  "packageManager": "pnpm@9.1.4",
   "scripts": {
-    "dev": "pnpm run --parallel -r dev",
+    "dev": "pnpm -r dev",
     "build": "nx build a.r.v.i.s. --verbose",
-    "serve": "pnpm run --parallel -r serve",
+    "serve": "pnpm -r serve",
     "changelog": "export GH_TOKEN=$(gh auth token) && echo \"GH_TOKEN: $GH_TOKEN\" && nx reset && nx release --dry-run --verbose",
     "release": "export GH_TOKEN=$(gh auth token) && nx release --skip-publish",
     "format": "prettier --write ."
   },
-  "//": "================================================================================",
   "devDependencies": {
-    "@nx/js": "^19.1.1",
+    "@nx/js": "^19.1.2",
     "nx": "19.1.1",
-    "prettier": "^3.2.5"
+    "prettier": "^3.3.0"
   }
 }
