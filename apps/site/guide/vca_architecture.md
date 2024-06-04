@@ -103,7 +103,7 @@ containerization with Docker and Kubernetes to facilitate the deployment and sca
 
 #### Comparison Matrix: Next.js (React.js) vs Nuxt.js (Vue.js)
 
-| Feature/Aspect                  | Next.js (React.js)                                                                                    | Nuxt.js (Vue.js)                                                           |
+| Feature/Aspect                  | [Next.js](https://trends.builtwith.com/framework/Next.js) [(React.js)](https://trends.builtwith.com/javascript/React)                                                                                    | [Nuxt.js](https://trends.builtwith.com/framework/Nuxt.js) [(Vue.js)](https://trends.builtwith.com/javascript/Vue)                                                           |
 | ------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
 | **GitHub Stars**                | **114k+(210k+)**                                                                                 | 51k+(220k+)                                                              |
 | **GitHub Commits**              | **20k+**                                                                                         | 7.5k+                                                             |
