@@ -5234,7 +5234,8 @@ This ensures that the MVP includes essential components for users to manage and 
   - User Authentication and user management
   - Enhanced implementation of Zoom Meeting API:
     - Control and manage livestreaming
-    - SIP integration
+    - ~~SIP integration~~
+      > not relevant
     - List upcoming meetings
     - List past meetings
     - Get/List meetings summaries
