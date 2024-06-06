@@ -5233,18 +5233,26 @@ This ensures that the MVP includes essential components for users to manage and 
 
   - User Authentication and user management
   - Enhanced implementation of Zoom Meeting API:
-    - Control and manage livestreaming
+    - ~~Control and manage livestreaming~~
+      > not relevant, maybe later
     - ~~SIP integration~~
       > not relevant
-    - List upcoming meetings
-    - List past meetings
+    - ~~List upcoming meetings~~
+    - ~~List past meetings~~
+      > This data is stored only in the linked calendar. not in this release
     - Get/List meetings summaries
+      > not relevant for frontend
     - Update cloud recording settings, providing access to accomplished cloud recordings
+      > not relevant for frontend
     - Control live-meeting parameters (start/stop recording, etc.)
+      > not relevant for frontend
     - Basic functionality to Get/List meetings summaries (Zoom Meetings compatible API)
+      > not relevant
   - Get QoS information
+    > имеет смысл сразу пробрасывать QoS, например, в [GA4/BigQuary](https://www.ga4bigquery.com/introduction-to-google-analytics-4-ga4-export-data-in-bigquery/) или GTM
   - Enhanced functionality for AI summarizing and assistance
-  - Implementation of Zoom Video SDK API (**Subject to Removal**)
+    > 👍
+  - ~~Implementation of Zoom Video SDK API (**Subject to Removal**)~~
 
 Each release phase is designed to progressively enhance the platform's capabilities while ensuring stability and 
 scalability through gradual integration and testing. This approach allows for feedback-driven development and minimizes 
