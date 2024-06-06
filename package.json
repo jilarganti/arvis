@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "pnpm --filter site build",
     "build": "pnpm --filter site build",
-    "serve": "pnpm --filter site build",
+    "serve": "pnpm --filter site serve",
     "lint": "echo \"No lint step\"",
     "test": "echo \"No test step\"",
     "changelog": "export GH_TOKEN=$(gh auth token) && echo \"GH_TOKEN: $GH_TOKEN\" && nx reset && nx release --dry-run --verbose",
