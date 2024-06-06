@@ -13,6 +13,7 @@
     "packages/*",
     "!apps/create-app/*"
   ],
+  "packageManager": "pnpm@9.2.0",
   "keywords": [
     "ai",
     "videomeeting"
