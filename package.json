@@ -17,10 +17,9 @@
     "ai",
     "videomeeting"
   ],
-  "packageManager": "pnpm@9.1.4",
   "scripts": {
     "dev": "pnpm -r dev",
-    "build": "nx build a.r.v.i.s. --verbose",
+    "build": "pnpm -r build",
     "serve": "pnpm -r serve",
     "lint": "echo \"No lint step\"",
     "test": "echo \"No test step\"",
