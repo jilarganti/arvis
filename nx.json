@@ -17,6 +17,22 @@
             "cache": true
         }
     },
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "@vercel/remote-nx",
+            "options": {
+                "cacheableOperations": [
+                    "build",
+                    "test",
+                    "lint",
+                    "e2e"
+                ],
+                "cacheDirectory": "/tmp/nx-cache",
+                "token": "NX_VERCEL_REMOTE_CACHE_TOKEN",
+                "teamId": "NX_VERCEL_REMOTE_CACHE_TEAM"
+            }
+        }
+    },
     /**
         For example, if the git history looks like this:
 

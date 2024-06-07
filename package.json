@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "dev": "pnpm --filter site build",
-    "build": "pnpm --filter site build",
+    "build": "nx build a.r.v.i.s. --verbose",
     "serve": "pnpm --filter site serve",
     "lint": "echo \"No lint step\"",
     "test": "echo \"No test step\"",
@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "@nx/js": "^19.2.0",
+    "@vercel/remote-nx": "^2.0.0",
     "nx": "19.1.1",
     "prettier": "^3.3.1"
-  },
-  "dependencies": {}
+  }
 }
