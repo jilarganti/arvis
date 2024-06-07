@@ -1,4 +1,4 @@
 {
-    "cleanUrls": false,
+    "cleanUrls": true,
     "outputDirectory": "apps/site/.vitepress/dist"
 }
