@@ -4,9 +4,9 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "echo \"Error: no build specified\" ",
+    "build": "echo \"NO BUILD STEP !!!!!!!!!!!!\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": { },
-  "devDependencies": { }
+  "dependencies": {},
+  "devDependencies": {}
 }

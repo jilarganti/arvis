@@ -13,8 +13,8 @@
     },
     "type": "module",
     "scripts": {
-        "dev": "echo \"No build step\"",
-        "build": "echo \"No build step\"",
+        "dev": "echo \"NO DEV STEP !!!!!!!!!!!!\"",
+        "build": "echo \"NO BUILD STEP !!!!!!!!!!!!\"",
         "format": "prettier --write --cache --parser typescript \"src/**/*.ts\""
     },
     "dependencies": {
