@@ -12,7 +12,7 @@
     "type": "module",
     "scripts": {
         "dev": "vitepress dev",
-        "build": "vitepress build --output .vitepress/dist",
+        "build": "vitepress build",
         "serve": "vitepress serve",
         "translation:compare": "v-translation compare",
         "translation:update": "v-translation update",
