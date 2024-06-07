@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "echo \"NO BUILD STEP !!!!!!!!!!!!\"",
+    "build": "echo -e \"\\033[0;36mNo build step !!!\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {},
