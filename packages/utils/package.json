@@ -1,12 +1,12 @@
 {
-  "name": "utils",
-  "version": "0.0.0",
-  "description": "",
-  "type": "module",
-  "scripts": {
-    "build": "node ./scripts/echo.js 'NO BUILD STEP !!!!!!!!!!!!'",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {},
-  "devDependencies": {}
+    "name": "utils",
+    "version": "0.0.0",
+    "description": "",
+    "type": "module",
+    "scripts": {
+        "build": "node ../../scripts/echo 'NO BUILD STEP !!!!!!!!!!!!'",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {},
+    "devDependencies": {}
 }
