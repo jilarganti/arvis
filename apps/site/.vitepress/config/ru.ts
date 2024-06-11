@@ -3,7 +3,7 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 export const ru = defineConfig({
     lang: 'ru-RU',
     description: 'Видеовстречи с поддержкой ИИ-помощника',
-    head: [['link', { rel: 'icon', href: '/play.png' }]],
+    // head: [['link', { rel: 'icon', href: '/LogoDark.png' }]],
     themeConfig: {
         nav: nav(),
 
