@@ -5,11 +5,12 @@
         "lib": ["esnext"],
         "module": "esnext",
         "moduleResolution": "Bundler",
-        "baseUrl": "./",
+
         "paths": {
-            "arvis": ["./apps/a.r.v.i.s./src/index.ts"],
-            "@arvis/site": ["./apps/site/src/index.md"],
-            "@arvis/utils/*": ["./package/utils/src/*"]
+            "@arvis": ["./apps/a.r.v.i.s./src/index"],
+            "@utils": ["./packages/utils/src/index"],
+            "@apps/*": ["./apps/*"],
+            "@packages/*": ["./packages/*"]
         },
         "resolveJsonModule": true,
         "types": ["node", "vite/client", "vitest/importMeta"],
