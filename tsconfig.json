@@ -13,12 +13,12 @@
             "@packages/*": ["./packages/*"]
         },
         "resolveJsonModule": true,
-        "types": ["node", "vite/client", "vitest/importMeta"],
+        "types": ["node", "vitest/importMeta"],
         "strict": true,
         "strictNullChecks": true,
         "esModuleInterop": true,
         "skipDefaultLibCheck": true,
         "skipLibCheck": true
     },
-    "exclude": ["**/dist/**", "**/node_modules/**", "**/examples/**", "**/test/dts/**"]
+    "exclude": ["**/dist/**", "**/node_modules/**"]
 }
