@@ -5,15 +5,11 @@
     "$schema": "./node_modules/nx/schemas/nx-schema.json",
     "targetDefaults": {
         "build": {
-            "dependsOn": [
-                "^build"
-            ],
+            "dependsOn": ["^build"],
             "cache": true
         },
-        "dev": {
-            "dependsOn": [
-                "^build"
-            ],
+        "test": {
+            "dependsOn": ["^build"],
             "cache": true
         }
     },
@@ -21,18 +17,12 @@
         "default": {
             "runner": "@vercel/remote-nx",
             "options": {
-                "cacheableOperations": [
-                    "build",
-                    "test",
-                    "lint",
-                    "e2e"
-                ],
-                "cacheDirectory": "/tmp/nx-cache",
                 "token": "NX_VERCEL_REMOTE_CACHE_TOKEN",
                 "teamId": "NX_VERCEL_REMOTE_CACHE_TEAM"
             }
         }
     },
+    // "cacheDirectory": "/tmp/nx-cache",
     /**
         For example, if the git history looks like this:
 
@@ -43,10 +33,7 @@
     */
     "release": {
         //* https://nx.dev/recipes/nx-release/get-started-with-nx-release
-        "projects": [
-            "a.r.v.i.s.",
-            "site"
-        ],
+        "projects": ["a.r.v.i.s.", "site"],
         //* https://nx.dev/recipes/nx-release/automatically-version-with-conventional-commits
         "version": {
             "conventionalCommits": true

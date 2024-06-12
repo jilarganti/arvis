@@ -12,6 +12,7 @@ export default defineConfig({
         testTimeout: 30_000,
         name: 'unit',
         setupFiles: ['./test/setup.ts'],
+        include: ['test/**/*.{test,spec}.{ts,js}'],
         exclude: [...defaultExclude, '**/site/**'],
     },
 })
