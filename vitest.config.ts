@@ -13,6 +13,6 @@ export default defineConfig({
         name: 'unit',
         setupFiles: ['./test/setup.ts'],
         include: ['test/**/*.{test,spec}.{ts,js}'],
-        exclude: [...defaultExclude, '**/site/**'],
+        // exclude: [...defaultExclude, '**/site/**'],
     },
 })
