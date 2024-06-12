@@ -3,9 +3,9 @@
 .temp
 .env
 .nx/cache
+.vercel
 
 node_modules
 dist
 cache
 temp
-.vercel
