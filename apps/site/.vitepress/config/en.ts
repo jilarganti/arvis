@@ -5,7 +5,7 @@ export const en = defineConfig({
     // description: "Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results.",
     description:
         "Introducing J.A.R.V.I.S.'s apprentice, designed to bring the brilliance of its mentor into your meetings. This AI assistant uses past data to help you reach your goals, providing strategic advice and a focus on concrete outcomes.",
-    head: [['link', { rel: 'icon', href: '/play.png' }]],
+    // head: [['link', { rel: 'icon', href: '/LogoDark.png' }]],
     themeConfig: {
         nav: nav(),
 
