@@ -34,3 +34,8 @@ jobs:
               run: |
                   echo Add other actions to build,
                   echo test, and deploy your project.
+
+            # Deletes merged branches
+            - name: Delete merged branches
+              run: |
+                  git branch --merged | egrep -v "(^\*|main)" | xargs git branch -d
