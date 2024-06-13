@@ -1,4 +1,4 @@
-name: "\U0001F680 New feature proposal"
+name: "🚀 New feature proposal"
 description: Suggest an idea for this project
 body:
     - type: markdown
@@ -35,7 +35,7 @@ body:
           label: Validations
           description: Before submitting the issue, please make sure you do the following
           options:
-              - label: Follow our [Code of Conduct](https://vuejs.org/about/coc.html)
+              - label: Follow our [Code of Conduct](https://github.com/jilarganti/arvis/blob/main/CODE_OF_CONDUCT.md)
                 required: true
               - label: Read the [docs](https://vitepress.dev).
                 required: true
