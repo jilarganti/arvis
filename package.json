@@ -20,7 +20,7 @@
     ],
     "scripts": {
         "dev": "pnpm --filter site dev",
-        "build": "nx build a.r.v.i.s.",
+        "build": "nx build a.r.v.i.s. --verbose",
         "preview": "pnpm --filter site preview",
         "lint": "node scripts/echo 'NO LINT STEP !!!!!!!!!!!!'",
         "test": "pnpm build && pnpm exec vitest --run && pnpm exec playwright test",
