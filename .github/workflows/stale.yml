@@ -2,7 +2,7 @@
 # For more information, see:
 # https://github.com/actions/stale
 
-name: Close stale issues and PRs
+name: Mark stale issues and PRs
 on:
     schedule:
         - cron: "30 23 * * *"

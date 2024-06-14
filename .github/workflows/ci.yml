@@ -24,7 +24,12 @@ jobs:
 
             - name: Delete merged branches
               run: |
-                  git branch --merged | egrep -v "(^\*|main)" | xargs git branch -d
+                  branches=$(git branch --merged | egrep -v "(^\*|main)")
+                  if [ -n "$branches" ]; then
+                      echo "$branches" | xargs git branch -d
+                  else
+                      echo "No merged branches to delete"
+                  fi
 
     test:
         timeout-minutes: 60
