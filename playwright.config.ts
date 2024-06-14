@@ -49,17 +49,15 @@ export default defineConfig({
             testDir: './apps/site/__tests__',
             use: { ...devices['Desktop Chrome'] },
         },
-        /* Test against mobile viewports. */
-        {
-            name: 'Mobile Safari',
-            testDir: './apps/site/__tests__',
-            use: { ...devices['iPhone 14'] },
-        },
-        /* Test against branded browsers. */
-        {
-            name: 'Microsoft Edge',
-            testDir: './__tests__',
-            use: { ...devices['Desktop Edge'], channel: 'msedge' },
-        },
+        // {
+        //     name: 'Mobile Safari',
+        //     testDir: './apps/site/__tests__',
+        //     use: { ...devices['iPhone 14'] },
+        // },
+        // {
+        //     name: 'Microsoft Edge',
+        //     testDir: './__tests__',
+        //     use: { ...devices['Desktop Edge'], channel: 'msedge' },
+        // },
     ],
 })

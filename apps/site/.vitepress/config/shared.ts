@@ -50,7 +50,7 @@ export const shared = defineConfig({
 
         socialLinks: [
             { icon: 'github', link: 'https://github.com/jilarganti/arvis' },
-            { icon: 'discord', link: 'https://discord.com/invite/SA4hDwsk' },
+            // { icon: 'discord', link: 'https://discord.com/invite/SA4hDwsk' },
         ],
 
         search: {
