@@ -4,7 +4,7 @@ AI assistant A.R.V.I.S.: enhancing communication efficiency through continuous A
 
 ## Documentation
 
-To check out documents, visit [arvis-doc](https://arvis-doc.vercel.app/).
+To check out documents, visit [arvis-doc](https://site-arvis.vercel.app/).
 
 ## Contribution
 
