@@ -35,7 +35,7 @@
 
 ## Качество
 
-Мы будем стремиться к идеальным показателям качества во всех аспектах. [Тест](https://pagespeed.web.dev/analysis/https-arvis-site-vercel-app/eoxsmcj3rk?form_factor=desktop)
+Мы будем стремиться к идеальным показателям качества во всех аспектах. [Test](https://pagespeed.web.dev/analysis/https-arvis-site-vercel-app/eoxsmcj3rk?form_factor=desktop)
 
 ![test](/IntroQuality.webp)
 

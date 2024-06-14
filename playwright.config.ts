@@ -6,6 +6,8 @@ import { defineConfig, devices } from '@playwright/test'
  */
 // require('dotenv').config();
 
+const baseUrl = 'http://localhost:4173'
+
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
@@ -19,18 +21,29 @@ export default defineConfig({
     /* Opt out of parallel tests on CI. */
     workers: process.env.CI ? 1 : undefined,
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-    reporter: 'html',
+    // reporter: 'html',
+    // Run local dev server before starting the tests
+    webServer: {
+        command: 'pnpm run preview',
+        url: baseUrl,
+        reuseExistingServer: !process.env.CI,
+    },
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
     use: {
         /* Base URL to use in actions like `await page.goto('/')`. */
-        // baseURL: 'http://127.0.0.1:3000',
+        baseURL: baseUrl,
 
-        /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+        viewport: { width: 1280, height: 720 },
+        ignoreHTTPSErrors: true,
+        bypassCSP: true,
+        locale: 'en-GB',
+        video: 'on-first-retry',
         trace: 'on-first-retry',
     },
 
     /* Configure projects for major browsers */
     projects: [
+        //
         {
             name: 'chromium',
             testDir: './apps/site/__tests__',
@@ -49,11 +62,4 @@ export default defineConfig({
             use: { ...devices['Desktop Edge'], channel: 'msedge' },
         },
     ],
-
-    /* Run your local dev server before starting the tests */
-    // webServer: {
-    //   command: 'npm run start',
-    //   url: 'http://127.0.0.1:3000',
-    //   reuseExistingServer: !process.env.CI,
-    // },
 })

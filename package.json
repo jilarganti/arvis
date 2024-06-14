@@ -20,10 +20,10 @@
     ],
     "scripts": {
         "dev": "pnpm --filter site dev",
-        "build": "nx build a.r.v.i.s. --verbose",
-        "serve": "pnpm --filter site serve",
+        "build": "nx build a.r.v.i.s.",
+        "preview": "pnpm --filter site preview",
         "lint": "node scripts/echo 'NO LINT STEP !!!!!!!!!!!!'",
-        "test": "pnpm exec vitest --run && pnpm exec playwright test --reporter=list",
+        "test": "pnpm build && pnpm exec vitest --run && pnpm exec playwright test",
         "changelog": "export GH_TOKEN=$(gh auth token) && echo \"GH_TOKEN: $GH_TOKEN\" && nx reset && nx release --dry-run --verbose",
         "release": "export GH_TOKEN=$(gh auth token) && nx release --skip-publish",
         "format": "prettier --write ."

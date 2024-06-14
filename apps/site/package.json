@@ -13,7 +13,7 @@
     "scripts": {
         "dev": "vitepress dev",
         "build": "vitepress build --outDir .vitepress/dist",
-        "serve": "vitepress serve",
+        "preview": "vitepress preview",
         "translation:compare": "v-translation compare",
         "translation:update": "v-translation update",
         "translation:status": "v-translation status",
@@ -28,7 +28,6 @@
         "@types/node": "^20.14.2",
         "markdown-it-mathjax3": "^4.3.2",
         "open-cli": "^8.0.0",
-        "vitepress": "^1.2.3",
-        "@playwright/test": "^1.44.1"
+        "vitepress": "^1.2.3"
     }
 }
