@@ -21,15 +21,10 @@ jobs:
               run: |
                   echo Add other actions to build,
                   echo test, and deploy your project.
-
+            #  xargs command uses the -r option (or --no-run-if-empty in some implementations) to ensure it doesn't run the git branch -d command if there are no branches to delete
             - name: Delete merged branches
               run: |
-                  branches=$(git branch --merged | egrep -v "(^\*|main)")
-                  if [ -n "$branches" ]; then
-                      echo "$branches" | xargs git branch -d
-                  else
-                      echo "No merged branches to delete"
-                  fi
+                  git branch --merged | egrep -v "(^\*|main)" | xargs -r git branch -d
 
     test:
         timeout-minutes: 60
