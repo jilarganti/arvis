@@ -8,7 +8,8 @@
 node_modules
 dist
 cache
-temp
+/private
+
 /test-results/
 /playwright-report/
 /blob-report/
