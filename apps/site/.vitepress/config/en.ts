@@ -42,7 +42,7 @@ function nav(): DefaultTheme.NavItem[] {
                             link: '/ru/guide/meeting#create-a-meeting-for-later',
                         },
                         { text: 'Start an instant meeting', link: '/ru/guide/meeting#start-an-instant-meeting' },
-                        { text: 'Shedule in Calendar', link: '/ru/guide/meeting#shedule-in-calendar' },
+                        { text: 'Schedule in Calendar', link: '/ru/guide/meeting#schedule-in-calendar' },
                     ],
                 },
                 {
@@ -53,7 +53,7 @@ function nav(): DefaultTheme.NavItem[] {
                             link: '/ru/guide/meeting#create-a-meeting-for-later-1',
                         },
                         { text: 'Start an instant meeting', link: '/ru/guide/meeting#start-an-instant-meeting-1' },
-                        { text: 'Shedule in Calendar', link: '/ru/guide/meeting#shedule-in-calendar-1' },
+                        { text: 'Schedule in Calendar', link: '/ru/guide/meeting#schedule-in-calendar-1' },
                     ],
                 },
             ],
