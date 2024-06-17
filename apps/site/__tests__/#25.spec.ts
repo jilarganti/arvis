@@ -11,20 +11,24 @@ test('PageSpeed ​​Insights link', async ({ page }) => {
     await expect(page1.getByPlaceholder('Enter a web page URL')).toHaveValue('https://arvis-site.vercel.app/')
 })
 
-test('links on github', async ({ page }) => {
-    await page.goto('/')
-    const page1Promise = page.waitForEvent('popup')
-    await page.getByRole('link', { name: 'github' }).click()
-    const page1 = await page1Promise
-    // const page2Promise = page1.waitForEvent('popup')
+test('Check all https links for 404 status', async ({ page }) => {
+    await page.goto('https://github.com/jilarganti/arvis')
 
-    // await expect(page.getByRole('heading', { name: 'A.R.V.I.S: AI-enhanced video' })).toBeVisible()
-    // await expect(page).toHaveURL(/.*arvis/)
+    const links = page.locator('a:visible')
+    const linksCount = await links.count()
 
-    // await page1.getByRole('link', { name: 'site-arvis.vercel.app/' }).click()
-    // const page2 = await page2Promise
-    // const page3Promise = page2.waitForEvent('popup')
-    // await page2.getByRole('link', { name: 'github' }).click()
-    // const page3 = await page3Promise
-    // await page3.getByRole('link', { name: 'Code of Conduct', exact: true }).click()
+    const hrefs = []
+    for (let i = 0; i < linksCount; i++) {
+        const href = await links.nth(i).getAttribute('href')
+        if (href && href.startsWith('https://')) {
+            hrefs.push(href)
+        }
+    }
+
+    console.log('Checking links:')
+    for (const link of hrefs) {
+        const response = await page.goto(link)
+        // console.log(`Checking link: ${link}`)
+        expect(response?.status(), `Link ${link} returned status ${response?.status()}`).toBeLessThan(400)
+    }
 })
