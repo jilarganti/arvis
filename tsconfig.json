@@ -22,5 +22,5 @@
         "skipLibCheck": true
     },
     "include": ["./apps/**/*", "./packages/**/*", "apps/site/.vitepress/**/*"],
-    "exclude": ["node_modules", "**/*.spec.ts", "**/*.e2e.ts"]
+    "exclude": ["node_modules", "**/*.e2e.ts"]
 }

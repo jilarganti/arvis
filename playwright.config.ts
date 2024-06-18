@@ -10,7 +10,7 @@ export default defineConfig({
     forbidOnly: !!process.env.CI, // Fail the build on CI if you accidentally left test.only in the source code.
     retries: process.env.CI ? 2 : 0, // Retry on CI only
     workers: process.env.CI ? 1 : undefined, // Opt out of parallel tests on CI.
-    testMatch: '**/*.{e2e,spec}.ts',
+    testMatch: '**/*.e2e.{ts,js}',
     reporter: 'html',
 
     // Run local dev server before starting the tests

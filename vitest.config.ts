@@ -17,7 +17,6 @@ export default defineConfig({
         globals: true,
         name: 'unit',
         setupFiles: ['./apps/site/.vitepress/config/vitest.config.ts'],
-        // include: ['**/test/*.test.{ts,js}'],
-        include: ['**/*.test.{ts,js}'],
+        include: ['**/*.{spec,test}.ts'],
     },
 })
