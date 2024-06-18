@@ -1,7 +1,7 @@
-// config.test.js
 import { describe, it, expect } from 'vitest'
 import { shared } from '@site/shared'
 
+// @see https://github.com/users/jilarganti/projects/4/views/1?pane=issue&itemId=67335481
 describe('Shared Vitepress Config', () => {
     it('should have a title', () => {
         expect(shared.title).toBe('A.R.V.I.S.')
