@@ -16,7 +16,7 @@ export default defineConfig({
         testTimeout: 30_000,
         globals: true,
         name: 'unit',
-        setupFiles: ['./apps/site/test/setup.ts'],
+        setupFiles: ['./apps/site/.vitepress/config/vitest.config.ts'],
         // include: ['**/test/*.test.{ts,js}'],
         include: ['**/*.test.{ts,js}'],
     },
