@@ -36,17 +36,17 @@ export default defineConfig({
         //
         {
             name: 'chromium',
-            testDir: './apps/site/__tests__',
+            testDir: './apps/site/test',
             use: { ...devices['Desktop Chrome'] },
         },
         // {
         //     name: 'Mobile Safari',
-        //     testDir: './apps/site/__tests__',
+        //     testDir: './apps/site/test',
         //     use: { ...devices['iPhone 14'] },
         // },
         // {
         //     name: 'Microsoft Edge',
-        //     testDir: './__tests__',
+        //     testDir: './test',
         //     use: { ...devices['Desktop Edge'], channel: 'msedge' },
         // },
     ],
