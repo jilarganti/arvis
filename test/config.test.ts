@@ -1,6 +1,6 @@
 // config.test.js
 import { describe, it, expect } from 'vitest'
-import { shared } from '../apps/site/.vitepress/config/shared'
+import { shared } from '@site/shared'
 
 describe('Shared Vitepress Config', () => {
     it('should have a title', () => {

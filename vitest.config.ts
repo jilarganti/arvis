@@ -8,6 +8,7 @@ export default defineConfig({
     resolve: {
         alias: {
             '@arvis': resolve(__dirname, './apps/a.r.v.i.s./src/'),
+            '@site': resolve(__dirname, './apps/site/.vitepress/config/'),
             '@utils': resolve(__dirname, './packages/utils/src/'),
         },
     },
