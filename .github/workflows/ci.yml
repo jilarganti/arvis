@@ -1,5 +1,4 @@
-name: CI and Playwright Tests
-
+name: CI
 on:
     push:
         branches: ["main"]
@@ -37,10 +36,16 @@ jobs:
                   node-version: lts/*
             - name: Install dependencies
               run: npm install -g pnpm && pnpm install
+
             - name: Install Playwright Browsers
-              run: pnpm exec playwright install --with-deps
-            - name: Run Playwright tests
-              run: pnpm exec playwright test
+              run: pnpm exec playwright install chromium
+
+            - name: Build
+              run: pnpm run build
+
+            - name: Run tests
+              run: pnpm run test
+
             - uses: actions/upload-artifact@v4
               if: always()
               with:

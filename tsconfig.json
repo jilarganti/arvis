@@ -9,6 +9,7 @@
         "paths": {
             "@arvis": ["./apps/a.r.v.i.s./src/index"],
             "@utils": ["./packages/utils/src/index"],
+            "@site/*": ["./apps/site/.vitepress/config/*"],
             "@apps/*": ["./apps/*"],
             "@packages/*": ["./packages/*"]
         },
@@ -20,5 +21,6 @@
         "skipDefaultLibCheck": true,
         "skipLibCheck": true
     },
-    "exclude": ["**/dist/**", "**/node_modules/**"]
+    "include": ["./apps/**/*", "./packages/**/*", "apps/site/.vitepress/**/*"],
+    "exclude": ["node_modules", "**/*.e2e.ts"]
 }
