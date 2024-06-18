@@ -42,16 +42,12 @@ export const shared = defineConfig({
     ],
 
     themeConfig: {
-        // logo: { src: '/play.png', width: 24, height: 24 },
         logo: {
             light: '/LogoDark.png',
             dark: '/LogoLight.png',
         },
 
-        socialLinks: [
-            { icon: 'github', link: 'https://github.com/jilarganti/arvis' },
-            // { icon: 'discord', link: 'https://discord.com/invite/SA4hDwsk' },
-        ],
+        socialLinks: [{ icon: 'github', link: 'https://github.com/jilarganti/arvis' }],
 
         search: {
             provider: 'algolia',
@@ -59,11 +55,8 @@ export const shared = defineConfig({
                 appId: 'OAF8W52W8I',
                 apiKey: '12c782af03f5595d06a56e517eb8c67b',
                 indexName: 'arvis-doc',
-                // locales: { ...zhSearch, ...ruSearch }
                 locales: { ...ruSearch },
             },
         },
-
-        // carbonAds: { code: 'CEBDT27Y', placement: 'vuejsorg' }
     },
 })
