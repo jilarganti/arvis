@@ -1,14 +1,34 @@
-### Description
+## PR Checklist
+Please check if your PR fulfills the following requirements:
 
-<!-- What is this PR solving? Write a clear description or reference the issues it solves (e.g. `fixes #123`). What other alternatives have you explored? Are there any parts you think require more attention from reviewers? -->
+- [ ] The commit message follows our guidelines: https://github.com/jilarganti/arvis/blob/main/CONTRIBUTING.md
+- [ ] Tests for the changes have been added (for bug fixes / features)
+- [ ] Docs have been added / updated (for bug fixes / features)
 
-<!----------------------------------------------------------------------
-Before creating the pull request, please make sure you do the following:
 
-- Read the Contributing Guidelines at https://github.com/jilarganti/arvis/blob/main/CONTRIBUTING.md.
-- Check that there isn't already a PR that solves the problem the same way. If you find a duplicate, please help us reviewing it.
-- Update the corresponding documentation if needed.
-- Include relevant tests that fail without this PR but pass with it.
+## PR Type
+What kind of change does this PR introduce?
 
-Thank you for contributing to A.R.V.I.S.!
------------------------------------------------------------------------>
+<!-- Please check the one that applies to this PR using "x". -->
+- [ ] Bugfix
+- [ ] Feature
+- [ ] Code style update (formatting, local variables)
+- [ ] Refactoring (no functional changes, no api changes)
+- [ ] Build related changes
+- [ ] CI related changes
+- [ ] Other... Please describe:
+
+## What is the current behavior?
+<!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
+
+Issue Number: N/A
+
+
+## What is the new behavior?
+
+
+## Does this PR introduce a breaking change?
+- [ ] Yes
+- [ ] No
+
+<!-- If this PR contains a breaking change, please describe the impact and migration path for existing applications below. -->
