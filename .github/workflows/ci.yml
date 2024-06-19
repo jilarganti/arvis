@@ -47,8 +47,14 @@ jobs:
             - name: Install Playwright
               run: pnpm exec playwright install chromium
 
-            - name: Run tests
-              run: pnpm run test
+            - name: Run unit tests
+              run: pnpm run unit:test
+
+            - name: Run e2e tests
+              run: pnpm run e2e:test
+
+            - name: Check broken links
+              run: pnpm run check:links
 
             - uses: actions/upload-artifact@v4
               if: always()
