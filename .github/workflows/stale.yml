@@ -5,7 +5,7 @@
 name: Mark stale issues and PRs
 on:
     schedule:
-        - cron: "30 23 * * *"
+        - cron: '30 23 * * *'
     workflow_dispatch:
 
 jobs:
@@ -14,8 +14,8 @@ jobs:
         steps:
             - uses: actions/stale@v9
               with:
-                  stale-issue-message: "Stale issue message"
-                  stale-pr-message: "Stale pull request message"
+                  stale-issue-message: 'Stale issue message'
+                  stale-pr-message: 'Stale pull request message'
                   stale-issue-label: stale
                   stale-pr-label: stale
                   days-before-stale: 30
