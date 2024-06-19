@@ -26,11 +26,11 @@
     },
     "devDependencies": {
         "@lunariajs/core": "^0.0.31",
-        "@types/node": "^20.14.2",
+        "@types/node": "^20.14.5",
+        "linkinator": "^6.0.5",
         "markdown-it-mathjax3": "^4.3.2",
         "msw": "^1.3.3",
         "open-cli": "^8.0.0",
-        "linkinator": "^6.0.5",
         "vitepress": "^1.2.3"
     }
 }
