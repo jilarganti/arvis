@@ -48,10 +48,10 @@ jobs:
               run: pnpm exec playwright install chromium
 
             - name: Run unit tests
-              run: pnpm run unit:test
+              run: pnpm run test:unit
 
             - name: Run e2e tests
-              run: pnpm run e2e:test
+              run: pnpm run test:e2e
 
             - name: Check broken links
               run: pnpm run check:links
