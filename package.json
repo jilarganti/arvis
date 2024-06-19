@@ -26,7 +26,7 @@
         "test:e2e": "pnpm exec playwright test",
         "check:links": "pnpm --filter site check:links",
         "lint": "node scripts/echo 'NO LINT STEP !!!!!!!!!!!!'",
-        "format": "prettier --check --write ."
+        "format": "prettier --check --write . --ignore-path=config/.prettierignore"
     },
     "devDependencies": {
         "@playwright/test": "^1.44.1",
