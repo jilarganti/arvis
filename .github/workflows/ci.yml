@@ -44,7 +44,10 @@ jobs:
               run: pnpm run build
 
             - name: Run tests
-              run: pnpm run test
+              run: |
+              pnpm run test:unit &
+              pnpm run test:e2e
+              wait
 
             - uses: actions/upload-artifact@v4
               if: always()
