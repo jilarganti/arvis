@@ -1,4 +1,18 @@
 name: CI
+
+env:
+    # 7 GiB by default on GitHub, setting to 6 GiB
+    # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
+    NODE_OPTIONS: --max-old-space-size=6144
+    # install playwright binary manually (because pnpm only runs install script once)
+    # PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+    # Vitest auto retry on flaky segfault
+    VITEST_SEGFAULT_RETRY: 3
+
+# Remove default permissions of GITHUB_TOKEN for security
+# https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
+permissions: {}
+
 on:
     push:
         branches: ["main"]
@@ -7,44 +21,43 @@ on:
     workflow_dispatch:
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-
-        steps:
-            - uses: actions/checkout@v4
-
-            - name: Run a one-line script
-              run: echo Hello, world!
-
-            - name: Run a multi-line script
-              run: |
-                  echo Add other actions to build,
-                  echo test, and deploy your project.
-            #  xargs command uses the -r option (or --no-run-if-empty in some implementations) to ensure it doesn't run the git branch -d command if there are no branches to delete
-            - name: Delete merged branches
-              run: |
-                  git branch --merged | egrep -v "(^\*|main)" | xargs -r git branch -d
-
     test:
         timeout-minutes: 60
         runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node_version: [20, 22]
 
         steps:
-            - uses: actions/checkout@v4
-            - uses: actions/setup-node@v4
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Install pnpm
+              uses: pnpm/action-setup@v3
+
+            - name: Set node version to ${{ matrix.node_version }}
+              uses: actions/setup-node@v4
               with:
-                  node-version: lts/*
-            - name: Install dependencies
-              run: npm install -g pnpm && pnpm install
+                  node-version: ${{ matrix.node_version }}
+                  cache: pnpm
 
-            - name: Install Playwright Browsers
-              run: pnpm exec playwright install chromium
+            - name: Install deps
+              run: pnpm install
 
-            - name: Build
+            - name: Install Playwright
+              run: pnpm exec playwright install --with-deps
+
+            - name: Build for e2e tests
               run: pnpm run build
 
-            - name: Run tests
-              run: pnpm run test
+            - name: Run unit tests
+              run: pnpm run test:unit
+
+            - name: Run e2e tests
+              run: pnpm run test:e2e
+
+            - name: Check broken links
+            #   run: pnpm run check:links
 
             - uses: actions/upload-artifact@v4
               if: always()
