@@ -12,7 +12,7 @@
     "type": "module",
     "scripts": {
         "dev": "vitepress dev",
-        "build": "vitepress build",
+        "build": "vitepress build --outDir .vitepress/dist",
         "preview": "vitepress preview",
         "test:unit": "pnpm exec vitest --run",
         "check:links": "pnpm exec linkinator '**/*.md' --verbosity ERROR -s 'example, zoom, openai'",
