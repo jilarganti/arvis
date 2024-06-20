@@ -8,17 +8,17 @@
     "bugs": "https://github.com/jilarganti/arvis/issues",
     "repository": "github:jilarganti/arvis",
     "type": "module",
+    "packageManager": "pnpm@9.4.0",
     "workspaces": [
         "packages/*"
     ],
-    "packageManager": "pnpm@9.2.0",
     "keywords": [
         "ai",
         "videomeeting"
     ],
     "scripts": {
         "dev": "pnpm -F site dev",
-        "build": "pnpm -F site build",
+        "build": "pnpm -r build",
         "preview": "pnpm -F site preview",
         "test": "pnpm test:unit && pnpm test:e2e",
         "test:unit": "pnpm -F site test:unit",

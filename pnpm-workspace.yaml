@@ -1,5 +1,0 @@
-packages:
-    # include packages that are inside this directories
-    - 'packages/*'
-
-    # exclude packages that are inside this directories
