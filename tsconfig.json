@@ -20,6 +20,6 @@
         "skipDefaultLibCheck": true,
         "skipLibCheck": true
     },
-    "include": ["./apps/**/*", "./packages/**/*", "apps/site/.vitepress/**/*"],
+    "include": ["./packages/**/*"],
     "exclude": ["node_modules", "**/*.e2e.ts"]
 }

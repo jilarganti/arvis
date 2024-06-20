@@ -41,7 +41,7 @@ export default defineConfig({
         },
         // {
         //     name: 'Mobile Safari',
-        //     testDir: './apps/site/test',
+        //     testDir: './packages/site/test',
         //     use: { ...devices['iPhone 14'] },
         // },
         // {
