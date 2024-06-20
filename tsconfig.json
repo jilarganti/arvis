@@ -7,9 +7,9 @@
         "moduleResolution": "Bundler",
 
         "paths": {
-            "@arvis": ["./apps/a.r.v.i.s./src/index"],
+            "@arvis": ["./packages/a.r.v.i.s./src/index"],
             "@utils": ["./packages/utils/src/index"],
-            "@site/*": ["./apps/site/.vitepress/config/*"],
+            "@site/*": ["./packages/site/.vitepress/config/*"],
             "@apps/*": ["./apps/*"],
             "@packages/*": ["./packages/*"]
         },

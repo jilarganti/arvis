@@ -7,8 +7,8 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            '@arvis': resolve(__dirname, './apps/a.r.v.i.s./src/'),
-            '@site': resolve(__dirname, './apps/site/.vitepress/config/'),
+            '@arvis': resolve(__dirname, './packages/a.r.v.i.s./src/'),
+            '@site': resolve(__dirname, './packages/site/.vitepress/config/'),
             '@utils': resolve(__dirname, './packages/utils/src/'),
         },
     },
@@ -16,7 +16,7 @@ export default defineConfig({
         testTimeout: 30_000,
         globals: true,
         name: 'unit',
-        setupFiles: ['./apps/site/.vitepress/config/vitest.config.ts'],
+        setupFiles: ['./packages/site/.vitepress/config/vitest.config.ts'],
         include: ['**/*.{spec,test}.ts'],
     },
 })

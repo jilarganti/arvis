@@ -36,7 +36,7 @@ export default defineConfig({
         //
         {
             name: 'chromium',
-            testDir: './apps/site/',
+            testDir: './packages/site/',
             use: { ...devices['Desktop Chrome'] },
         },
         // {
