@@ -1,13 +1,10 @@
-.DS_Store
 .vscode
-.temp
-.env
 .vercel
+.env
 
 node_modules
 dist
 cache
-/private
 
 /test-results/
 /playwright-report/
