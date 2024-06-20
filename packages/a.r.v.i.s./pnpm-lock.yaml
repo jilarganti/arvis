@@ -1,0 +1,132 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      site:
+        specifier: 0.1.0
+        version: 0.1.0
+      utils:
+        specifier: workspace:*
+        version: link:../utils
+
+packages:
+
+  amdefine@1.0.1:
+    resolution: {integrity: sha512-S2Hw0TtNkMJhIabBwIojKL9YHO5T0n5eNqWJ7Lrlel/zDbftQpxpapi8tZs3X1HWa+u+QeydGmzzNU0m09+Rcg==}
+    engines: {node: '>=0.4.2'}
+
+  async@0.2.10:
+    resolution: {integrity: sha512-eAkdoKxU6/LkKDBzLpT+t6Ff5EtfSF4wx1WfJiPEEV7WNLnDaRXk0oVysiEPm262roaachGexwUv94WhSgN5TQ==}
+
+  coffee-script@1.7.1:
+    resolution: {integrity: sha512-W3s+SROY73OmrSGtPTTW/2wp2rmW5vuh0/tUuCK1NvTuyzLOVPccIP9whmhZ4cYWcr2NJPNENZIFaAMkTD5G3w==}
+    engines: {node: '>=0.8.0'}
+    deprecated: CoffeeScript on NPM has moved to "coffeescript" (no hyphen)
+    hasBin: true
+
+  esprima@1.2.2:
+    resolution: {integrity: sha512-+JpPZam9w5DuJ3Q67SqsMGtiHKENSMRVoxvArfJZK01/BfLEObtZ6orJa/MtoGNR/rfMgp5837T41PAmTwAv/A==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  js-bundler@0.5.0:
+    resolution: {integrity: sha512-4NRpT75UhsBVa0EYgpUeKqQeXRUhluHU5fRP2alTcniiAwuH8qKSOUb4Sg5SsepZsX5vVJWbp5Ex/Pl1nX5jGQ==}
+    engines: {node: '>=0.11.13'}
+    hasBin: true
+
+  mate@0.11.1:
+    resolution: {integrity: sha512-5pb7FjqaqGX++xAJFgwx1j+EROrLSD9qzaQGtuaIRKHNAGq31vZ49mWuWRRDMtxZN4W50eDSzwZXUyaltCOG9Q==}
+
+  mkdirp@0.3.5:
+    resolution: {integrity: sha512-8OCq0De/h9ZxseqzCH8Kw/Filf5pF/vMI6+BH7Lu0jXz2pqYCjTAQRolSxRIi+Ax+oCCjlxoJMP0YQ4XlrQNHg==}
+    deprecated: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+
+  optimist@0.3.7:
+    resolution: {integrity: sha512-TCx0dXQzVtSCg2OgY/bO9hjM9cV4XYx09TVK+s3+FhkjT6LovsLe+pPMzpWf+6yXK/hUizs2gUoTw3jHM0VaTQ==}
+
+  resolve@0.7.1:
+    resolution: {integrity: sha512-UwPxf6ye7YEy4c29myQ2FESNuVooJcufgdU+Rh7yTA+PDR7xX/q3wLeI/vbhBXOS7zDZWEKSblPBGMaAi1D6tw==}
+
+  site@0.1.0:
+    resolution: {integrity: sha512-5KKAZVU4g76OeQxMDpIxrRuQaG6hJ5un8oUykpmAc5JJ2xuum1BQMhjwSeEtQG41rJklm5uaJOV/OElVZCufmQ==}
+    engines: {node: '>=0.11.13'}
+    hasBin: true
+
+  source-map@0.1.43:
+    resolution: {integrity: sha512-VtCvB9SIQhk3aF6h+N85EaqIaBFIAfZ9Cu+NJHHVvc8BbEcnvDcFw6sqQ2dQrT6SlOrZq3tIvyD9+EGq/lJryQ==}
+    engines: {node: '>=0.8.0'}
+
+  uglify-js@2.4.13:
+    resolution: {integrity: sha512-QkqCuvdHSmVjCUgGW4Rhs3emUfosuiqgZmk1ZbGT58gBO+CdkpXW7AcJf+0VXtFG1JKqLVHvtedYUKaKiMYCZg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  uglify-to-browserify@1.0.2:
+    resolution: {integrity: sha512-vb2s1lYx2xBtUgy+ta+b2J/GLVUR+wmpINwHePmPRhOsIVCG2wDzKJ0n14GslH1BifsqVzSOwQhRaCAsZ/nI4Q==}
+
+  wishlist@0.3.2:
+    resolution: {integrity: sha512-h3DDFt4UyFU1DqAvauzCWuPglRMIQfA39DYyRS/OrtOUFo7geF3FesEmDO4Mw3/dGWv6jdLas6dBenVjsW5wpg==}
+
+  wordwrap@0.0.3:
+    resolution: {integrity: sha512-1tMA907+V4QmxV7dbRvb4/8MaRALK6q9Abid3ndMYnbyo8piisCmeONVqVSXqQA3KaP4SLt5b7ud6E2sqP8TFw==}
+    engines: {node: '>=0.4.0'}
+
+snapshots:
+
+  amdefine@1.0.1: {}
+
+  async@0.2.10: {}
+
+  coffee-script@1.7.1:
+    dependencies:
+      mkdirp: 0.3.5
+
+  esprima@1.2.2: {}
+
+  js-bundler@0.5.0:
+    dependencies:
+      coffee-script: 1.7.1
+      esprima: 1.2.2
+      resolve: 0.7.1
+
+  mate@0.11.1:
+    dependencies:
+      wishlist: 0.3.2
+
+  mkdirp@0.3.5: {}
+
+  optimist@0.3.7:
+    dependencies:
+      wordwrap: 0.0.3
+
+  resolve@0.7.1: {}
+
+  site@0.1.0:
+    dependencies:
+      coffee-script: 1.7.1
+      js-bundler: 0.5.0
+      mate: 0.11.1
+      uglify-js: 2.4.13
+
+  source-map@0.1.43:
+    dependencies:
+      amdefine: 1.0.1
+
+  uglify-js@2.4.13:
+    dependencies:
+      async: 0.2.10
+      optimist: 0.3.7
+      source-map: 0.1.43
+      uglify-to-browserify: 1.0.2
+
+  uglify-to-browserify@1.0.2: {}
+
+  wishlist@0.3.2: {}
+
+  wordwrap@0.0.3: {}

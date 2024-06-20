@@ -15,7 +15,7 @@ export default defineConfig({
 
     // Run local dev server before starting the tests
     webServer: {
-        command: 'pnpm run preview',
+        command: 'lsof -ti:4173 | xargs kill -9 || true && pnpm run preview',
         url: baseUrl,
         reuseExistingServer: !process.env.CI,
     },
@@ -36,7 +36,7 @@ export default defineConfig({
         //
         {
             name: 'chromium',
-            testDir: './packages/site/',
+            testDir: '../packages/site/',
             use: { ...devices['Desktop Chrome'] },
         },
         // {
