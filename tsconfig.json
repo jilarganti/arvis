@@ -7,11 +7,10 @@
         "moduleResolution": "Bundler",
 
         "paths": {
+            "@packages/*": ["./packages/*"],
             "@arvis": ["./packages/a.r.v.i.s./src/index"],
             "@utils": ["./packages/utils/src/index"],
-            "@site/*": ["./packages/site/.vitepress/config/*"],
-            "@apps/*": ["./apps/*"],
-            "@packages/*": ["./packages/*"]
+            "@site/*": ["./packages/site/.vitepress/config/*"]
         },
         "resolveJsonModule": true,
         "types": ["node", "vitest/importMeta"],

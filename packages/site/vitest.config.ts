@@ -1,9 +1,11 @@
-import { defaultExclude, defineProject } from 'vitest/config'
+import { defineProject, mergeConfig } from 'vitest/config'
+import configShared from '../../config/vite.config'
 
-export default defineProject({
-    test: {
-        name: 'site-scoped:unit',
-        includeSource: ['src/**/*.ts'],
-        exclude: [...defaultExclude, 'test/fixtures/**'],
-    },
-})
+export default mergeConfig(
+    configShared,
+    defineProject({
+        test: {
+            setupFiles: ['vitest.setup.ts'],
+        },
+    }),
+)
