@@ -18,7 +18,7 @@
     ],
     "scripts": {
         "dev": "pnpm -F site dev",
-        "build": "pnpm -F site πbuild",
+        "build": "pnpm -F site build",
         "preview": "pnpm -F site preview",
         "test": "pnpm test:unit && pnpm test:e2e",
         "test:unit": "pnpm -F site test:unit",
