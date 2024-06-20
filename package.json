@@ -9,9 +9,11 @@
     "repository": "github:jilarganti/arvis",
     "type": "module",
     "packageManager": "pnpm@9.4.0",
-    "workspaces": [
-        "packages/*"
-    ],
+    "pnpm": {
+        "packages": [
+            "packages/*"
+        ]
+    },
     "keywords": [
         "ai",
         "videomeeting"
