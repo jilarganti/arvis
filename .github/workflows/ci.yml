@@ -33,7 +33,6 @@ jobs:
             - name: Install pnpm
               uses: pnpm/action-setup@v4
               with:
-                  # version: 9
                   run_install: |
                         - recursive: true
                           args: [--frozen-lockfile, --strict-peer-dependencies]
@@ -44,9 +43,6 @@ jobs:
               with:
                   node-version: ${{ matrix.node_version }}
                   cache: pnpm
-
-            # - name: Install deps
-            #   run: pnpm install
 
             - name: Install Playwright
               run: pnpm exec playwright install --with-deps
