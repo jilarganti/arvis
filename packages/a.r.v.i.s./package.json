@@ -21,7 +21,5 @@
         "site": "0.1.0",
         "utils": "workspace:*"
     },
-    "devDependencies": {
-        "rollup-plugin-license": "^3.4.0"
-    }
+    "devDependencies": {}
 }

@@ -1,8 +1,0 @@
-packages:
-    # include packages that are inside this directories
-    - 'apps/*'
-    - 'packages/*'
-
-    # exclude packages that are inside this directories
-    - '!apps/create-app'
-    - '!packages/**/__tests__/**'

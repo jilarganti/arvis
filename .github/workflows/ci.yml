@@ -15,9 +15,7 @@ permissions: {}
 
 on:
     push:
-        branches: ['main']
     pull_request:
-        branches: ['main']
     workflow_dispatch:
 
 jobs:
@@ -33,16 +31,18 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Install pnpm
-              uses: pnpm/action-setup@v3
+              uses: pnpm/action-setup@v4
+              with:
+                  run_install: |
+                        - recursive: true
+                          args: [--frozen-lockfile, --strict-peer-dependencies]
+                        - args: [--global, prettier, typescript]  
 
             - name: Set node version to ${{ matrix.node_version }}
               uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node_version }}
                   cache: pnpm
-
-            - name: Install deps
-              run: pnpm install
 
             - name: Install Playwright
               run: pnpm exec playwright install --with-deps

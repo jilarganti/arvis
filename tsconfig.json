@@ -7,11 +7,10 @@
         "moduleResolution": "Bundler",
 
         "paths": {
-            "@arvis": ["./apps/a.r.v.i.s./src/index"],
+            "@packages/*": ["./packages/*"],
+            "@arvis": ["./packages/a.r.v.i.s./src/index"],
             "@utils": ["./packages/utils/src/index"],
-            "@site/*": ["./apps/site/.vitepress/config/*"],
-            "@apps/*": ["./apps/*"],
-            "@packages/*": ["./packages/*"]
+            "@site/*": ["./packages/site/.vitepress/config/*"]
         },
         "resolveJsonModule": true,
         "types": ["node", "vitest/importMeta"],
@@ -21,6 +20,6 @@
         "skipDefaultLibCheck": true,
         "skipLibCheck": true
     },
-    "include": ["./apps/**/*", "./packages/**/*", "apps/site/.vitepress/**/*"],
+    "include": ["./packages/**/*"],
     "exclude": ["node_modules", "**/*.e2e.ts"]
 }
