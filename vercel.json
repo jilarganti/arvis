@@ -1,5 +1,5 @@
 {
-    "installCommand": "pnpm install -r --no-frozen-lockfile --strict-peer-dependencies",
+    "installCommand": "pnpm install",
     "buildCommand": "pnpm build",
     "outputDirectory": "packages/site/.vitepress/dist"
     // "cleanUrls": true
