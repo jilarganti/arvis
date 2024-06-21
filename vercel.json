@@ -1,6 +1,6 @@
 {
-    "installCommand": "pnpm store prune && pnpm install -r --no-frozen-lockfile --strict-peer-dependencies",
+    "installCommand": "pnpm install -r --no-frozen-lockfile --strict-peer-dependencies",
     "buildCommand": "pnpm build",
-    "outputDirectory": "packages/site/.vitepress/dist",
-    "cleanUrls": true
+    "outputDirectory": "packages/site/.vitepress/dist"
+    // "cleanUrls": true
 }
