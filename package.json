@@ -19,14 +19,14 @@
         "videomeeting"
     ],
     "scripts": {
-        "dev": "pnpm -F site dev",
+        "dev": "pnpm -r dev",
         "build": "pnpm -r build",
         "preview": "pnpm -r preview",
         "test": "pnpm test:unit && pnpm test:e2e",
         "test:unit": "pnpm -r test:unit",
         "test:e2e": "pnpm exec playwright test -c config/playwright.config.ts",
         "check:links": "pnpm -F site check:links",
-        "lint": "tsx scripts/echo 'NO LINT STEP !!!!!!!!!!!!'",
+        "lint": "eslint --cache -c config/eslint.config.js",
         "format": "prettier --check --write . --ignore-path=config/.prettierignore"
     },
     "devDependencies": {
@@ -36,6 +36,7 @@
         "eslint": "~9.5.0",
         "globals": "^15.6.0",
         "prettier": "^3.3.2",
+        "typescript": "^5.5.2",
         "typescript-eslint": "^7.13.1",
         "vite": "^5.3.1",
         "vitest": "^1.6.0"
