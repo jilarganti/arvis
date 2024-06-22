@@ -19,7 +19,7 @@
         "videomeeting"
     ],
     "scripts": {
-        "dev": "pnpm -r dev",
+        "dev": "pnpm -F site dev",
         "build": "pnpm -r build",
         "preview": "pnpm -r preview",
         "test": "pnpm test:unit && pnpm test:e2e",
@@ -37,7 +37,6 @@
         "prettier": "^3.3.2",
         "typescript": "~5.4.0",
         "typescript-eslint": "^7.13.1",
-        "vite": "^5.3.1",
         "vitest": "^1.6.0"
     },
     "prettier": {
