@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test'
 
-const baseUrl = 'http://localhost:4173'
+const baseUrl = 'http://192.168.70.95:3000/'
 
 /**
  * @see https://playwright.dev/docs/test-configuration.
@@ -15,7 +15,7 @@ export default defineConfig({
 
     // Run local dev server before starting the tests
     webServer: {
-        command: 'lsof -ti:4173 | xargs kill -9 || true && pnpm run preview',
+        command: 'pnpm run dev',
         url: baseUrl,
         reuseExistingServer: !process.env.CI,
     },
