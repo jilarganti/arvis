@@ -5,9 +5,9 @@ env:
   # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
   NODE_OPTIONS: --max-old-space-size=6144
   # install playwright binary manually (because pnpm only runs install script once)
-  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+  # PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
   # Vitest auto retry on flaky segfault
-  # VITEST_SEGFAULT_RETRY: 3
+  VITEST_SEGFAULT_RETRY: 2
 
 # Remove default permissions of GITHUB_TOKEN for security
 # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
