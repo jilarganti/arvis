@@ -20,5 +20,5 @@ test('Stackblitz Publisher link', async ({ page }) => {
     await page1.getByText('Sign in to propose changes').click()
     const page2Promise = page1.waitForEvent('popup')
     await page1.getByRole('button', { name: 'Sign in to StackBlitz' }).click()
-    const page2 = await page2Promise
+    await page2Promise
 })

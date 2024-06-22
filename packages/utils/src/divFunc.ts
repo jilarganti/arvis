@@ -1,3 +1,3 @@
-export function divFunc(a: any, b: any) {
+export function divFunc(a: number, b: number) {
     return a / b
 }
