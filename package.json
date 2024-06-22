@@ -26,14 +26,17 @@
         "test:unit": "pnpm -r test:unit",
         "test:e2e": "pnpm exec playwright test -c config/playwright.config.ts",
         "check:links": "pnpm -F site check:links",
-        "lint": "node scripts/echo 'NO LINT STEP !!!!!!!!!!!!'",
+        "lint": "tsx scripts/echo 'NO LINT STEP !!!!!!!!!!!!'",
         "format": "prettier --check --write . --ignore-path=config/.prettierignore"
     },
     "devDependencies": {
         "@playwright/test": "^1.44.1",
-        "@types/node": "^20.14.6",
+        "@types/node": "^20.14.7",
         "chalk": "^5.3.0",
+        "eslint": "~9.5.0",
+        "globals": "^15.6.0",
         "prettier": "^3.3.2",
+        "typescript-eslint": "^7.13.1",
         "vite": "^5.3.1",
         "vitest": "^1.6.0"
     },
