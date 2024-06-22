@@ -21,5 +21,5 @@
         "skipLibCheck": true
     },
     "include": ["./packages/**/*"],
-    "exclude": ["node_modules", "**/*.e2e.ts"]
+    "exclude": ["node_modules", "**/*.e2e.ts"] //! TODO: Del "**/*.e2e.ts"
 }
