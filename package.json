@@ -46,5 +46,8 @@
         "singleQuote": true,
         "tabWidth": 4,
         "printWidth": 120
+    },
+    "stackblitz": {
+        "startCommand": "pnpm run dev"
     }
 }
