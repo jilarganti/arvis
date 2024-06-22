@@ -27,7 +27,7 @@
     },
     "devDependencies": {
         "@lunariajs/core": "^0.0.31",
-        "@types/node": "^20.14.7",
+        "@types/node": "^20.14.8",
         "linkinator": "^6.0.5",
         "markdown-it-mathjax3": "^4.3.2",
         "msw": "^1.3.3",
