@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { test } from '@playwright/test'
 
 // @see https://github.com/users/jilarganti/projects/4/views/1?pane=issue&itemId=67330086
 test('Stackblitz Publisher link', async ({ page }) => {
