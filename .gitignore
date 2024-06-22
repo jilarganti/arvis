@@ -1,5 +1,6 @@
 .vscode
 .vercel
+.eslintcache
 .env
 
 node_modules
