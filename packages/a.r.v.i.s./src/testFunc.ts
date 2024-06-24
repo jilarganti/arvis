@@ -1,3 +1,3 @@
-export function testFunc(a: any, b: any) {
+export function testFunc(a: number, b: number) {
     return a + b
 }

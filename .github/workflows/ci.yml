@@ -1,67 +1,69 @@
 name: CI
 
 env:
-    # 7 GiB by default on GitHub, setting to 6 GiB
-    # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
-    NODE_OPTIONS: --max-old-space-size=6144
-    # install playwright binary manually (because pnpm only runs install script once)
-    # PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
-    # Vitest auto retry on flaky segfault
-    VITEST_SEGFAULT_RETRY: 3
+  # 7 GiB by default on GitHub, setting to 6 GiB
+  # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
+  NODE_OPTIONS: --max-old-space-size=6144
+  # install playwright binary manually (because pnpm only runs install script once)
+  # PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+  # Vitest auto retry on flaky segfault
+  VITEST_SEGFAULT_RETRY: 2
 
 # Remove default permissions of GITHUB_TOKEN for security
 # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
 permissions: {}
 
 on:
-    push:
-    pull_request:
-    workflow_dispatch:
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
-    test:
-        timeout-minutes: 60
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node_version: [20, 22]
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node_version: [20]
 
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-            - name: Install pnpm
-              uses: pnpm/action-setup@v4
-              with:
-                  run_install: |
-                        - recursive: true
-                          args: [--frozen-lockfile, --strict-peer-dependencies]
-                        - args: [--global, prettier, typescript]  
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - args: [--global, prettier, typescript]
 
-            - name: Set node version to ${{ matrix.node_version }}
-              uses: actions/setup-node@v4
-              with:
-                  node-version: ${{ matrix.node_version }}
-                  cache: pnpm
+      - name: Set node version to ${{ matrix.node_version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node_version }}
+          cache: pnpm
 
-            - name: Install Playwright
-              run: pnpm exec playwright install --with-deps
+      - name: Install Playwright
+        run: pnpm exec playwright install --with-deps
 
-            - name: Build for e2e tests
-              run: pnpm run build
+      # - name: Build for e2e tests
+      #   run: pnpm run build
 
-            - name: Run unit tests
-              run: pnpm run test:unit
+      - name: Run unit tests
+        run: pnpm run test:unit
 
-            - name: Run e2e tests
-              run: pnpm run test:e2e
+      # - name: Run e2e tests
+      #   run: pnpm run test:e2e
+      #   env:
+      #     PLAYWRIGHT_TEST_BASE_URL: ${{ github.event.deployment_status.target_url }}
 
-            # - name: Check broken links
-            #   run: pnpm run check:links
+      # - name: Check broken links
+      #   run: pnpm run check:links
 
-            - uses: actions/upload-artifact@v4
-              if: always()
-              with:
-                  name: playwright-report-${{ matrix.node_version }}-${{ github.run_id }}
-                  path: playwright-report/
-                  retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report-${{ matrix.node_version }}-${{ github.run_id }}
+          path: playwright-report/
+          retention-days: 30

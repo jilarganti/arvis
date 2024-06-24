@@ -20,6 +20,6 @@
         "skipDefaultLibCheck": true,
         "skipLibCheck": true
     },
-    "include": ["./packages/**/*"],
-    "exclude": ["node_modules", "**/*.e2e.ts"]
+    "include": ["./packages/**/*", "packages/site/test/.ts"],
+    "exclude": ["node_modules", "**/*.e2e.ts"] //! TODO: Del "**/*.e2e.ts"
 }
