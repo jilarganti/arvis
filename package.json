@@ -19,7 +19,7 @@
         "videomeeting"
     ],
     "scripts": {
-        "dev": "pnpm -r dev --host",
+        "dev": "pnpm -r dev",
         "build": "pnpm -r build",
         "preview": "pnpm -r preview",
         "test": "pnpm test:unit && pnpm test:e2e",
