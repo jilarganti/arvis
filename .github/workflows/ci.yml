@@ -1,44 +1,39 @@
 name: CI
 
 env:
-  # 7 GiB by default on GitHub, setting to 6 GiB
-  # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
   NODE_OPTIONS: --max-old-space-size=6144
-  # install playwright binary manually (because pnpm only runs install script once)
   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
-  # Vitest auto retry on flaky segfault
-  VITEST_SEGFAULT_RETRY: 2
-
-# Remove default permissions of GITHUB_TOKEN for security
-# https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
-permissions: {}
+  VITEST_SEGFAULT_RETRY: 2 # Vitest auto retry on flaky segfault
 
 on:
   push:
+    branches: [main]
   pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+  cancel-in-progress: true
 
 jobs:
   test:
-    timeout-minutes: 60
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node_version: [20]
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4 # Install pnpm
         with:
           run_install: |
             - recursive: true
               args: [--frozen-lockfile, --strict-peer-dependencies]
 
-      # - name: Set node version to ${{ matrix.node_version }}
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4 # Set node version to ${{ matrix.node_version }}
         with:
           node-version: ${{ matrix.node_version }}
           cache: pnpm
@@ -46,14 +41,11 @@ jobs:
       - name: Run unit tests
         run: pnpm run test:unit
 
-      - name: Install Playwright
-        run: pnpm playwright install --with-deps
-
-      # - name: Build for e2e tests
-      - run: pnpm run build
-
       - name: Run e2e tests
-        run: pnpm run test:e2e
+        run: |
+          pnpm playwright install --with-deps
+          pnpm build # Build for e2e tests
+          pnpm test:e2e
 
       # - name: Check broken links
       #   run: pnpm run check:links
