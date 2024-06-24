@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test'
 
-const baseUrl = 'http://192.168.70.95:3000/'
+const baseUrl = 'http://localhost:3000/'
 
 /**
  * @see https://playwright.dev/docs/test-configuration.

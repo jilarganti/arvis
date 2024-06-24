@@ -5,7 +5,7 @@ env:
   # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
   NODE_OPTIONS: --max-old-space-size=6144
   # install playwright binary manually (because pnpm only runs install script once)
-  # PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
   # Vitest auto retry on flaky segfault
   VITEST_SEGFAULT_RETRY: 2
 
@@ -36,27 +36,24 @@ jobs:
           run_install: |
             - recursive: true
               args: [--frozen-lockfile, --strict-peer-dependencies]
-            - args: [--global, prettier, typescript]
 
-      - name: Set node version to ${{ matrix.node_version }}
-        uses: actions/setup-node@v4
+      # - name: Set node version to ${{ matrix.node_version }}
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
           cache: pnpm
 
-      - name: Install Playwright
-        run: pnpm exec playwright install --with-deps
-
-      - name: Build for e2e tests
-        run: pnpm run build
-
       - name: Run unit tests
         run: pnpm run test:unit
 
+      - name: Install Playwright
+        run: pnpm playwright install --with-deps
+
+      # - name: Build for e2e tests
+      - run: pnpm run build
+
       - name: Run e2e tests
         run: pnpm run test:e2e
-        env:
-          PLAYWRIGHT_TEST_BASE_URL: ${{ github.event.deployment_status.target_url }}
 
       # - name: Check broken links
       #   run: pnpm run check:links
