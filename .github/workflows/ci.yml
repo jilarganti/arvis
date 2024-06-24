@@ -47,16 +47,16 @@ jobs:
       - name: Install Playwright
         run: pnpm exec playwright install --with-deps
 
-      # - name: Build for e2e tests
-      #   run: pnpm run build
+      - name: Build for e2e tests
+        run: pnpm run build
 
       - name: Run unit tests
         run: pnpm run test:unit
 
-      # - name: Run e2e tests
-      #   run: pnpm run test:e2e
-      #   env:
-      #     PLAYWRIGHT_TEST_BASE_URL: ${{ github.event.deployment_status.target_url }}
+      - name: Run e2e tests
+        run: pnpm run test:e2e
+        env:
+          PLAYWRIGHT_TEST_BASE_URL: ${{ github.event.deployment_status.target_url }}
 
       # - name: Check broken links
       #   run: pnpm run check:links
