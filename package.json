@@ -19,7 +19,7 @@
         "videomeeting"
     ],
     "scripts": {
-        "dev": "pnpm -F site dev --host --port 3000",
+        "dev": "pnpm -r dev --host",
         "build": "pnpm -r build",
         "preview": "pnpm -r preview",
         "test": "pnpm test:unit && pnpm test:e2e",

@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test'
 
-const baseUrl = 'http://localhost:3000/'
+const baseUrl = 'http://192.168.70.107:3000/'
 
 /**
  * @see https://playwright.dev/docs/test-configuration.
@@ -25,15 +25,12 @@ export default defineConfig({
         baseURL: baseUrl,
         viewport: { width: 1280, height: 720 },
         ignoreHTTPSErrors: true,
-        bypassCSP: true,
         locale: 'en-GB',
-        video: 'on-first-retry',
         trace: 'on-first-retry',
     },
 
     /* Configure projects for major browsers */
     projects: [
-        //
         {
             name: 'chromium',
             testDir: '../packages/site/',
