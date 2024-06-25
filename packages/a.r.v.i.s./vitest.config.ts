@@ -5,7 +5,7 @@ export default mergeConfig(
     configShared,
     defineProject({
         test: {
-            setupFiles: ['vitest.setup.ts'],
+            // setupFiles: ['vitest.setup.ts'],
         },
     }),
 )
