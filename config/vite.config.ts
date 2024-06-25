@@ -16,6 +16,7 @@ export default defineConfig({
         },
     },
     test: {
-        name: 'unit',
+        include: ['test/*.{spec,test}.ts'],
+        globals: true,
     },
 })

@@ -10,7 +10,7 @@ export default defineConfig({
     forbidOnly: !!process.env.CI,
     retries: process.env.CI ? 2 : 0,
     workers: process.env.CI ? 1 : undefined,
-    testMatch: '**/*.e2e.ts',
+    testMatch: 'test/e2e/*.{test,spec}.ts',
     reporter: 'html',
 
     // Run local dev server before starting the tests
