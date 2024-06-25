@@ -1,25 +1,26 @@
 {
     "compilerOptions": {
-        "target": "es2018",
+        "target": "es2020",
         "jsx": "preserve",
         "lib": ["esnext"],
         "module": "esnext",
         "moduleResolution": "Bundler",
 
-        "paths": {
-            "@packages/*": ["./packages/*"],
-            "@arvis": ["./packages/a.r.v.i.s./src/index"],
-            "@utils": ["./packages/utils/src/index"],
-            "@site/*": ["./packages/site/.vitepress/config/*"]
-        },
         "resolveJsonModule": true,
         "types": ["node", "vitest/importMeta"],
         "strict": true,
         "strictNullChecks": true,
         "esModuleInterop": true,
         "skipDefaultLibCheck": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
+
+        "paths": {
+            "@packages/*": ["./packages/*"],
+            "@arvis": ["./packages/a.r.v.i.s./src/index"],
+            "@utils": ["./packages/utils/src/index"],
+            "@site/*": ["./packages/site/.vitepress/config/*"]
+        }
     },
-    "include": ["./packages/**/*", "packages/site/test/.ts"],
-    "exclude": ["node_modules", "**/*.e2e.ts"] //! TODO: Del "**/*.e2e.ts"
+    "include": ["./packages/**/*"],
+    "exclude": ["node_modules"]
 }

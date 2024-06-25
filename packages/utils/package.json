@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "build": "node  ../../scripts/echo 'NO BUILD STEP !!!!!!!!!!!!'",
-        "test": "vitest"
+        "test:unit": "vitest --run"
     },
     "dependencies": {},
     "devDependencies": {}
