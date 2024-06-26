@@ -4,8 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "node  ../../scripts/echo 'NO BUILD STEP !!!!!!!!!!!!'",
-    "test:unit": "vitest"
+    "build": "node  ../../scripts/echo 'NO BUILD STEP !!!!!!!!!!!!'"
   },
   "dependencies": {},
   "devDependencies": {}
