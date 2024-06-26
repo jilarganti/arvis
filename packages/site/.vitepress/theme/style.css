@@ -44,17 +44,17 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-    --vp-c-main-1: #444444;
-    --vp-c-main-2: #222222;
-    --vp-c-main-3: #000000;
-    --vp-c-main-soft: rgba(2, 9, 27, 0.14);
+  --vp-c-main-1: #444444;
+  --vp-c-main-2: #222222;
+  --vp-c-main-3: #000000;
+  --vp-c-main-soft: rgba(2, 9, 27, 0.14);
 }
 
 .dark {
-    --vp-c-main-1: #bbbbbb;
-    --vp-c-main-2: #dddddd;
-    --vp-c-main-3: #ffffff;
-    --vp-c-main-soft: rgba(252, 253, 255, 0.14);
+  --vp-c-main-1: #bbbbbb;
+  --vp-c-main-2: #dddddd;
+  --vp-c-main-3: #ffffff;
+  --vp-c-main-soft: rgba(252, 253, 255, 0.14);
 }
 
 /**
@@ -62,11 +62,11 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-    --vp-button-brand-text: var(--vp-c-neutral-inverse);
-    --vp-button-brand-bg: var(--vp-c-main-3);
-    --vp-button-brand-hover-border: var(--vp-c-neutral);
-    --vp-button-brand-hover-text: var(--vp-c-neutral);
-    --vp-button-brand-hover-bg: var(--vp-c-neutral-inverse);
+  --vp-button-brand-text: var(--vp-c-neutral-inverse);
+  --vp-button-brand-bg: var(--vp-c-main-3);
+  --vp-button-brand-hover-border: var(--vp-c-neutral);
+  --vp-button-brand-hover-text: var(--vp-c-neutral);
+  --vp-button-brand-hover-bg: var(--vp-c-neutral-inverse);
 }
 
 /**
@@ -74,25 +74,25 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(
-        90deg,
-        rgba(131, 58, 180, 1) 0%,
-        rgba(253, 29, 29, 1) 50%,
-        rgba(252, 176, 69, 1) 100%
-    );
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 
 @media (min-width: 640px) {
-    :root {
-        --vp-home-hero-image-filter: blur(56px);
-    }
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
 }
 
 @media (min-width: 2000px) {
-    :root {
-        --vp-home-hero-image-filter: blur(68px);
-    }
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
 }
 
 /**

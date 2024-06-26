@@ -1,12 +1,12 @@
 {
-    "name": "utils",
-    "version": "0.0.0",
-    "description": "",
-    "type": "module",
-    "scripts": {
-        "build": "node  ../../scripts/echo 'NO BUILD STEP !!!!!!!!!!!!'",
-        "test:unit": "vitest --run"
-    },
-    "dependencies": {},
-    "devDependencies": {}
+  "name": "utils",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "node  ../../scripts/echo 'NO BUILD STEP !!!!!!!!!!!!'",
+    "test:unit": "vitest"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

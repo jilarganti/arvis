@@ -1,53 +1,74 @@
 {
-    "name": "arvis-monorepo",
-    "version": "0.0.0",
-    "license": "MIT",
-    "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
-    "description": "Arvis project monorepo: AI-enhanced video meetings",
-    "homepage": "https://github.com/jilarganti/arvis",
-    "bugs": "https://github.com/jilarganti/arvis/issues",
-    "repository": "github:jilarganti/arvis",
-    "type": "module",
-    "packageManager": "pnpm@9.4.0",
-    "pnpm": {
-        "packages": [
-            "packages/*"
-        ]
-    },
-    "keywords": [
-        "ai",
-        "videomeeting"
+  "name": "arvis-monorepo",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "SMYRNA INFORMATION TECHNOLOGY NETWORK SERVICES L.L.C",
+  "description": "Arvis project monorepo: AI-enhanced video meetings",
+  "homepage": "https://github.com/jilarganti/arvis",
+  "bugs": "https://github.com/jilarganti/arvis/issues",
+  "repository": "github:jilarganti/arvis",
+  "type": "module",
+  "packageManager": "pnpm@9.4.0",
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "preview": "pnpm -r preview",
+    "test": "pnpm test:unit && pnpm test:e2e",
+    "test:unit": "pnpm -r test:unit --no-watch --outputFile ../../vitest-report/index.html",
+    "test:unit:ui": "vite preview --outDir vitest-report --port 3001 --strictPort",
+    "test:e2e": "playwright test -c config/playwright.config.ts",
+    "test:e2e:ui": "playwright show-report --port 3002",
+    "check:links": "pnpm -F site check:links",
+    "lint": "eslint -c config/eslint.config.js",
+    "format": "prettier -cwu . --ignore-path=config/.prettierignore",
+    "prepare": "simple-git-hooks && playwright install"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.8",
+    "@vitest/ui": "^1.6.0",
+    "chalk": "^5.3.0",
+    "eslint": "~9.5.0",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.2",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "~5.4.5",
+    "typescript-eslint": "^7.14.1",
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0",
+    "vue": "^3.4.30"
+  },
+  "pnpm": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint && pnpm format",
+    "pre-push": "pnpm test:unit",
+    "preserveUnused": [
+      "commit-msg"
+    ]
+  },
+  "lint-staged": {
+    "*.ts": [
+      "pnpm lint",
+      "git add"
     ],
-    "scripts": {
-        "dev": "pnpm -r dev",
-        "build": "pnpm -r build",
-        "preview": "pnpm -r preview",
-        "test": "pnpm test:unit && pnpm test:e2e",
-        "test:unit": "pnpm -r test:unit",
-        "test:e2e": "playwright test -c config/playwright.config.ts",
-        "check:links": "pnpm -F site check:links",
-        "lint": "eslint -c config/eslint.config.js",
-        "format": "prettier --check --write . --ignore-path=config/.prettierignore"
-    },
-    "devDependencies": {
-        "@playwright/test": "^1.44.1",
-        "@types/node": "^20.14.8",
-        "chalk": "^5.3.0",
-        "eslint": "~9.5.0",
-        "prettier": "^3.3.2",
-        "typescript": "~5.4.0",
-        "typescript-eslint": "^7.13.1",
-        "vite": "^5.3.1",
-        "vitest": "^1.6.0",
-        "vue": "^3.4.29"
-    },
-    "prettier": {
-        "semi": false,
-        "singleQuote": true,
-        "tabWidth": 4,
-        "printWidth": 120
-    },
-    "stackblitz": {
-        "startCommand": "pnpm run dev"
-    }
+    "*.{ts, json, yml}": [
+      "pnpm format"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100
+  },
+  "stackblitz": {
+    "startCommand": "pnpm run dev"
+  },
+  "keywords": [
+    "videomeeting",
+    "ai"
+  ]
 }

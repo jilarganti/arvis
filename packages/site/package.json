@@ -1,37 +1,37 @@
 {
-    "name": "site",
-    "version": "0.0.1",
-    "description": "Documentation for A.R.V.I.S",
-    "main": "index.md",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jilarganti/arvis"
-    },
-    "author": "Jil Arganti",
-    "license": "CC BY-NC-SA 4.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vitepress dev --port 3000 --strictPort",
-        "build": "vitepress build",
-        "preview": "vitepress preview",
-        "test:unit": "vitest --run",
-        "check:links": "pnpm exec linkinator '**/*.md' --verbosity ERROR -s 'example, zoom, openai'",
-        "translation:compare": "v-translation compare",
-        "translation:update": "v-translation update",
-        "translation:status": "v-translation status",
-        "lunaria:build": "lunaria build",
-        "lunaria:open": "open-cli .vitepress/dist/_translations/index.html"
-    },
-    "dependencies": {
-        "utils": "workspace:*"
-    },
-    "devDependencies": {
-        "@lunariajs/core": "^0.0.31",
-        "@types/node": "^20.14.8",
-        "linkinator": "^6.0.5",
-        "markdown-it-mathjax3": "^4.3.2",
-        "msw": "^1.3.3",
-        "open-cli": "^8.0.0",
-        "vitepress": "^1.2.3"
-    }
+  "name": "site",
+  "version": "0.0.1",
+  "description": "Documentation for A.R.V.I.S",
+  "main": "index.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jilarganti/arvis"
+  },
+  "author": "Jil Arganti",
+  "license": "CC BY-NC-SA 4.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev --port 3000 --strictPort",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "test:unit": "vitest",
+    "check:links": "pnpm exec linkinator '**/*.md' --verbosity ERROR -s 'example, zoom, openai'",
+    "translation:compare": "v-translation compare",
+    "translation:update": "v-translation update",
+    "translation:status": "v-translation status",
+    "lunaria:build": "lunaria build",
+    "lunaria:open": "open-cli .vitepress/dist/_translations/index.html"
+  },
+  "dependencies": {
+    "utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@lunariajs/core": "^0.0.31",
+    "@types/node": "^20.14.8",
+    "linkinator": "^6.0.5",
+    "markdown-it-mathjax3": "^4.3.2",
+    "msw": "^1.3.3",
+    "open-cli": "^8.0.0",
+    "vitepress": "^1.2.3"
+  }
 }

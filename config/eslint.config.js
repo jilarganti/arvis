@@ -6,15 +6,15 @@
 import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
-    ...tseslint.configs.strict,
-    ...tseslint.configs.stylistic,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
 
-    {
-        ignores: ['**/.vitepress/dist', '**/.vitepress/cache'],
+  {
+    ignores: ['**/.vitepress/{dist,cache}', 'vitest-report'],
+  },
+  {
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'warn',
     },
-    {
-        rules: {
-            '@typescript-eslint/no-unused-vars': 'warn',
-        },
-    },
+  },
 )

@@ -9,10 +9,10 @@ To check out documents, visit [Mind API (draft) (1.0)](https://api.mind.com/).
 ## Changelog
 
 Detailed changes for each release are documented:
+
 - [Web SDK](https://gitlab.com/mindlabs/api/sdk/web/-/commits/master?ref_type=heads)
 - [IOS SDK](https://gitlab.com/mindlabs/api/sdk/ios/-/commits/master?ref_type=heads)
 - [Android SDK](https://gitlab.com/mindlabs/api/sdk/android/-/commits/master?ref_type=heads)
-
 
 <!-- ## Contribution -->
 

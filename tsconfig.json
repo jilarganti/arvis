@@ -1,26 +1,26 @@
 {
-    "compilerOptions": {
-        "target": "es2020",
-        "jsx": "preserve",
-        "lib": ["esnext"],
-        "module": "esnext",
-        "moduleResolution": "Bundler",
+  "compilerOptions": {
+    "target": "es2020",
+    "jsx": "preserve",
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "Bundler",
 
-        "resolveJsonModule": true,
-        "types": ["node", "vitest/importMeta"],
-        "strict": true,
-        "strictNullChecks": true,
-        "esModuleInterop": true,
-        "skipDefaultLibCheck": true,
-        "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node", "vitest/importMeta"],
+    "strict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
 
-        "paths": {
-            "@packages/*": ["./packages/*"],
-            "@arvis": ["./packages/a.r.v.i.s./src/index"],
-            "@utils": ["./packages/utils/src/index"],
-            "@site/*": ["./packages/site/.vitepress/config/*"]
-        }
-    },
-    "include": ["./packages/**/*"],
-    "exclude": ["node_modules"]
+    "paths": {
+      "@packages/*": ["./packages/*"],
+      "@arvis": ["./packages/a.r.v.i.s./src/index"],
+      "@utils": ["./packages/utils/src/index"],
+      "@site/*": ["./packages/site/.vitepress/config/*"]
+    }
+  },
+  "include": ["./packages/**/*"],
+  "exclude": ["node_modules"]
 }

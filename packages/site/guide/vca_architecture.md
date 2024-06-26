@@ -1,23 +1,23 @@
 ---
-
 MIND VIDEO CONFERENCING SERVICE
-
 ---
 
 ---
-::: tip 📝 Suggest changes to this page 
+
+::: tip 📝 Suggest changes to this page
 [![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/apps/site/guide/vca_architecture.md?initialPath=%2Fguide%2Fvca_architecture)
 :::
+
 ---
 
 REVISION HISTORY
 
 ---
 
-| Ver. | Description of Change                                                                                                                  | Author       | Date         | Approved By     | Effective Date  |
-|------|-----------------------------------------------------------------------------------------------------------------------------------------|--------------|--------------|-----------------|-----------------|
-| 1.0  | Initial version of SAD for Video Call API service (like Zoom)                                                                           | Ivan Fediaev | 16-May-2024  | Ivan Fediaev    | 16-May-2024     |
-| 1.1  | Removed requirements for unnecessary APIs (Chats, Calendar, Meetings Polls/Template/Trash bin/On-Demand recordings/Surveys/Archiving), updated document structure, updated release plan, added comparison of frameworks for frontend (React.js/Vue.js) | Viacheslav Korogoin / Ivan Fediaev | 03-Jun-2024  | Sergey Fomin    | 03-Jun-2024     |
+| Ver. | Description of Change                                                                                                                                                                                                                                  | Author                             | Date        | Approved By  | Effective Date |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------- | ----------- | ------------ | -------------- |
+| 1.0  | Initial version of SAD for Video Call API service (like Zoom)                                                                                                                                                                                          | Ivan Fediaev                       | 16-May-2024 | Ivan Fediaev | 16-May-2024    |
+| 1.1  | Removed requirements for unnecessary APIs (Chats, Calendar, Meetings Polls/Template/Trash bin/On-Demand recordings/Surveys/Archiving), updated document structure, updated release plan, added comparison of frameworks for frontend (React.js/Vue.js) | Viacheslav Korogoin / Ivan Fediaev | 03-Jun-2024 | Sergey Fomin | 03-Jun-2024    |
 
 # 1 Executive Summary
 
@@ -103,27 +103,27 @@ containerization with Docker and Kubernetes to facilitate the deployment and sca
 
 #### Comparison Matrix: Next.js (React.js) vs Nuxt.js (Vue.js)
 
-| Feature/Aspect                  | [Next.js](https://trends.builtwith.com/framework/Next.js) [(React.js)](https://trends.builtwith.com/javascript/React)                                                                                    | [Nuxt.js](https://trends.builtwith.com/framework/Nuxt.js) [(Vue.js)](https://trends.builtwith.com/javascript/Vue)                                                           |
-| ------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| **GitHub Stars**                | **114k+(210k+)**                                                                                 | 51k+(220k+)                                                              |
-| **GitHub Commits**              | **20k+**                                                                                         | 7.5k+                                                             |
-| **GitHub Contributors**         | **1.5k+**                                                                                        | 450+                                                              |
-| **Questions on Stack Overflow** | **18k+**                                                                                         | 10k+                                                              |
-| **Live Websites**               | **117k+(2M+)**                                                                                   | 23k+(1M+)                                                              |
-| **Popular Websites**            | Hulu, Twitch, GitHub, TikTok (Facebook, Instagram, Airbnb, Netflix)                                | GitLab, Nespresso, Orange, Wizzair (Alibaba, Xiaomi, GitLab)                                |
-| **Trends**                      | **Higher growth in searches and job postings**                                                   | Steady growth in searches and job postings                        |
-| **Performance**                 | Excellent (Optimized for SSR, SSG, hybrid rendering)                                               | Excellent (Optimized for SSR, SSG, hybrid rendering)              |
-| **Scalability**                 | Highly scalable with incremental static regeneration, API routes, and serverless functions         | Highly scalable with built-in modules and flexible configurations |
-| **Documentation**               | Comprehensive, regularly updated, extensive examples                                               | Comprehensive, beginner-friendly, extensive examples              |
-| **Ecosystem**                   | Rich ecosystem with plugins and integrations (e.g., Vercel, Now, NextAuth)                          | Rich ecosystem with modules and plugins (e.g., Axios, PWA, Auth)  |
-| **Count of Libraries/Packages** | **5000+ packages available via npm (10000+ packages available via npm)**                         | 3000+ modules and plugins available via npm (6000+ packages and plugins available via npm)      |
+| Feature/Aspect                  | [Next.js](https://trends.builtwith.com/framework/Next.js) [(React.js)](https://trends.builtwith.com/javascript/React) | [Nuxt.js](https://trends.builtwith.com/framework/Nuxt.js) [(Vue.js)](https://trends.builtwith.com/javascript/Vue) |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **GitHub Stars**                | **114k+(210k+)**                                                                                                      | 51k+(220k+)                                                                                                       |
+| **GitHub Commits**              | **20k+**                                                                                                              | 7.5k+                                                                                                             |
+| **GitHub Contributors**         | **1.5k+**                                                                                                             | 450+                                                                                                              |
+| **Questions on Stack Overflow** | **18k+**                                                                                                              | 10k+                                                                                                              |
+| **Live Websites**               | **117k+(2M+)**                                                                                                        | 23k+(1M+)                                                                                                         |
+| **Popular Websites**            | Hulu, Twitch, GitHub, TikTok (Facebook, Instagram, Airbnb, Netflix)                                                   | GitLab, Nespresso, Orange, Wizzair (Alibaba, Xiaomi, GitLab)                                                      |
+| **Trends**                      | **Higher growth in searches and job postings**                                                                        | Steady growth in searches and job postings                                                                        |
+| **Performance**                 | Excellent (Optimized for SSR, SSG, hybrid rendering)                                                                  | Excellent (Optimized for SSR, SSG, hybrid rendering)                                                              |
+| **Scalability**                 | Highly scalable with incremental static regeneration, API routes, and serverless functions                            | Highly scalable with built-in modules and flexible configurations                                                 |
+| **Documentation**               | Comprehensive, regularly updated, extensive examples                                                                  | Comprehensive, beginner-friendly, extensive examples                                                              |
+| **Ecosystem**                   | Rich ecosystem with plugins and integrations (e.g., Vercel, Now, NextAuth)                                            | Rich ecosystem with modules and plugins (e.g., Axios, PWA, Auth)                                                  |
+| **Count of Libraries/Packages** | **5000+ packages available via npm (10000+ packages available via npm)**                                              | 3000+ modules and plugins available via npm (6000+ packages and plugins available via npm)                        |
 
 #### Conclusion
 
 **Choose Next.js (React.js) if:**
 
 - You need a highly scalable solution for large-scale applications.
-- React is more widely adopted, better supported, and has a larger amount of documentation and community resources, 
+- React is more widely adopted, better supported, and has a larger amount of documentation and community resources,
   including numerous articles on Stack Overflow and other platforms.
 - You require a robust ecosystem with extensive third-party libraries and tools.
 - You prioritize performance and need advanced features like incremental static regeneration and serverless functions.
@@ -235,7 +235,7 @@ authentication system:
 ### 4.2.2 Meeting API
 
 This section describes the requests related to the conference management API. This API provides methods for creating,
-modifying, and deleting conferences, as well as managing various aspects of video conferences, invitation links, and more. 
+modifying, and deleting conferences, as well as managing various aspects of video conferences, invitation links, and more.
 Our API is similar to the Zoom API and uses similar methods and data models.
 Detailed information about the Zoom API methods is available at: [Zoom Meeting
 API](https://developers.zoom.us/docs/api/rest/meeting/). Additionally, it outlines how we can leverage the Mind API in
@@ -336,6 +336,7 @@ implementing these methods.
 
 This API structure allows Zoom customers to easily adapt to using our service, while allowing us to leverage the
 conferencing management capabilities of the Mind API to ensure the reliability and scalability of our solution.
+
 </details>
 
 #### Create Meeting\'s Invite Links
@@ -436,6 +437,7 @@ Content-Type: application/json
 This feature simplifies the process of distributing meeting access to multiple attendees, providing each with a unique,
 timed link that enhances security and meeting management. This system is particularly useful for large meetings where
 control over participant access is critical.
+
 </details>
 
 #### Delete A Meeting
@@ -485,6 +487,7 @@ DELETE /meetings/{meetingId}?occurrence_id=1648194360000&schedule_for_reminder=t
 This feature is crucial for meeting administrators, allowing them to manage meeting schedules effectively and
 communicate changes to participants promptly. It ensures that the meeting landscape within an organization remains
 flexible and responsive to changes in availability or meeting requirements.
+
 </details>
 
 #### Getting A Meeting
@@ -593,6 +596,7 @@ GET /users/{userId}/meetings/{meetingId}
 This structure ensures that the service meets the expectations for a seamless integration experience similar to Zoom
 while leveraging advanced capabilities from Mind API to provide additional valuable meeting details and enhanced
 security features.
+
 </details>
 
 #### Get A Meeting's SIP URI With Passcode
@@ -678,6 +682,7 @@ Content-Type: application/json
 This functionality is crucial for organizations that integrate their meeting systems with SIP-enabled devices or
 services, offering a seamless transition between online platforms and traditional teleconferencing systems. It ensures
 secure and efficient access to Zoom meetings via SIP devices, enhancing connectivity and meeting accessibility.
+
 </details>
 
 **\* Is required new BE functionality from Mind API**
@@ -819,6 +824,7 @@ follow-ups.
 **Provides access to basic functionalities of AI Summarizer through an interface compatible with the Zoom Meeting API.
 Access to advanced features of AI Summarizer is available through an extension to the Zoom Meeting API for AI
 summarizing and assistance.**
+
 </details>
 
 #### Get Livestream Details (\*pro or higher plan)
@@ -883,6 +889,7 @@ The response includes the key elements needed to connect and stream the meeting 
 This functionality is essential for organizations looking to enhance the reach of their meetings by broadcasting them to
 a wider audience through custom streaming platforms. It ensures that the host can manage and distribute the streaming
 settings effectively, maintaining control over the visibility and accessibility of the meeting content.
+
 </details>
 
 **\* Is required new BE functionality from Mind API**
@@ -989,6 +996,7 @@ auditing purposes.
 This functionality is essential for organizations to maintain an archival record of their meetings, providing insights
 into attendance, duration, and engagement, which are crucial for understanding the effectiveness of meetings and
 planning future improvements.
+
 </details>
 
 **\* Is required new BE functionality from Mind API**
@@ -1120,6 +1128,7 @@ GET /past_meetings/{meetingId}/participants?page_size=30&next_page_token=IAfJX3j
 
 This detailed approach ensures that the system not only complies with data protection standards but also provides
 comprehensive insights into meeting participation, enhancing overall meeting management and participant tracking.
+
 </details>
 
 #### List Meeting Summaries Of An Account (\*Pro or higher plan)
@@ -1243,6 +1252,7 @@ GET /meetings/meeting_summaries?from=2023-10-19T07:00:00Z&to=2023-10-20T07:00:00
 **Provides access to basic functionalities of AI Summarizer through an interface compatible with the Zoom Meeting API.
 Access to advanced features of AI Summarizer is available through an extension to the Zoom Meeting API for AI
 summarizing and assistance.**
+
 </details>
 
 #### List Meetigns (\*Pro or higher plan)
@@ -1351,6 +1361,7 @@ GET /users/{userId}/meetings?type=scheduled&from=2023-01-01&to=2023-01-16&timezo
 
 This setup ensures that users can easily access, manage, and plan for upcoming meetings, enhancing organizational
 efficiency and communication.
+
 </details>
 
 #### List Past Meeting Instances
@@ -1433,6 +1444,7 @@ GET /past_meetings/93398114182/instances
 
 This functionality aids in auditing and compliance efforts by providing an accessible log of past meeting occurrences,
 streamlining administrative tasks and enhancing oversight.
+
 </details>
 
 #### List Upcoming Meetings
@@ -1565,6 +1577,7 @@ GET /users/{userId}/upcoming_meetings
 
 This structure ensures that users can efficiently manage and prepare for their upcoming engagements by providing
 detailed, up-to-date information on each scheduled meeting.
+
 </details>
 
 #### Update A Livestream
@@ -1766,7 +1779,7 @@ Content-Type: application/json
 - Ensure that updates to meeting settings comply with organizational policies and privacy regulations.
 
 - Monitor API usage against the rate limit to avoid service disruptions and ensure compliance with Zoom\'s API usage
-  policies.
+policies.
 </details>
 
 #### Update Livestream Status
@@ -1854,6 +1867,7 @@ PATCH /meetings/85746065/livestream/status
 
 This approach ensures that meeting hosts can adapt livestream settings swiftly and efficiently, enhancing the overall
 engagement and accessibility of meetings streamed to broader audiences.
+
 </details>
 
 #### Update Meeting Status
@@ -1929,6 +1943,7 @@ PUT /meetings/85746065/status
 
 This structured approach ensures that meeting hosts and administrators can manage meeting statuses efficiently,
 facilitating better control over meeting lifecycles and improving overall meeting governance.
+
 </details>
 
 #### Use In-meeting Controls
@@ -2036,6 +2051,7 @@ PATCH /live_meetings/93398114182/events
 
 This setup ensures that meeting hosts can effectively manage their meetings directly from their software environments,
 leveraging Zoom\'s extensive capabilities to enhance meeting security, efficiency, and overall management.
+
 </details>
 
 #### Start Meeting Recording
@@ -2153,6 +2169,7 @@ This detailed setup ensures that meeting hosts can reliably start and manage rec
 for users who rely on meeting recordings for various operational or compliance needs. The system mimics familiar
 functionalities from platforms like Zoom while incorporating robust backend support for effective data management and
 user experience.
+
 </details>
 
 #### Get Past Meeting Participants
@@ -2179,9 +2196,7 @@ Zoom-like API interface externally while harnessing Mind API capabilities intern
 - **next_page_token** (string, optional): Used to paginate through large result sets. This token, which expires after
   15 minutes, is provided when the available results exceed the page size.
 
--
-
-**Response Details:**
+- **Response Details:**
 
 Participants are returned in an array, each participant object providing detailed participant information.
 
@@ -2290,6 +2305,7 @@ GET /meetings/{meetingId}/participants?page_size=30&next_page_token=IAfJX3jsOLW7
 This example response demonstrates how to use pagination to manage large sets of data efficiently while providing
 comprehensive details about each meeting participant. This functionality is crucial for effective meeting management and
 post-meeting analysis.
+
 </details>
 
 ### 4.2.3 Meetings API (Cloud Recording)
@@ -2370,6 +2386,7 @@ DELETE /meetings/85746065/recordings/a2f19f96-9294-4f51-8134-6f0eea108eb2?action
 
 This structured approach to managing Zoom cloud recordings ensures that organizations can handle recorded meeting data
 securely and efficiently, aligning with both operational needs and compliance requirements.
+
 </details>
 
 #### Delete Meeting Recordings
@@ -2436,6 +2453,7 @@ DELETE /meetings/atsXxhSEQWit9t+U02HXNQ==/recordings?action=delete
 
 This API function ensures that organizations can maintain control over their digital meeting spaces, managing recording
 storage efficiently and complying with internal or regulatory data management policies.
+
 </details>
 
 #### Get Meeting Recording Settings
@@ -2539,6 +2557,7 @@ GET /meetings/atsXxhSEQWit9t+U02HXNQ==/recordings/settings
 
 This structured approach ensures that organizations can control and manage how their meeting recordings are accessed and
 viewed, aligning with privacy and security regulations.
+
 </details>
 
 #### Get Meeting Recording
@@ -2642,6 +2661,7 @@ GET /meetings/atsXxhSEQWit9t+U02HXNQ==/recordings
 
 This setup ensures that meeting hosts and participants can access recorded sessions for review, compliance, or archival
 purposes efficiently and securely.
+
 </details>
 
 #### List All Recordings
@@ -2772,6 +2792,7 @@ GET /users/{userId}/recordings
 
 This structured approach ensures a comprehensive retrieval of cloud recordings, enhancing organizational capabilities
 for managing and analyzing recorded content effectively.
+
 </details>
 
 #### Update Meeting Recording Settings
@@ -2872,6 +2893,7 @@ PATCH /meetings/{meetingId}/recordings/settings
 
 This API functionality offers robust controls over recording settings, ensuring that users can manage access and
 distribution effectively to meet diverse needs in organizational and individual contexts.
+
 </details>
 
 ### 4.2.4 QSS API
@@ -3088,6 +3110,7 @@ GET
 \]
 
 }
+
 </details>
 
 #### List session users QoS Summary
@@ -3282,6 +3305,7 @@ GET /videosdk/sessions/{sessionId}/users/qos_summary?page_size=10&next_page_toke
 \]
 
 }
+
 </details>
 
 ### 4.2.5 Account API
@@ -3376,6 +3400,7 @@ DELETE /videosdk/sessions/{sessionId}/recordings/{recordingId}?action=trash
 \"message\": \"The recording file was successfully deleted.\"
 
 }
+
 </details>
 
 #### Delete session\'s recordings
@@ -3441,6 +3466,7 @@ DELETE /videosdk/sessions/{sessionId}/recordings?action=trash
 \"message\": \"All recording files were successfully deleted.\"
 
 }
+
 </details>
 
 #### List recordings of an account
@@ -3674,6 +3700,7 @@ GET
 \]
 
 }
+
 </details>
 
 #### List session's recordings
@@ -3925,6 +3952,7 @@ GET /videosdk/sessions/{sessionId}/recordings?include_fields=download_access_tok
 \]
 
 }
+
 </details>
 
 #### Get session user QoS
@@ -4420,6 +4448,7 @@ Zoom API Fields Mind API Fields Mind API Methods
 **user_qos.video_output.frame_rate** **rate** **getRate()**
 
 ---
+
 </details>
 
 #### List session users QoS
@@ -4879,6 +4908,7 @@ user_qos.video_output.resolution width, height getWidth(), getHeight()
 user_qos.video_output.frame_rate rate getRate()
 
 ---
+
 </details>
 
 ### 4.2.8 Event API (In Progress)
@@ -5214,7 +5244,7 @@ to Google Meet, utilizing the Mind SDK and a Zoom Meetings-like backend. This do
 
 - **Features:**
 
-  - Development of a web application (Next.js (React.js) or Nuxt.js (Vue.js)) with a UI similar to Google Meet for 
+  - Development of a web application (Next.js (React.js) or Nuxt.js (Vue.js)) with a UI similar to Google Meet for
     joining meetings and displaying and managing live meeting items like input/output streams, local devices, etc.
   - Development of a Zoom Meetings-like backend implementing a subset of the Zoom Meeting API for managing meeting
     schedules, invitation links, etc.
@@ -5254,8 +5284,8 @@ This ensures that the MVP includes essential components for users to manage and 
     > 👍
   - ~~Implementation of Zoom Video SDK API (**Subject to Removal**)~~
 
-Each release phase is designed to progressively enhance the platform's capabilities while ensuring stability and 
-scalability through gradual integration and testing. This approach allows for feedback-driven development and minimizes 
+Each release phase is designed to progressively enhance the platform's capabilities while ensuring stability and
+scalability through gradual integration and testing. This approach allows for feedback-driven development and minimizes
 disruptions to existing users.
 
 # 9 Architecture Decision Log

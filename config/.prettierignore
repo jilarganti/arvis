@@ -1,4 +1,4 @@
 *.md
-*.yml
 *.yaml
 dist/
+cache/
