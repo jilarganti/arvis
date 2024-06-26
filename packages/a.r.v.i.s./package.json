@@ -15,7 +15,6 @@
   "scripts": {
     "dev": "node ../../scripts/echo 'NO DEV STEP !!!!!!!!!!!!'",
     "build": "node ../../scripts/echo 'NO BUILD STEP !!!!!!!!!!!!'",
-    "test:unit": "vitest",
     "format": "prettier --write --cache --parser typescript \"src/**/*.ts\""
   },
   "dependencies": {

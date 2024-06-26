@@ -16,7 +16,7 @@ export default defineConfig({
     },
   },
   test: {
-    include: ['test/*.{spec,test}.ts'],
+    include: ['**/test/*.{spec,test}.ts'],
     globals: true,
     reporters: ['html'],
   },

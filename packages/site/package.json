@@ -14,7 +14,6 @@
     "dev": "vitepress dev --port 3000 --strictPort",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "test:unit": "vitest",
     "check:links": "pnpm exec linkinator '**/*.md' --verbosity ERROR -s 'example, zoom, openai'",
     "translation:compare": "v-translation compare",
     "translation:update": "v-translation update",
