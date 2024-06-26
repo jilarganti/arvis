@@ -24,6 +24,8 @@
     "prepare": "simple-git-hooks && playwright install"
   },
   "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-angular": "19.3.0",
     "@playwright/test": "^1.45.0",
     "@types/node": "^20.14.8",
     "@vitest/ui": "^1.6.0",
@@ -46,6 +48,7 @@
   "simple-git-hooks": {
     "pre-commit": "pnpm lint && pnpm format",
     "pre-push": "pnpm test:unit",
+    "commit-msg": "npx --no-install commitlint --edit $1 -g config/.commitlintrc.json",
     "preserveUnused": [
       "commit-msg"
     ]
