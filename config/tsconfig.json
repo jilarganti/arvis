@@ -15,12 +15,11 @@
     "skipLibCheck": true,
 
     "paths": {
-      "@packages/*": ["./packages/*"],
-      "@arvis": ["./packages/a.r.v.i.s./src/index"],
-      "@utils": ["./packages/utils/src/index"],
-      "@site/*": ["./packages/site/.vitepress/config/*"]
+      "@arvis": ["../packages/a.r.v.i.s./src/index"],
+      "@utils": ["../packages/utils/src/index"],
+      "@site/*": ["../packages/site/.vitepress/config/*"]
     }
   },
-  "include": ["./packages/**/*"],
+  "include": ["../packages/**/*"],
   "exclude": ["node_modules"]
 }
