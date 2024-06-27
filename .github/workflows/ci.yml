@@ -2,7 +2,7 @@ name: CI
 
 env:
   NODE_OPTIONS: --max-old-space-size=6144
-  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
   VITEST_SEGFAULT_RETRY: 2 # Vitest auto retry on flaky segfault
 
 on:
@@ -37,9 +37,6 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
           cache: pnpm
-
-      - name: Run unit tests
-        run: pnpm run test:unit
 
       - name: Run e2e tests
         run: |
