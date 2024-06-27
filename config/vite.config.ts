@@ -16,8 +16,8 @@ export default defineConfig({
     },
   },
   test: {
-    include: ['**/test/*.{spec,test}.ts'],
+    exclude: ['node_modules', 'packages', 'e2e', 'dist'],
+    reporters: ['default', 'html'],
     globals: true,
-    reporters: ['html'],
   },
 })
