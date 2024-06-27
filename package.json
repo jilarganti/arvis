@@ -14,13 +14,13 @@
     "build": "pnpm -r build",
     "preview": "pnpm -r preview",
     "test": "pnpm test:unit && pnpm test:e2e",
-    "test:unit": "pnpm vitest --no-watch --outputFile vitest-report/index.html -c config/vite.config.ts",
+    "test:unit": "pnpm vitest --no-watch --outputFile vitest-report/index.html -c configs/vite.config.ts",
     "test:unit:ui": "vite preview --outDir vitest-report --port 3001 --strictPort",
-    "test:e2e": "playwright test -c config/playwright.config.ts",
+    "test:e2e": "playwright test -c configs/playwright.config.ts",
     "test:e2e:ui": "playwright show-report --port 3002",
     "check:links": "pnpm -F site check:links",
-    "lint": "eslint -c config/eslint.config.js",
-    "format": "prettier -cwu . --ignore-path=config/.prettierignore",
+    "lint": "eslint -c configs/eslint.config.js",
+    "format": "prettier -cwu . --ignore-path=configs/.prettierignore",
     "prepare": "simple-git-hooks && playwright install"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
   "simple-git-hooks": {
     "pre-commit": "pnpm lint && pnpm format",
     "pre-push": "pnpm test:unit",
-    "commit-msg": "npx --no-install commitlint --edit $1 -g config/.commitlintrc.json",
+    "commit-msg": "npx --no-install commitlint --edit $1 -g configs/.commitlintrc.json",
     "preserveUnused": [
       "commit-msg"
     ]

@@ -1,5 +1,5 @@
 import { defineProject, mergeConfig } from "vitest/config"
-import configShared from "../../config/vite.config"
+import configShared from "../../configs/vite.config"
 
 export default mergeConfig(
   configShared,
