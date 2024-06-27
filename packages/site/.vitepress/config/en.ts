@@ -1,7 +1,7 @@
-import { defineConfig, type DefaultTheme } from 'vitepress'
+import { defineConfig, type DefaultTheme } from "vitepress"
 
 export const en = defineConfig({
-  lang: 'en-US',
+  lang: "en-US",
   // description: "Meet J.A.R.V.I.S.'s protégé, crafted to channel the essence of its mentor's brilliance into your meetings. This AI assistant leverages historical data to ensure your objectives are achieved, representing you with strategic insight and a focus on tangible results.",
   description:
     "Introducing J.A.R.V.I.S.'s apprentice, designed to bring the brilliance of its mentor into your meetings. This AI assistant uses past data to help you reach your goals, providing strategic advice and a focus on concrete outcomes.",
@@ -10,8 +10,8 @@ export const en = defineConfig({
     nav: nav(),
 
     sidebar: {
-      '/guide/': { base: '/guide/', items: sidebarDocs() },
-      '/about/': { base: '/about/', items: sidebarAbout() },
+      "/guide/": { base: "/guide/", items: sidebarDocs() },
+      "/about/": { base: "/about/", items: sidebarAbout() },
     },
 
     // editLink: {
@@ -20,66 +20,66 @@ export const en = defineConfig({
     // },
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present, Jil Arganti',
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2024-present, Jil Arganti",
     },
   },
 })
 
 function nav(): DefaultTheme.NavItem[] {
   return [
-    { text: 'Docs', link: '/guide/introduction', activeMatch: '/guide/' },
-    { text: 'About', link: '/about/team', activeMatch: '/about/' },
+    { text: "Docs", link: "/guide/introduction", activeMatch: "/guide/" },
+    { text: "About", link: "/about/team", activeMatch: "/about/" },
     {
-      text: 'Join',
-      link: 'https://zoom.us/join',
-      target: '_self',
-      rel: 'noreferrer',
+      text: "Join",
+      link: "https://zoom.us/join",
+      target: "_self",
+      rel: "noreferrer",
     },
     {
-      text: 'Host',
+      text: "Host",
       items: [
         {
-          text: 'Public Meeting',
+          text: "Public Meeting",
           items: [
             {
-              text: 'Create a meeting for later',
-              link: '/ru/guide/meeting#create-a-meeting-for-later',
+              text: "Create a meeting for later",
+              link: "/ru/guide/meeting#create-a-meeting-for-later",
             },
             {
-              text: 'Start an instant meeting',
-              link: '/ru/guide/meeting#start-an-instant-meeting',
+              text: "Start an instant meeting",
+              link: "/ru/guide/meeting#start-an-instant-meeting",
             },
             {
-              text: 'Schedule in Calendar',
-              link: '/ru/guide/meeting#schedule-in-calendar',
+              text: "Schedule in Calendar",
+              link: "/ru/guide/meeting#schedule-in-calendar",
             },
           ],
         },
         {
-          text: 'Private Meeting',
+          text: "Private Meeting",
           items: [
             {
-              text: 'Create a meeting for later',
-              link: '/ru/guide/meeting#create-a-meeting-for-later-1',
+              text: "Create a meeting for later",
+              link: "/ru/guide/meeting#create-a-meeting-for-later-1",
             },
             {
-              text: 'Start an instant meeting',
-              link: '/ru/guide/meeting#start-an-instant-meeting-1',
+              text: "Start an instant meeting",
+              link: "/ru/guide/meeting#start-an-instant-meeting-1",
             },
             {
-              text: 'Schedule in Calendar',
-              link: '/ru/guide/meeting#schedule-in-calendar-1',
+              text: "Schedule in Calendar",
+              link: "/ru/guide/meeting#schedule-in-calendar-1",
             },
           ],
         },
       ],
     },
     {
-      text: 'Sign In',
-      link: 'https://zoom.us/signin#/login',
-      target: '_self',
-      rel: 'noreferrer',
+      text: "Sign In",
+      link: "https://zoom.us/signin#/login",
+      target: "_self",
+      rel: "noreferrer",
     },
   ]
 }
@@ -87,23 +87,23 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarDocs(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Introduction',
+      text: "Introduction",
       collapsed: true,
       items: [
-        { text: 'What is A.R.V.I.S.?', link: 'introduction' },
-        { text: 'Privacy', link: 'privacy' },
-        { text: 'Get Started', link: 'get-started' },
+        { text: "What is A.R.V.I.S.?", link: "introduction" },
+        { text: "Privacy", link: "privacy" },
+        { text: "Get Started", link: "get-started" },
       ],
     },
     {
-      text: 'Platform',
+      text: "Platform",
       collapsed: false,
       items: [
         {
-          text: 'Backend Architecture Specification',
-          link: 'vca_architecture',
+          text: "Backend Architecture Specification",
+          link: "vca_architecture",
         },
-        { text: 'AI assistants', link: 'markdown' },
+        { text: "AI assistants", link: "markdown" },
       ],
     },
 
@@ -114,8 +114,8 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
 function sidebarAbout(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'About',
-      items: [{ text: 'Code Of Conduct', base: '/', link: 'CODE_OF_CONDUCT' }],
+      text: "About",
+      items: [{ text: "Code Of Conduct", base: "/", link: "CODE_OF_CONDUCT" }],
     },
   ]
 }

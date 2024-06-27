@@ -1,1 +1,1 @@
-export * from './testFunc'
+export * from "./testFunc"

@@ -1,1 +1,1 @@
-export * from './divFunc'
+export * from "./divFunc"
