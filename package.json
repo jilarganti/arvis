@@ -67,7 +67,8 @@
     "printWidth": 100
   },
   "stackblitz": {
-    "startCommand": "pnpm run dev"
+    "installDependencies": true,
+    "startCommand": "pnpm -F site dev"
   },
   "keywords": [
     "videomeeting",
