@@ -24,6 +24,6 @@
         "sample"
       ]
     ],
-    "scope-enum": [1, "always", ["all", "arvis", "site", "link", "ai", "utils"]]
+    "scope-enum": [1, "always", ["arvis", "site", "link", "ai", "utils"]]
   }
 }
