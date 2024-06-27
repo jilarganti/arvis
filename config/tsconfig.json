@@ -7,6 +7,8 @@
     "moduleResolution": "Bundler",
 
     "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+
     "types": ["node", "vitest/importMeta"],
     "strict": true,
     "strictNullChecks": true,

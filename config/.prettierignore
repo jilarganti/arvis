@@ -2,3 +2,9 @@
 *.yaml
 dist/
 cache/
+
+/vitest-report
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/test-results/
