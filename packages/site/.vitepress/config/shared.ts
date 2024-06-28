@@ -49,6 +49,10 @@ export const shared = defineConfig({
 
     socialLinks: [{ icon: "github", link: "https://github.com/jilarganti/arvis" }],
 
+    editLink: {
+      pattern: "https://github.com/jilarganti/arvis/edit/main/packages/site/:path",
+    },
+
     search: {
       provider: "algolia",
       options: {
