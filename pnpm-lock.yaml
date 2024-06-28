@@ -66,10 +66,6 @@ importers:
   packages/link: {}
 
   packages/site:
-    dependencies:
-      utils:
-        specifier: workspace:*
-        version: link:../utils
     devDependencies:
       '@lunariajs/core':
         specifier: ^0.0.31
