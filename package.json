@@ -68,7 +68,15 @@
   },
   "stackblitz": {
     "installDependencies": true,
-    "startCommand": "pnpm -F site dev"
+    "startCommand": "pnpm -F site dev",
+    "bot": {
+      "issues": {
+        "enabled": false
+      },
+      "pullRequests": {
+        "enabled": false
+      }
+    }
   },
   "keywords": [
     "videomeeting",
