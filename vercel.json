@@ -1,5 +1,4 @@
 {
-  "installCommand": "pnpm install --recursive",
   "buildCommand": "pnpm build",
   "outputDirectory": "packages/site/.vitepress/dist"
 }
