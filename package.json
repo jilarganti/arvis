@@ -20,7 +20,7 @@
     "check:links": "pnpm -F site check:links",
     "lint": "eslint -c configs/eslint.config.js",
     "format": "prettier -cw . --ignore-path=configs/.prettierignore",
-    "prepare": "simple-git-hooks && playwright install --with-deps"
+    "prepare": "simple-git-hooks"
   },
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
