@@ -35,7 +35,7 @@ jobs:
       - run: pnpm install
 
       # @see https://playwright.dev/docs/ci-intro
-      - run: playwright install --with-deps
+      - run: pnpm playwright install --with-deps
       - run: pnpm test:e2e
         env:
           PLAYWRIGHT_TEST_BASE_URL: ${{ github.event.deployment_status.target_url }}
