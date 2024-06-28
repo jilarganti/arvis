@@ -1,5 +1,5 @@
 {
-  "installCommand": "pnpm install --recursive --prod --frozen-lockfile",
+  "installCommand": "pnpm install --recursive --frozen-lockfile",
   "buildCommand": "pnpm build",
   "outputDirectory": "packages/site/.vitepress/dist"
 }
