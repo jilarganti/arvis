@@ -15,26 +15,26 @@ concurrency:
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     strategy:
       matrix:
         node_version: [20]
 
+    # @see https://pnpm.io/continuous-integration#github-actions
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
           cache: pnpm
 
-      - name: Run e2e tests
-        run: pnpm test:e2e
-
-      # - name: Check broken links
-      #   run: pnpm run check:links
+      - run: pnpm install
+      - run: pnpm test:e2e
 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
