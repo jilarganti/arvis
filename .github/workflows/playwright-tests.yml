@@ -1,6 +1,10 @@
-name: CI
+name: Playwright Tests
 
 on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+  deployment_status:
   workflow_dispatch:
 
 concurrency:
@@ -16,6 +20,8 @@ jobs:
       matrix:
         node_version: [20]
 
+    if: github.event.deployment_status.state == 'success'
+
     # @see https://pnpm.io/continuous-integration#github-actions
     steps:
       - uses: actions/checkout@v4
@@ -30,6 +36,8 @@ jobs:
 
       - run: pnpm install
       - run: pnpm test:e2e
+        env:
+          PLAYWRIGHT_TEST_BASE_URL: ${{ github.event.deployment_status.target_url }}
 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
