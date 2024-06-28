@@ -66,9 +66,6 @@
     "semi": false,
     "printWidth": 100
   },
-  "stackblitz": {
-    "startCommand": "pnpm i && pnpm -F site dev"
-  },
   "keywords": [
     "videomeeting",
     "ai"
