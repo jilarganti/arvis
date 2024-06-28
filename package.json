@@ -15,12 +15,12 @@
     "test": "pnpm test:unit && pnpm test:e2e",
     "test:unit": "pnpm vitest --no-watch --outputFile vitest-report/index.html -c configs/vite.config.ts",
     "test:unit:ui": "vite preview --outDir vitest-report --port 3001 --strictPort",
-    "test:e2e": "playwright install --with-deps && playwright test -c configs/playwright.config.ts",
+    "test:e2e": "playwright test -c configs/playwright.config.ts",
     "test:e2e:ui": "playwright show-report --port 3002",
     "check:links": "pnpm -F site check:links",
     "lint": "eslint -c configs/eslint.config.js",
     "format": "prettier -cw . --ignore-path=configs/.prettierignore",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks && playwright install --with-deps"
   },
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
