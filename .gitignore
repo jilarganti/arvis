@@ -5,8 +5,8 @@ node_modules
 dist
 cache
 
-/vitest-report
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/test-results/
+vitest-report
+playwright-report
+blob-report
+playwright/.cache
+test-results
