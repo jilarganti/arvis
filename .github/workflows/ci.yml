@@ -1,10 +1,5 @@
 name: CI
 
-env:
-  NODE_OPTIONS: --max-old-space-size=6144
-  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
-  VITEST_SEGFAULT_RETRY: 2 # Vitest auto retry on flaky segfault
-
 on:
   push:
     branches: [main]
@@ -19,6 +14,7 @@ concurrency:
 
 jobs:
   test:
+    timeout-minutes: 60
     runs-on: ubuntu-latest
 
     strategy:
@@ -27,13 +23,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4 # Install pnpm
+      - uses: pnpm/action-setup@v4
         with:
           run_install: |
             - recursive: true
               args: [--frozen-lockfile, --strict-peer-dependencies]
 
-      - uses: actions/setup-node@v4 # Set node version to ${{ matrix.node_version }}
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node_version }}
           cache: pnpm
@@ -41,7 +37,7 @@ jobs:
       - name: Run e2e tests
         run: |
           pnpm playwright install --with-deps
-          pnpm build # Build for e2e tests
+          pnpm build
           pnpm test:e2e
 
       # - name: Check broken links
