@@ -35,10 +35,7 @@ jobs:
           cache: pnpm
 
       - name: Run e2e tests
-        run: |
-          pnpm playwright install --with-deps
-          pnpm build
-          pnpm test:e2e
+        run: pnpm test:e2e
 
       # - name: Check broken links
       #   run: pnpm run check:links
