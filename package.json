@@ -42,8 +42,8 @@
   },
   "pnpm": {},
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint",
-    "pre-push": "pnpm format && pnpm test:unit",
+    "pre-commit": "pnpm lint && pnpm format",
+    "pre-push": "pnpm test:unit",
     "commit-msg": "npx --no-install commitlint --edit $1 -g configs/.commitlintrc.json",
     "preserveUnused": [
       "commit-msg"
