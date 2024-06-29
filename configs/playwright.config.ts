@@ -15,7 +15,7 @@ export default defineConfig({
 
   // The webServer to start only if PLAYWRIGHT_TEST_BASE_URL is set in the environment variables
   webServer: {
-    command: process.env.PLAYWRIGHT_TEST_BASE_URL ? "pnpm run dev" : "",
+    command: !process.env.PLAYWRIGHT_TEST_BASE_URL ? "pnpm run dev" : "",
     url: baseUrl,
     reuseExistingServer: true,
   },
