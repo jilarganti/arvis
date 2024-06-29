@@ -1,6 +1,6 @@
 {
   "files.exclude": {
-    ".vercel": true,
+    ".vercel": false,
     ".vscode": true,
     "playwright-report": true,
     "vitest-report": true,
