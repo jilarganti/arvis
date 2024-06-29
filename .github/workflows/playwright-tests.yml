@@ -16,6 +16,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-22.04
 
+    # @see https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs
     strategy:
       matrix:
         node_version: [20]
