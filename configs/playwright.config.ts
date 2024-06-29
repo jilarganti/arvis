@@ -17,7 +17,7 @@ export default defineConfig({
   webServer: {
     command: !process.env.PLAYWRIGHT_TEST_BASE_URL ? "pnpm run dev" : "",
     url: baseUrl,
-    reuseExistingServer: true,
+    // reuseExistingServer: true,
   },
   /**
    * @see https://playwright.dev/docs/api/class-testoptions.
