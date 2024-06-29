@@ -18,7 +18,6 @@ export default defineConfig({
     ? {
         command: "pnpm run dev",
         url: baseUrl,
-        reuseExistingServer: true,
       }
     : undefined,
 
@@ -27,9 +26,9 @@ export default defineConfig({
    */
   use: {
     baseURL: baseUrl,
-    viewport: { width: 1280, height: 720 },
+    // viewport: { width: 1280, height: 720 },
     locale: "en-GB",
-    trace: "retry-with-trace",
+    trace: "on-first-retry",
   },
 
   /* Configure projects for major browsers */
