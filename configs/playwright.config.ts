@@ -13,12 +13,15 @@ export default defineConfig({
   testMatch: "e2e/*.test.ts",
   reporter: "html",
 
-  // Run local dev server before starting the tests
-  webServer: {
-    command: "pnpm run dev",
-    url: baseUrl,
-    reuseExistingServer: !process.env.CI,
-  },
+  // The webServer to start only if PLAYWRIGHT_TEST_BASE_URL is set in the environment variables
+  webServer: process.env.PLAYWRIGHT_TEST_BASE_URL
+    ? {
+        command: "pnpm run dev",
+        url: baseUrl,
+        reuseExistingServer: true,
+      }
+    : undefined,
+
   /**
    * @see https://playwright.dev/docs/api/class-testoptions.
    */
