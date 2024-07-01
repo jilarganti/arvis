@@ -40,7 +40,12 @@
   "dependencies": {
     "simple-git-hooks": "^2.11.1"
   },
-  "pnpm": {},
+  "pnpm": {
+    "overrides": {
+      "uglify-js@<2.6.0": ">=2.6.0",
+      "uglify-js@<2.4.24": ">=2.4.24"
+    }
+  },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint && pnpm format",
     "pre-push": "pnpm test:unit",
