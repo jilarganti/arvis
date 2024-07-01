@@ -1,6 +1,7 @@
 import { defineConfig, devices } from "@playwright/test"
 
 const baseUrl = process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000/"
+console.log("baseUrl", baseUrl)
 
 /**
  * @see https://playwright.dev/docs/test-configuration.
