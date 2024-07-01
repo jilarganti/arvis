@@ -1,7 +1,6 @@
 import { defineConfig, devices } from "@playwright/test"
 
 const baseUrl = process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000/"
-console.log("baseUrl", baseUrl)
 
 /**
  * @see https://playwright.dev/docs/test-configuration.
@@ -30,12 +29,29 @@ export default defineConfig({
     trace: "on-first-retry",
   },
 
-  /* Configure projects for major browsers */
+  timeout: 60000, // Timeout is shared between all tests.
   projects: [
+    // {
+    //   name: "chromium",
+    //   testDir: "../packages/site/",
+    //   use: { ...devices["Desktop Chrome"] },
+    // },
     {
-      name: "chromium",
+      name: "staging",
       testDir: "../packages/site/",
-      use: { ...devices["Desktop Chrome"] },
+      use: {
+        baseURL: process.env.PLAYWRIGHT_TEST_BASE_URL,
+        ...devices["Desktop Chrome"],
+      },
+      retries: 2,
+    },
+    {
+      name: "production",
+      use: {
+        baseURL: "https://arvis-site.vercel.app/",
+        ...devices["Desktop Chrome"],
+      },
+      retries: 0,
     },
   ],
 })
