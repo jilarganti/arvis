@@ -2,10 +2,6 @@
 
 AI assistant A.R.V.I.S.: enhancing communication efficiency through continuous AI learning during your meetings.
 
-## Documentation
-
-To check out documents, visit [A.R.V.I.S.](https://site-arvis.vercel.app/).
-
 ## Contribution
 
 Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before making a pull request.
