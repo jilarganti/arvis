@@ -29,7 +29,7 @@ export default defineConfig({
     trace: "on-first-retry",
   },
 
-  timeout: 60000, // Timeout is shared between all tests.
+  timeout: 30000, // Timeout is shared between all tests.
   projects: [
     // {
     //   name: "chromium",
