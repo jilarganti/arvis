@@ -1,5 +1,9 @@
 import { defineConfig, devices } from "@playwright/test"
 
+/**
+ * To test the preview you need to disable the Vercel toolbar !
+ * @see https://vercel.com/arvis-me/arvis/settings/general
+ */
 const isDev = !process.env.PLAYWRIGHT_TEST_BASE_URL
 const baseUrl = process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000/"
 const command = isDev ? "pnpm run dev" : ""
@@ -12,8 +16,9 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  testMatch: "e2e/*.test.ts",
+  testMatch: "e2e/*.{spec,test}.ts",
   reporter: "html",
+  timeout: 10000,
 
   // The webServer to start only if PLAYWRIGHT_TEST_BASE_URL is set in the environment variables
   webServer: {
@@ -31,29 +36,11 @@ export default defineConfig({
     trace: "on-first-retry",
   },
 
-  timeout: 30000, // Timeout is shared between all tests.
   projects: [
     {
       name: "chromium",
       testDir: "../packages/",
       use: { ...devices["Desktop Chrome"] },
     },
-    // {
-    //   name: "staging",
-    //   testDir: "../packages/site/",
-    //   use: {
-    //     baseURL: process.env.PLAYWRIGHT_TEST_BASE_URL,
-    //     ...devices["Desktop Chrome"],
-    //   },
-    //   retries: 2,
-    // },
-    // {
-    //   name: "production",
-    //   use: {
-    //     baseURL: "https://arvis-site.vercel.app/",
-    //     ...devices["Desktop Chrome"],
-    //   },
-    //   retries: 0,
-    // },
   ],
 })
