@@ -1,6 +1,8 @@
 import { defineConfig, devices } from "@playwright/test"
 
+const isDev = !process.env.PLAYWRIGHT_TEST_BASE_URL
 const baseUrl = process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000/"
+const command = isDev ? "pnpm run dev" : ""
 
 /**
  * @see https://playwright.dev/docs/test-configuration.
@@ -15,7 +17,7 @@ export default defineConfig({
 
   // The webServer to start only if PLAYWRIGHT_TEST_BASE_URL is set in the environment variables
   webServer: {
-    command: !process.env.PLAYWRIGHT_TEST_BASE_URL ? "pnpm run dev" : "",
+    command: command,
     url: baseUrl,
     reuseExistingServer: true,
   },

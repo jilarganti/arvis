@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test"
 
 test("test", async ({ page }) => {
+  console.log(process.env.PLAYWRIGHT_TEST_BASE_URL)
   await page.goto("/")
   await page.goto("/guide/introduction#what-is-a-r-v-i-s")
   await page.getByRole("switch", { name: "Switch to dark theme" }).click()
