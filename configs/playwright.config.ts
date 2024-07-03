@@ -5,10 +5,10 @@ import { defineConfig, devices } from "@playwright/test"
  * @see https://vercel.com/arvis-me/arvis/settings/general
  */
 const isDev = !process.env.PLAYWRIGHT_TEST_BASE_URL
-// const baseUrl = process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000/"
-const baseUrl = "http://localhost:3000/"
-// const command = isDev ? "pnpm run dev" : ""
-const command = "pnpm run dev"
+const baseUrl = process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000/"
+// const baseUrl = "http://localhost:3000/"
+const command = isDev ? "pnpm run dev" : ""
+// const command = "pnpm run dev"
 
 // console.log("process.env:", process.env)
 
@@ -29,6 +29,7 @@ export default defineConfig({
     command: command,
     // url: baseUrl,
     // reuseExistingServer: true,
+    reuseExistingServer: !isDev,
   },
   /**
    * @see https://playwright.dev/docs/api/class-testoptions.
