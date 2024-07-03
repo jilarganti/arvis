@@ -1,18 +1,6 @@
 import { defineConfig, devices } from "@playwright/test"
 
 /**
- * To test the preview you need to disable the Vercel toolbar !
- * @see https://vercel.com/arvis-me/arvis/settings/general
- */
-const isDev = !process.env.PLAYWRIGHT_TEST_BASE_URL
-const baseUrl = process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000/"
-// const baseUrl = "http://localhost:3000/"
-const command = isDev ? "pnpm run dev" : ""
-// const command = "pnpm run dev"
-
-// console.log("process.env:", process.env)
-
-/**
  * @see https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
@@ -24,20 +12,14 @@ export default defineConfig({
   reporter: "html",
   timeout: 10000,
 
-  // The webServer to start only if PLAYWRIGHT_TEST_BASE_URL is set in the environment variables
   webServer: {
-    command: command,
-    // url: baseUrl,
-    // reuseExistingServer: true,
-    reuseExistingServer: !isDev,
+    command: "pnpm run dev",
   },
   /**
    * @see https://playwright.dev/docs/api/class-testoptions.
    */
   use: {
-    baseURL: baseUrl,
-    // viewport: { width: 1280, height: 720 },
-    locale: "en-GB",
+    baseURL: "http://localhost:3000/",
     trace: "on-first-retry",
   },
 
