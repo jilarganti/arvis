@@ -10,7 +10,7 @@ export default tseslint.config(
   ...tseslint.configs.stylistic,
 
   {
-    ignores: ["**/.vitepress/{dist,cache}", "vitest-report"],
+    ignores: ["**/.vitepress/{dist,cache}", "**/.nuxt", "vitest-report"],
   },
   {
     rules: {
