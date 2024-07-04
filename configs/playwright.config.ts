@@ -13,13 +13,13 @@ export default defineConfig({
   timeout: 10000,
 
   webServer: {
-    command: "pnpm run dev",
+    command: "pnpm run dev --host",
   },
   /**
    * @see https://playwright.dev/docs/api/class-testoptions.
    */
   use: {
-    baseURL: "http://localhost:3000/",
+    baseURL: "http://192.168.70.107:5173/",
     trace: "on-first-retry",
   },
 

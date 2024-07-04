@@ -11,7 +11,7 @@
   "license": "CC BY-NC-SA 4.0",
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev --port 3000 --strictPort",
+    "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
     "check:links": "pnpm exec linkinator '**/*.md' --verbosity ERROR -s 'example, zoom, openai'",
