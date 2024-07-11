@@ -4,6 +4,8 @@ import { search as ruSearch } from "./ru"
 export const shared = defineConfig({
   title: "A.R.V.I.S.",
 
+  srcDir: "./docs",
+
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,

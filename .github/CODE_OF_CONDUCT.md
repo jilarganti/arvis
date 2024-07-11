@@ -34,7 +34,7 @@ This Code of Conduct applies within all project spaces, as well as in public spa
 
 ## Enforcement
 
-Reports of abusive, harassing, or otherwise unacceptable behavior may be made by contacting the project team directly at [Arvis Fam on Discord](https://discord.com/invite/SA4hDwsk). All complaints will be reviewed and investigated promptly and fairly. The project team is committed to maintaining confidentiality for the reporter of an incident. Specific enforcement policies may be posted separately.
+Reports of abusive, harassing, or otherwise unacceptable behavior may be made by contacting the project team directly at [GitHub Discussions](https://github.com/jilarganti/arvis/discussions). All complaints will be reviewed and investigated promptly and fairly. The project team is committed to maintaining confidentiality for the reporter of an incident. Specific enforcement policies may be posted separately.
 
 Maintainers who do not follow or enforce the Code of Conduct may face temporary or permanent repercussions as defined by the project leadership.
 
