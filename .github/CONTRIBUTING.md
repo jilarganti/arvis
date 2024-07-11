@@ -21,6 +21,12 @@ Hi! We're really excited that you are interested in contributing to Arvis. Befor
 
 - Commit messages must follow the [commit message convention](https://www.conventionalcommits.org/en/v1.0.0/) so that changelogs can be automatically generated.
 
+## How To Contribute
+
+### Triage Issues and Help Out in Discussions
+
+Check out the issues and discussions for the project you want to help. For example, here are the [issues board](https://github.com/users/jilarganti/projects/4) and [discussions](https://github.com/jilarganti/arvis/discussions) for Arvis. Helping other users, sharing workarounds, creating reproductions, or even poking into a bug a little bit and sharing your findings makes a huge difference.
+
 ## Development Setup
 
 You will need [pnpm](https://pnpm.io)
