@@ -1,7 +1,7 @@
 ---
 title: Introduction
-localPath: '/ru/guide/introduction.md'
-encodedPath: '%2Fru%2Fguide%2Fintroduction'
+localPath: "/ru/guide/introduction.md"
+encodedPath: "%2Fru%2Fguide%2Fintroduction"
 ---
 
 # Начало работы <Badge type="danger" text="DRAFT" />
@@ -27,3 +27,5 @@ encodedPath: '%2Fru%2Fguide%2Fintroduction'
 ::: tip 📝 Suggest changes to this page
 [![Edit](https://developer.stackblitz.com/img/edit_in_web_publisher_small.svg)](https://pr.new/jilarganti/arvis/edit/main/docs{{ localPath }}?initialPath={{ encodedPath }})
 :::
+
+[dmcc](/ru/guide/dmcc.md)
